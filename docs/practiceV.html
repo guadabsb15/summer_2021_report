@@ -42,18 +42,19 @@
 <li><p>Football has never come home to England</p></li>
 <li><p>The British people are afraid of penalties</p></li>
 </ul>
-<p>Video of danish people ‘celebrating
-&lt;<a class="reference external" href="https://www.youtube.com/watch?v=PU0sCWmEQZU/">https://www.youtube.com/watch?v=PU0sCWmEQZU/</a>&gt;’_ a goal.</p>
+<p>Video of danish people ‘celebrating a goal
+&lt;<a class="reference external" href="https://www.youtube.com/watch?v=PU0sCWmEQZU/">https://www.youtube.com/watch?v=PU0sCWmEQZU/</a>&gt;’_.</p>
 <p>if you want to plot the heart rate of the british people during a penalty shootout, it can be done like this:</p>
-<dl>
-<dt>::</dt><dd><p>import numpy as np
-import matplotlib.pyplot as plt</p>
-<p>time = np.linspace(0,5,1000) # Duration of penalty shootout [minutes]
-heartbeat = np.ones(1000)*100 + 15 * np.sin(time) # Heartbeat</p>
-<p>plt.plot(time, heartbeat)
-plt.show()</p>
-</dd>
-</dl>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+
+<span class="n">time</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">1000</span><span class="p">)</span> <span class="c1"># Duration of penalty shootout [minutes]</span>
+<span class="n">heartbeat</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">ones</span><span class="p">(</span><span class="mi">1000</span><span class="p">)</span><span class="o">*</span><span class="mi">100</span> <span class="o">+</span> <span class="mi">15</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">time</span><span class="p">)</span> <span class="c1"># Heartbeat</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">time</span><span class="p">,</span> <span class="n">heartbeat</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
 <p>Having looked at physiology, let’s look at a table showing a possible outcome of a penalty shootout.</p>
 <table class="docutils align-default">
 <colgroup>
