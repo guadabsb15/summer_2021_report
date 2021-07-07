@@ -1,10 +1,11 @@
-Brio& Wu, Sod experimemts 
+Brio& Wu experimemts 
 =========================
 
-Here we will report the results of the Sod experiment and Brio&Wu
+Here we will report the results of the Brio&Wu experiment
 
-Sod experiment
----------------
+
+Brio & Wu  experiment
+---------------------
 
 initial contidions
 
@@ -12,8 +13,5 @@ different directions
 different solvers
 
 references
-
-Brio & Wu  experiment
----------------------
 
 
