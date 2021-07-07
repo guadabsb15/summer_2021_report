@@ -57,15 +57,17 @@ jobs:
         run: |
           cd docs
           make html
-          cd ..
+          cd ../
           
       - name: Commit chantes to gh-pages
         run: |
+        
           # Copies documentation outside of git folder.  
           mkdir -p ../docs/html 
           cp -r docs/build/html ../docs/
           
           # Checks out to gh-pages branch.
+          git fetch
           git checkout gh-pages
           
           # Copies files to branch.
