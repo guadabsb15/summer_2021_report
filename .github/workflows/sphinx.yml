@@ -38,3 +38,56 @@ jobs:
           python-version: 3.8
       # https://docs.github.com/en/actions/guides/building-and-testing-python#caching-dependencies
       # ^-- How to set up caching for pip on Ubuntu
+      - name: Cache pip
+        uses: actions/cache@v2
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+            ${{ runner.os }}-
+      # https://docs.github.com/en/actions/guides/building-and-testing-python#installing-dependencies
+      # ^-- This gives info on installing dependencies with pip
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          
+      - name: Build docs
+        run: |
+          cd docs
+          make html
+          cd ..
+          
+      - name: Commit chantes to gh-pages
+        run: |
+          # Copies documentation outside of git folder.  
+          mkdir -p ../docs/html 
+          cp -r docs/build/html ../docs/
+          
+          # Checks out to gh-pages branch.
+          git checkout gh-pages
+          
+          # Copies files to branch.
+          cp -r ../docs/html/* .
+          
+          # Sets up no Jekyll config.
+          touch .nojekyll
+          
+          # Commits the changes.
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add .
+          git commit -m "Documentation update." -a || true
+
+      # Deploy
+      # https://github.com/peaceiris/actions-gh-pages
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        if: ${{ github.event_name == 'push' }}
+        #if: ${{ success() && github.event_name == 'push' && github.ref == 'refs/heads/$defaultBranch' }}
+        with:
+          publish_branch: gh-pages
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: _gh-pages/
+          force_orphan: true
