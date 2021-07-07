@@ -1,10 +1,43 @@
 Site for Vetle to do practice excercise
 =======================================
 
-Inlcude a pragraph
-A subsection/subtitle
-Some bullet points
-A link
-An image
-Code like snippets
-A table
+This is the paragraph for the practice of Vetle. Let's hope Denmark beats England in the Euros tonight. 
+
+
+Advantages of Denmark:
+----------------------
+- Kasper Schmeichel is a better goalkeeper than Jordan Pickford 
+- Football has never come home to England 
+- The British people are afraid of penalties 
+
+Video of danish people 'celebrating 
+<https://www.youtube.com/watch?v=PU0sCWmEQZU/>'_ a goal. 
+
+if you want to plot the heart rate of the british people during a penalty shootout, it can be done like this:
+
+.. code-block:: python
+   import numpy as np 
+   import matplotlib.pyplot as plt 
+   
+   time = np.linspace(0,5,1000) # Duration of penalty shootout [minutes]
+   heartbeat = np.ones(1000)*100 + 15 * np.sin(time) # Heartbeat
+
+  ''plt.plot(time, heartbeat)''
+   plt.show()
+
+
+Having looked at physiology, let's look at a table showing a possible outcome of a penalty shootout. 
+
++-----------+-------+-------+
+|Shot number|England|Denmark|
++===========+=======+=======+
+|     1     |   x   |   1   |
++-----------+-------+-------+
+|     2     |   x   |   2   |
++-----------+-------+-------+
+|     3     |   x   |   3   |
++-----------+-------+-------+
+
+It's evident from the above table that the penalty abilities of the british players are quite subpar. Denmark won 3-0, and the shooutout ended after three consecutive misses from England, while Denmark scored on the first three. 
+
+A related image will appear shortly 
