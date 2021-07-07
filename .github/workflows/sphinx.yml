@@ -72,7 +72,7 @@ jobs:
           #cp -r ../docs/html/* .
           
           # Sets up no Jekyll config.
-          #touch .nojekyll
+          touch out/docs/.nojekyll
           
           # Commits the changes.
           #git config --local user.email "action@github.com"
