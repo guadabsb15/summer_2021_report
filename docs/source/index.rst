@@ -9,12 +9,9 @@ Welcome to Summer 2021 report's documentation!
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
+   
+   briowu 
+   practiceV
+   practiceI
 
 
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
