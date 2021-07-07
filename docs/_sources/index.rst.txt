@@ -10,7 +10,8 @@ Welcome to Summer 2021 report's documentation!
    :maxdepth: 2
    :caption: Contents:
    
-   briowu 
+   briowu
+   sod 
    practiceV
    practiceI
 
