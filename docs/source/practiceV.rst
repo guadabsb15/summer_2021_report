@@ -15,14 +15,14 @@ Video of danish people 'celebrating
 
 if you want to plot the heart rate of the british people during a penalty shootout, it can be done like this:
 
-.. code-block:: python
+:: 
    import numpy as np 
    import matplotlib.pyplot as plt 
    
    time = np.linspace(0,5,1000) # Duration of penalty shootout [minutes]
    heartbeat = np.ones(1000)*100 + 15 * np.sin(time) # Heartbeat
 
-  ''plt.plot(time, heartbeat)''
+   plt.plot(time, heartbeat)
    plt.show()
 
 
