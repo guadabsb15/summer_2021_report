@@ -13,6 +13,11 @@ Advantages of Denmark:
 Video of danish people 'celebrating a goal 
 <https://www.youtube.com/watch?v=PU0sCWmEQZU/>'_. 
 
+Second attempt at correct video link. Here is the celebration_.
+
+.. _celebration: https://www.youtube.com/watch?v=PU0sCWmEQZU/
+
+
 if you want to plot the heart rate of the british people during a penalty shootout, it can be done like this:
 :: 
  
