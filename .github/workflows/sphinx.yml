@@ -64,14 +64,15 @@ jobs:
         
           # Copies documentation outside of git folder.  
           mkdir -p ../docs/html 
-          cp -r docs/build/html ../docs/
+          mv docs/build/html/* ../docs/.
           
           # Checks out to gh-pages branch.
           git fetch
           git checkout gh-pages
           
           # Copies files to branch.
-          cp -r ../docs/html/* .
+          mv ../docs .
+          cd docs
           
           # Sets up no Jekyll config.
           touch .nojekyll
