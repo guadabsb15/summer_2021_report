@@ -10,9 +10,6 @@ Advantages of Denmark:
 - Football has never come home to England 
 - The British people are afraid of penalties 
 
-Video of danish people 'celebrating a goal 
-<https://www.youtube.com/watch?v=PU0sCWmEQZU/>'_. 
-
 The danes celebrate goals by throwing beers in the air. This celebration can be seen in this video_.
 
 .. _video: https://www.youtube.com/watch?v=PU0sCWmEQZU/
