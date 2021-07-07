@@ -10,9 +10,11 @@ Advantages of Denmark:
 - Football has never come home to England 
 - The British people are afraid of penalties 
 
-Video of danish people 'celebrating <https://www.youtube.com/watch?v=PU0sCWmEQZU/>'_ a goal 
+Video of danish people 'celebrating 
+<https://www.youtube.com/watch?v=PU0sCWmEQZU/>'_ a goal. 
 
 if you want to plot the heart rate of the british people during a penalty shootout, it can be done like this:
+
 .. code-block:: python
    import numpy as np 
    import matplotlib.pyplot as plt 
@@ -22,6 +24,7 @@ if you want to plot the heart rate of the british people during a penalty shooto
 
    plt.plot(time, heartbeat)
    plt.show()
+
 
 Having looked at physiology, let's look at a table showing a possible outcome of a penalty shootout. 
 
