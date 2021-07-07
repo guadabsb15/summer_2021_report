@@ -33,16 +33,20 @@
             
   <div class="section" id="site-for-isak-to-do-practice-excercise">
 <h1>Site for Isak to do practice excercise<a class="headerlink" href="#site-for-isak-to-do-practice-excercise" title="Permalink to this headline">¶</a></h1>
-<p>Here I will practice my RST and Sphinx syntax (This is my paragraph)</p>
-<div class="section" id="this-is-my-subtitle">
-<h2>This is my subtitle<a class="headerlink" href="#this-is-my-subtitle" title="Permalink to this headline">¶</a></h2>
+<p>In this excericise I wil study some various animals living inthe world.</p>
+<div class="section" id="describing-animals">
+<h2>Describing animals<a class="headerlink" href="#describing-animals" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><p>This is my first bullet point.</p></li>
-<li><p>This is my second bullet point.</p></li>
+<li><p>Everyone knows that pigs are fat.</p></li>
+<li><p>You never know when that bear is going to attack.</p></li>
+<li><p>I always wonder why squirrels are so good at climbing.</p></li>
 </ul>
-<p>Here is a link to <a href="#id4"><span class="problematic" id="id5">Conda_</span></a>
-.. _Conda: <a class="reference external" href="https://docs.conda.io/en/latest/">https://docs.conda.io/en/latest/</a></p>
-<p>This is my animal table:</p>
+<p>Are bears related to pigs, the following <a class="reference external" href="https://bear.org/are-bears-related-to-pigs/">website</a></p>
+<p>explains this in more detail.</p>
+</div>
+<div class="section" id="comparing-animals">
+<h2>Comparing animals<a class="headerlink" href="#comparing-animals" title="Permalink to this headline">¶</a></h2>
+<p>This is my animal table, camparing color and size for Pigs, Bears and squirrels:</p>
 <table class="docutils align-default">
 <colgroup>
 <col style="width: 36%" />
@@ -68,13 +72,24 @@
 </tr>
 </tbody>
 </table>
-<p>Inlcude a pragraph
-A subsection/subtitle
-Some bullet points
-A link
-An image
-Code like snippets
-A table</p>
+</div>
+<div class="section" id="deaths-caused-by-bear-attack">
+<h2>Deaths caused by bear attack<a class="headerlink" href="#deaths-caused-by-bear-attack" title="Permalink to this headline">¶</a></h2>
+<p>Below shows python code for plotting age-distribution of bears:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+
+<span class="n">years</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">11</span><span class="p">)</span>
+<span class="n">deaths</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">2</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">20</span><span class="p">,</span><span class="mi">80</span><span class="p">,</span><span class="mi">300</span><span class="p">,</span><span class="mi">1000</span><span class="p">,</span><span class="mi">7800</span><span class="p">,</span><span class="mi">43000</span><span class="p">,</span><span class="mi">38000</span>    <span class="mi">0</span><span class="p">,</span><span class="mi">3000000</span><span class="p">])</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">years</span><span class="p">,</span><span class="n">deaths</span><span class="p">,</span> <span class="n">label</span> <span class="o">=</span> <span class="s1">&#39;Killed by bear&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;year&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Number of deaths&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Number of human deaths, caused by bear attack&quot;</span>    <span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
 </div>
 </div>
 
@@ -101,7 +116,9 @@ A table</p>
 <li class="toctree-l1"><a class="reference internal" href="sod.html">Sod experimemts</a></li>
 <li class="toctree-l1"><a class="reference internal" href="practiceV.html">Site for Vetle to do practice excercise</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Site for Isak to do practice excercise</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#this-is-my-subtitle">This is my subtitle</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#describing-animals">Describing animals</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#comparing-animals">Comparing animals</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#deaths-caused-by-bear-attack">Deaths caused by bear attack</a></li>
 </ul>
 </li>
 </ul>
