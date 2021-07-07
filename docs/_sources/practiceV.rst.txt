@@ -13,9 +13,9 @@ Advantages of Denmark:
 Video of danish people 'celebrating a goal 
 <https://www.youtube.com/watch?v=PU0sCWmEQZU/>'_. 
 
-Second attempt at correct video link. Here is the celebration_.
+The danes celebrate goals by throwing beers in the air. This celebration can be seen in this video_.
 
-.. _celebration: https://www.youtube.com/watch?v=PU0sCWmEQZU/
+.. _video: https://www.youtube.com/watch?v=PU0sCWmEQZU/
 
 
 if you want to plot the heart rate of the british people during a penalty shootout, it can be done like this:
