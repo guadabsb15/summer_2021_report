@@ -47,7 +47,7 @@ England won the game
 -----------------------
 Despite my thorough and flawless analysis, Denmark lost the game. There is one simple reason for this, which is seen in the image below 
 
-.. image:: penalty_dive.png
+.. image:: V_images/penalty_dive.png
 
 
  
