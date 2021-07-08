@@ -42,4 +42,12 @@ Having looked at physiology, let's look at a table showing a possible outcome of
 
 It's evident from the above table that the penalty abilities of the british players are quite subpar. Denmark won 3-0, and the shooutout ended after three consecutive misses from England, while Denmark scored on the first three. 
 
-A related image will appear shortly 
+
+England won the game 
+-----------------------
+Despite my thorough and flawless analysis, Denmark lost the game. There is one simple reason for this, which is seen in the image below 
+
+..image:: penalty_dive.png
+
+
+ 
