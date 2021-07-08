@@ -49,5 +49,10 @@ Below shows python code for plotting age-distribution of bears:
     plt.show()
    
 
+.. figure:: /imagesI/bear_attack.png
+   :scale: 40 %
+   :allign: center
+   *Plot showing number of humans killed by bears every year during the next 10 years*
+
 
 
