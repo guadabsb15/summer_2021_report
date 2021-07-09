@@ -33,7 +33,7 @@ Below shows a table of the inital conditions for the left state and right state.
 
 +------------------------------------+
 |     Initial Bifrost parameters:    |
-+=====-+=====+=====+=====+=====+=====+
++======+=====+=====+=====+=====+=====+
 |  Ca  |  U  |  Uv |  d  |  e  |  E  |
 +------+-----+-----+-----+-----+-----+
 | 0.01 | 0.3 | 0.1 | 0.5 | 0.5 | 0.9 |
