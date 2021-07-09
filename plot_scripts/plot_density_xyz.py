@@ -7,31 +7,32 @@ import matplotlib.pyplot as plt
 #run outside the python directory inside the experiment
 data='data/'
 
-# Names of the data folders 
 run_name = ['brio-wu_bifrost_x', 'brio-wu_bifrost_y', 'brio-wu_bifrost_z']
 coordinate = ['x', 'y', 'z']
 lines = ['--','-.',':']
 
 direction = 0
 
-
 for run in run_name:
-  ss=[]
-  #I know the last snapshot number is 10
-  s=dispatch.snapshot(10,run=run,data=data, verbose=0)
-  ss.append(s)
+    ss=[]
 
-  #plot density
-  plt.figure(1)
-  dg.plot_values_along(ss[0],[0.00,0.000,0.000],dir=direction,iv='d', ls=lines[direction], label=coordinate[direction])
-  plt.title(r'Brio-wu bifrost: $\rho$')
-  plt.xlabel(r'$x/y/z$')
-  plt.ylabel(r'$\rho$')
-  plt.grid()
-  plt.legend()
+    #load data from all plot files
+    for i in range(0,11):
+      s=dispatch.snapshot(i,run=run,data=data, verbose=0)
+      ss.append(s)
 
+    #plot density
+    plt.figure(1)
+    for i in (0, 10):
+      dg.plot_values_along(ss[i],[0.00,0.000,0.000],dir=direction,iv='d', ls=lines[direction], label=coordinate[direction])
 
-  direction = direction +1
+    plt.title(r'Brio-wu bifrost: $\rho$')
+    plt.xlabel('x/y/z')
+    plt.ylabel(r'$\rho$')
+    plt.grid()
+    plt.legend()
+
+    direction += 1
 
 path_to_figure = '.'
 plt.figure(1)
