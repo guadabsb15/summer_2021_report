@@ -6,23 +6,31 @@ Here we will report the results of the Brio&Wu experiment
 
 Bifrost Solver 
 ---------------------
-The following input parameters were used for all three directions:
+For the brio-wu experiment we use
+        * gamma = 2.0
+        * Final time = 0.1 
+where the equation of state is a gamma law. 
+
+
+Below is a table of the input parameters used for simulating the experiment in all three directions. 
+These values are used in all verifications for the brio-wu experiment. 
 
 +----------+----------+-----------+
 | Quantity |Left state|Right state|
 +==========+==========+===========+
 | rho      | 1        | 0.125     |
 +----------+----------+-----------+
-| v_x      |  0       | 0         |
+| vx       |  0       | 0         |
 +----------+----------+-----------+
-| v_y      |  0       | 0         |
+| vy       |  0       | 0         |
 +----------+----------+-----------+
-| v_z      |  0       | 0         |
+| vz       |  0       | 0         |
 +----------+----------+-----------+
-| P        |  1       | 0.1       |
+| p        |  1       | 0.1       |
 +----------+----------+-----------+
 
 The magnetic field values are different for the three direction, and are listed in the table below. 
+These will also be used in all subsequent verification tests. 
 
            +-------------------------------------+
            |  Simulation direction               |
@@ -31,17 +39,14 @@ The magnetic field values are different for the three direction, and are listed 
 |          +------+------+-----+-----+-----+-----+
 |          |Left  |Right |Left |Right|Left |Right|            
 +----------+------+------+-----+-----+-----+-----+
-| B_x      | 0.75 | 0.75 | 0   | 0   | 1   | -1  |
+| Bx       | 0.75 | 0.75 | 0   | 0   | 1   | -1  |
 +----------+------+------+-----+-----+-----+-----+
-| B_y      |  1   | -1   | 0.75|0.75 | 0   | 0   |
+| By       |  1   | -1   | 0.75|0.75 | 0   | 0   |
 +----------+------+------+-----+-----+-----+-----+
-| B_z      |  0   | 0    | 1   | -1  | 0.75| 0.75|
+| Bz       |  0   | 0    | 1   | -1  | 0.75| 0.75|
 +----------+------+------+-----+-----+-----+-----+
 
-The end time was: 0.1
-Out time: 1e-2 
-
-Equation of state: Gamma law, gamma=2.0 
+The initial Bifrost parameters used in the experiment are:
 
 +-----------------------------+
 | Initial Bifrost Parameters: |
@@ -55,7 +60,8 @@ Equation of state: Gamma law, gamma=2.0
 Comparing densities in the x/y/z direction
 ------------------------------------------
 
-The figure below shows the result of the denisties computed in each direction from the three input files
+The figure below shows the result of the denisties computed in each direction from the three input files.
+These were configured with the initial Bifrost Parameters listed in the above table. 
 
 .. image:: images_brio-wu_bifrost/brio-wu_initial_rho.png
 
