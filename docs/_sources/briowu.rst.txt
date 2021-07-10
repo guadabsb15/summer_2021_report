@@ -69,6 +69,15 @@ All density profiles overlap.
 
 
 
+Adjusting the bifrost parameters
+-------------------------------
+We adjust the bifrost parameters one by one while the remaining five parameters are held fixed. Each parameter are increased by a factor 10 except from E, since E=9.0 led to an error while running. In the figure below, the densities from the different runs can be seen, where the legend indicates the parameter that has been adjusted includnig its corresponding value.
+
+.. image:: images_brio-wu_bifrost/brio-wu_init_adjust_rho.png  
+
+
+
+
 different directions
 different solvers
 
