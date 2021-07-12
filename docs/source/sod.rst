@@ -59,3 +59,12 @@ Adjusting initial parameters
 .. image:: images_sod_bifrost/sod_bifrost_x_ibf_h_rho.png
     :scale: 70 %
     :width: 70 %
+
+Velocity plotted below
+
+.. image:: images_sod_bifrost/sod_bifrost_x_ibf_l_ux.png
+    :scale: 70 %
+    :width: 70 %
+.. image:: images_sod_bifrost/sod_bifrost_x_ibf_h_ux.png
+    :scale: 70 %
+    :width: 70 %
