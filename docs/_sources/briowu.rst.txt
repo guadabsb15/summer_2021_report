@@ -80,6 +80,11 @@ Below shows the velocity in x-direction with the same parameter adjustments.
 
 .. image:: images_brio-wu_bifrost/brio-wu_init_adjust_ux.png
 
+
+Below shows the y-component of the Magnetic field in the x-direction. 
+
+.. image:: images_brio-wu_bifrost/brio-wu_init_adjust_by.png
+
 different directions
 different solvers
 
