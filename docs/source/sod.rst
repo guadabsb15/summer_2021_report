@@ -42,7 +42,7 @@ Below shows a table of the inital conditions for the left state and right state.
 
 Density for all directions
 --------------------------
-.. figure:: imagesI/sod_bifrost_xyz_rho.png
+.. figure:: images_sod_bifrost/sod_bifrost_xyz_rho.png
    :scale: 70 %
    :align: center
 
