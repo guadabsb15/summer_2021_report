@@ -30,12 +30,7 @@ for run in run_name:
 
     #plot density
     plt.figure(1)
-    if run_number==0:
-        for i in (0, 10):
-            dg.plot_values_along(ss[i],[0.00,0.000,0.000],dir=0,iv='d', ls=lines[run_number], label=run_adjustments[run_number])
-
-    else:
-        dg.plot_values_along(ss[10],[0.00,0.000,0.000],dir=0,iv='d', ls=lines[run_number], label=run_adjustments[run_number])
+    dg.plot_values_along(ss[10],[0.00,0.000,0.000],dir=0,iv='d', ls=lines[run_number], label=run_adjustments[run_number])
 
     plt.title(r'Brio-wu bifrost: Densities with each bifrost_params adjusted')
     plt.xlabel('x')
