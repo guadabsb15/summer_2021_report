@@ -63,7 +63,7 @@ Comparing densities in the x/y/z direction
 The figure below shows the result of the denisties computed in each direction from the three input files.
 These were configured with the initial Bifrost Parameters listed in the above table. 
 
-.. image:: images_brio-wu_bifrost/brio-wu_initial_rho.png
+.. image:: images_brio-wu_bifrost/brio-wu_density_all.png
 
 All density profiles overlap.  
 
