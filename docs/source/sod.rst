@@ -52,15 +52,8 @@ Density for all directions
 
 Adjusting initial parameters
 ----------------------------
-
-* - .. figure:: images_sod_bifrost/sod_bifrost_x_ibf_l_rho.png
        
-       Fig1. repr
-
-
-  - .. figure:: images_sod_bifrost/sod_bifrost_x_ibf_h_rho.png
-       
-       Fig 2. Transparency
-
-
-
+.. image:: images_sod_bifrost/sod_bifrost_x_ibf_l_rho.png
+    :width: 48 %
+.. image:: images_sod_bifrost/sod_bifrost_x_ibf_h_rho.png
+    :width: 48 %
