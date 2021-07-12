@@ -32,7 +32,6 @@ Below shows a table of the inital conditions for the left state and right state.
 +--------------+--------------+----------------+
 
 
-The initial Bifrost parameters for the Sod-problem are presented in the table below. During test verifications we are going to change these parameters one at a time, while holding the other parameters constant.
 +------------------------------------+
 |     Initial Bifrost parameters:    |
 +======+=====+=====+=====+=====+=====+
@@ -41,6 +40,7 @@ The initial Bifrost parameters for the Sod-problem are presented in the table be
 | 0.01 | 0.3 | 0.1 | 0.5 | 0.5 | 0.9 |
 +------+-----+-----+-----+-----+-----+
 
+The initial Bifrost parameters for the Sod-problem are presented in the table below. During test verifications we are going to change these parameters one at a time, while holding the other parameters constant.
 
 Density for all directions
 --------------------------
