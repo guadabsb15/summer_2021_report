@@ -76,7 +76,9 @@ We adjust the bifrost parameters one by one while the remaining five parameters 
 .. image:: images_brio-wu_bifrost/brio-wu_init_adjust_rho.png  
 
 
+Below shows the velocity in x-direction with the same parameter adjustments. 
 
+.. image:: images_brio-wu_bifrost/brio-wu_init_adjust_ux.png
 
 different directions
 different solvers
