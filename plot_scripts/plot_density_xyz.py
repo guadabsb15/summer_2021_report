@@ -23,8 +23,13 @@ for run in run_name:
 
     #plot density
     plt.figure(1)
-    for i in (0, 10):
-      dg.plot_values_along(ss[i],[0.00,0.000,0.000],dir=direction,iv='d', ls=lines[direction], label=coordinate[direction])
+
+    if direction == 0:
+        dg.plot_values_along(ss[0],[0.00,0.000,0.000],dir=direction,iv='d', ls='solid', label='Initial condition x/y/z')
+
+
+
+    dg.plot_values_along(ss[10],[0.00,0.000,0.000],dir=direction,iv='d', ls=lines[direction], label=coordinate[direction])
 
     plt.title(r'Brio-wu bifrost: $\rho$')
     plt.xlabel('x/y/z')
