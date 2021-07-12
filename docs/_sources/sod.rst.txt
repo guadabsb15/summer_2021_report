@@ -55,7 +55,7 @@ Adjusting initial parameters
        
 .. image:: images_sod_bifrost/sod_bifrost_x_ibf_l_rho.png
     :scale: 70 %
-    :width: 85 %
+    :width: 80 %
 .. image:: images_sod_bifrost/sod_bifrost_x_ibf_h_rho.png
     :scale: 70 %
-    :width: 85 %
+    :width: 80 %
