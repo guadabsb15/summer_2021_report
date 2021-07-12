@@ -50,14 +50,17 @@ Density for all directions
 
    Plot showing the density rho for every direction x,y and z. Here we have used the initial Bifrost parameters which are presented above.
 
+Adjusting initial parameters
+----------------------------
+
+* - .. figure:: images_sod_bifrost/sod_bifrost_x_ibf_l_rho.png
+       
+       Fig1. repr
 
 
-
-
-different directions
-different solvers
-
-references
+  - .. figure:: images_sod_bifrost/sod_bifrost_x_ibf_h_rho.png
+       
+       Fig 2. Transparency
 
 
 
