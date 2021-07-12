@@ -31,6 +31,8 @@ Below shows a table of the inital conditions for the left state and right state.
 |     bz       |      0       |      0         |
 +--------------+--------------+----------------+
 
+
+The initial Bifrost parameters for the Sod-problem are presented in the table below. During test verifications we are going to change these parameters one at a time, while holding the other parameters constant.
 +------------------------------------+
 |     Initial Bifrost parameters:    |
 +======+=====+=====+=====+=====+=====+
@@ -46,7 +48,7 @@ Density for all directions
    :scale: 70 %
    :align: center
 
-   *Plot showing the density rho for every direction x,y and z*
+   Plot showing the density rho for every direction x,y and z. Here we have used the initial Bifrost parameters which are presented above.
 
 
 
