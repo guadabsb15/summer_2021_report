@@ -27,14 +27,14 @@ class nml_bifrost_params:
         f90nml.patch(self.filename, patch_nml, mod_name) # Create the new nml file
 
 
-    def increase_all_bifrost_params(self, five_idx=[]):
+    def increase_all_bifrost_params(self, factor=10, five_idx=[]):
         """
         Create six nml files with each bifrost_param adjusted individually
         Option for increasing certain parameters by a factor of 5 only
         Useful when factor 10 increments causes experiment to crash
         """
 
-        factors = [10]*6
+        factors = [factor]*6
 
         for idx in five_idx:
             ### use factor of 5 for a given parameter
@@ -69,6 +69,6 @@ class nml_bifrost_params:
 
 
 brio_wu = nml_bifrost_params('brio-wu_bifrost_x.nml')
-brio_wu.increase_all_bifrost_params(five_idx=[5])
+brio_wu.increase_all_bifrost_params(factor=10, five_idx=[5])
 E_values = [0.3, 0.5, 0.7, 0.9, 1.1, 1.3]
 brio_wu.single_parameter_adjustment(idx=5, values=E_values)
