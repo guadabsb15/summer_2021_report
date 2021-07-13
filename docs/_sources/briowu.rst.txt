@@ -1,7 +1,8 @@
 Brio& Wu experimemts 
 =========================
 
-Here we will report the results of the Brio&Wu experiment
+Here we will report the results of the Brio&Wu experiment.
+These studies were wone using the develop branch of Dispatch-Bifrost and hash 299c6d5
 
 
 Bifrost Solver 
