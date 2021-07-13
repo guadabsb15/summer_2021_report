@@ -177,21 +177,28 @@ These were configured with the initial Bifrost Parameters listed in the above ta
 </div>
 <div class="section" id="initial-adjustments-of-the-individual-bifrost-parameters">
 <h2>Initial adjustments of the individual bifrost parameters<a class="headerlink" href="#initial-adjustments-of-the-individual-bifrost-parameters" title="Permalink to this headline">¶</a></h2>
-<p>We adjust the bifrost parameters one by one while the remaining five parameters are held fixed. Initially, each parameter is increased by a factor 10 except from E, since E=9.0 led to an error while running, which is increased by a factor of 5. In the figure below, the densities from the different runs can be seen, where the legend indicates the parameter that has been adjusted includnig its corresponding value.</p>
-<a class="reference internal image-reference" href="_images/brio-wu_init_adjust_rho.png"><img alt="_images/brio-wu_init_adjust_rho.png" src="_images/brio-wu_init_adjust_rho.png" style="width: 45%;" /></a>
+<p>We adjust the bifrost parameters one by one while the remaining five parameters are held fixed. Initially, each parameter is increased by a factor 10 except from E, since E=9.0 led to an error while running. E is therefore increased by a factor of 5 initially. We also reduce each parameter by a factor of 10, and compare with the original results. The figures below we plot the resulting densities, the x-components of the velocity and the y-components of the magnetic field. The figures on the left shows the result of parameter increase, while the figures on the right shows the parameter reductions. Each figure has a legend indicating which parameter has been adjusted, includnig its corresponding value. The original parameter result is included in all plots.</p>
+<p>We start with the density, shown below.
+.. image:: images_brio-wu_bifrost/brio-wu_init_adjust_rho.png</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">width</dt>
+<dd class="field-odd"><p>45 %</p>
+</dd>
+</dl>
+</div></blockquote>
 <a class="reference internal image-reference" href="_images/brio-wu_init_reduced_rho.png"><img alt="_images/brio-wu_init_reduced_rho.png" src="_images/brio-wu_init_reduced_rho.png" style="width: 45%;" /></a>
-<p>Below shows the velocity in x-direction with the same parameter adjustments.</p>
+<p>Image below shows the resulting velocities in x-direction from the parameter adjustments.</p>
 <a class="reference internal image-reference" href="_images/brio-wu_init_adjust_ux.png"><img alt="_images/brio-wu_init_adjust_ux.png" src="_images/brio-wu_init_adjust_ux.png" style="width: 45%;" /></a>
 <a class="reference internal image-reference" href="_images/brio-wu_init_reduced_ux.png"><img alt="_images/brio-wu_init_reduced_ux.png" src="_images/brio-wu_init_reduced_ux.png" style="width: 45%;" /></a>
-<p>Below shows the y-component of the Magnetic field in the x-direction.</p>
+<p>Below shows the y-component of the Magnetic field in the x-direction from the parameter adjustments.</p>
 <a class="reference internal image-reference" href="_images/brio-wu_init_adjust_by.png"><img alt="_images/brio-wu_init_adjust_by.png" src="_images/brio-wu_init_adjust_by.png" style="width: 45%;" /></a>
 <a class="reference internal image-reference" href="_images/brio-wu_init_reduced_by.png"><img alt="_images/brio-wu_init_reduced_by.png" src="_images/brio-wu_init_reduced_by.png" style="width: 45%;" /></a>
-<p>We now include the same plots, but with the initial parameters reduced by a factor 10. The resulting density is shown below.</p>
-<p>Below is the resulting velocities in the x-direction with the reduced parameters</p>
-<p>Now we plot the y-component of the magnetic field, as shown below</p>
-<p>different directions
-different solvers</p>
+<p>The increase of the bifrost parameter E visibly affects all quantities. Another noticeable quantity is U, which is evident in all plots where it has been decreased. Another parameter affecting the result is the increased d. This is easiest to see in the plot of the x-velocity, where it lies above the other lines for 0.7&lt;x&lt;0.8. We adjust these parameters further to study their behaviour individually.</p>
+<div class="section" id="single-parameter-adjustments">
+<h3>Single parameter adjustments<a class="headerlink" href="#single-parameter-adjustments" title="Permalink to this headline">¶</a></h3>
 <p>references</p>
+</div>
 </div>
 </div>
 
