@@ -102,20 +102,20 @@ Single parameter adjustments
 
 Adjusting U-parameter:
 
-.. image:: images_brio-wu_bifrost/E-adjust_initial/brio-wu_U-adjust_rho.png
+.. image:: images_brio-wu_bifrost/U-adjust_initial/brio-wu_U-adjust_rho.png
 
-.. image:: images_brio-wu_bifrost/E-adjust_initial/brio-wu_U-adjust_ux.png
+.. image:: images_brio-wu_bifrost/U-adjust_initial/brio-wu_U-adjust_ux.png
 
-.. image:: images_brio-wu_bifrost/E-adjust_initial/brio-wu_U-adjust_by.png
+.. image:: images_brio-wu_bifrost/U-adjust_initial/brio-wu_U-adjust_by.png
 
 
 Adjusting d-parameter:
 
-.. image:: images_brio-wu_bifrost/E-adjust_initial/brio-wu_d-adjust_rho.png
+.. image:: images_brio-wu_bifrost/d-adjust_initial/brio-wu_d-adjust_rho.png
 
-.. image:: images_brio-wu_bifrost/E-adjust_initial/brio-wu_d-adjust_ux.png
+.. image:: images_brio-wu_bifrost/d-adjust_initial/brio-wu_d-adjust_ux.png
 
-.. image:: images_brio-wu_bifrost/E-adjust_initial/brio-wu_d-adjust_by.png
+.. image:: images_brio-wu_bifrost/d-adjust_initial/brio-wu_d-adjust_by.png
 
 
 Adjusting E-parameter:
