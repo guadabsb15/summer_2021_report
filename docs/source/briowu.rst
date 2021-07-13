@@ -100,6 +100,13 @@ The increase of the bifrost parameter E visibly affects all quantities. Another 
 Single parameter adjustments
 ............................
 
+Adjusting E-component:
+
+.. image:: images_brio-wu_bifrost/E-adjust_initial/brio-wu_E-adjust_rho.png
+
+.. image:: images_brio-wu_bifrost/E-adjust_initial/brio-wu_E-adjust_ux.png
+
+.. image:: images_brio-wu_bifrost/E-adjust_initial/brio-wu_E-adjust_by.png
 
 
 references
