@@ -72,7 +72,7 @@ All density profiles overlap.
 
 Initial adjustments of the individual bifrost parameters
 --------------------------------------------------------
-We adjust the bifrost parameters one by one while the remaining five parameters are held fixed. Each parameter are increased by a factor 10 except from E, since E=9.0 led to an error while running. In the figure below, the densities from the different runs can be seen, where the legend indicates the parameter that has been adjusted includnig its corresponding value.
+We adjust the bifrost parameters one by one while the remaining five parameters are held fixed. Initially, each parameter is increased by a factor 10 except from E, since E=9.0 led to an error while running, which is increased by a factor of 5. In the figure below, the densities from the different runs can be seen, where the legend indicates the parameter that has been adjusted includnig its corresponding value.
 
 .. image:: images_brio-wu_bifrost/brio-wu_init_adjust_rho.png  
 
@@ -85,6 +85,21 @@ Below shows the velocity in x-direction with the same parameter adjustments.
 Below shows the y-component of the Magnetic field in the x-direction. 
 
 .. image:: images_brio-wu_bifrost/brio-wu_init_adjust_by.png
+
+
+
+We now include the same plots, but with the initial parameters reduced by a factor 10. The resulting density is shown below. 
+
+.. image:: images_brio-wu_bifrost/brio-wu_init_reduced_rho.png 
+
+Below is the resulting velocities in the x-direction with the reduced parameters
+
+.. image:: images_brio-wu_bifrost/brio-wu_init_reduced_ux.png
+
+Now we plot the y-component of the magnetic field, as shown below 
+
+.. image:: images_brio-wu_bifrost/brio-wu_init_reduced_by.png
+
 
 different directions
 different solvers
