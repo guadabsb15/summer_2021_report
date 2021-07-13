@@ -82,16 +82,16 @@ We adjust the bifrost parameters one by one while the remaining five parameters 
 Below shows the velocity in x-direction with the same parameter adjustments. 
 
 .. image:: images_brio-wu_bifrost/brio-wu_init_adjust_ux.png
-        :scale: 50 %
+        :width: 45 %
 .. image:: images_brio-wu_bifrost/brio-wu_init_reduced_ux.png
-        :scale: 50 %
+        :width: 45 %
 
 Below shows the y-component of the Magnetic field in the x-direction. 
 
 .. image:: images_brio-wu_bifrost/brio-wu_init_adjust_by.png
-        :scale: 60 %
+        :width: 45 %
 .. image:: images_brio-wu_bifrost/brio-wu_init_reduced_by.png
-        :scale: 60 %
+        :width: 45 %
 
 We now include the same plots, but with the initial parameters reduced by a factor 10. The resulting density is shown below. 
 
