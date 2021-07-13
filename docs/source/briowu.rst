@@ -75,11 +75,11 @@ Initial adjustments of the individual bifrost parameters
 We adjust the bifrost parameters one by one while the remaining five parameters are held fixed. Initially, each parameter is increased by a factor 10 except from E, since E=9.0 led to an error while running, which is increased by a factor of 5. In the figure below, the densities from the different runs can be seen, where the legend indicates the parameter that has been adjusted includnig its corresponding value.
 
 .. image:: images_brio-wu_bifrost/brio-wu_init_adjust_rho.png  
-        :width: 50 %
-        :height: 50 %
+        :width: 45 %
+        :height: 45 %
 .. image:: images_brio-wu_bifrost/brio-wu_init_reduced_rho.png 
-        :width: 50 %
-        :height: 50 %
+        :width: 45 %
+        :height: 45 %
 
 Below shows the velocity in x-direction with the same parameter adjustments. 
 
