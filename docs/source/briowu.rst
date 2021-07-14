@@ -75,6 +75,7 @@ Initial adjustments of the individual bifrost parameters
 We adjust the bifrost parameters one by one while the remaining five parameters are held fixed. Initially, each parameter is increased by a factor 10 except from E, since E=9.0 led to an error while running. E is therefore increased by a factor of 5 initially. We also reduce each parameter by a factor of 10, and compare with the original results. The figures below we plot the resulting densities, the x-components of the velocity and the y-components of the magnetic field. The figures on the left shows the result of parameter increase, while the figures on the right shows the parameter reductions. Each figure has a legend indicating which parameter has been adjusted, includnig its corresponding value. The original parameter result is included in all plots. 
 
 We start with the density, shown below. 
+
 .. image:: images_brio-wu_bifrost/brio-wu_init_adjust_rho.png  
         :width: 45 %
 .. image:: images_brio-wu_bifrost/brio-wu_init_reduced_rho.png 
