@@ -1,4 +1,5 @@
 import f90nml
+import numpy as np
 import sys
 
 
@@ -16,6 +17,7 @@ class nml_params:
         self.nml = f90nml.read(filename) # Contains the entire nml file
         self.bf_params = self.nml['bifrost_params']['nu'] # List of Paramters to adjust
         self.box_size = self.nml['patch_params']['n'] # Resolution of experiment
+        self.IC = self.nml['IC_params']
 
 
     def patch_bifrost_params(self, param_list, name):
@@ -36,6 +38,70 @@ class nml_params:
         patch_nml = {'patch_params': {'n': new_box_size}}
         mod_name = self.filename[:-4] + name + '.nml'
         f90nml.patch(self.filename, patch_nml, mod_name)
+
+    def mag_field(self):
+        ### Permutation of magnetic field components
+        IC = self.IC
+        IC_y = IC.copy()
+        IC_z = IC.copy()
+
+        mag_x = ['Bx_l', 'By_l', 'Bz_l', 'Bx_r', 'By_r', 'Bz_r']
+        mag_y = ['Bz_l', 'Bx_l', 'By_l', 'Bz_r', 'Bx_r', 'By_r']
+        mag_z = ['By_l', 'Bz_l', 'Bx_l', 'By_r', 'Bz_r', 'Bx_r']
+
+
+        for i in range(len(mag_x)):
+            IC_y[mag_x[i]] = IC[mag_y[i]]
+            IC_z[mag_x[i]] = IC[mag_z[i]]
+
+        return IC_y, IC_z
+
+
+    def create_yz(self, magnetic_field=True):
+
+        cart_params = self.nml['cartesian_params']
+        p_params = self.nml['patch_params']
+
+        size_y = [0.003, 1, 0.003]
+        dims_y = [1, 5, 1]
+        periodic_y = [True, False, True]
+        n_y = [1, 100, 1]
+
+        size_z = [0.003, 0.003, 1]
+        dims_z = [1, 1, 5]
+        periodic_z = [True, True, False]
+        n_z = [1, 1, 100]
+
+
+        if magnetic_field==True:
+            # Permutates the magnetic field values
+            IC_y, IC_z = self.mag_field()
+        else:
+            IC_y = self.IC.copy()
+            IC_z = self.IC.copy()
+
+        IC_y['idir'] = 2
+        IC_z['idir'] = 3
+
+        patch_y = {'cartesian_params': {'size': size_y,
+                                        'dims': dims_y,
+                                        'periodic': periodic_y},
+                    'patch_params': {'n': n_y},
+                    'IC_params': IC_y}
+
+
+
+        patch_z = {'cartesian_params': {'size': size_z,
+                                        'dims': dims_z,
+                                        'periodic': periodic_z},
+                    'patch_params': {'n': n_z},
+                    'IC_params': IC_z}
+
+        y_name = self.filename[:-5] + 'y.nml'
+        z_name = self.filename[:-5] + 'z.nml'
+
+        f90nml.patch(self.filename, patch_y, y_name)
+        f90nml.patch(self.filename, patch_z, z_name)
 
 
     def increase_all_bifrost_params(self, factor=10, five_idx=[]):
@@ -79,5 +145,14 @@ class nml_params:
             mod_no += 1
 
 
-brio_wu = nml_params('brio-wu_bifrost_x.nml')
-brio_wu.decrease_resolution(name='_n50')
+brio_wu = nml_params('brio-wu_ramses_x.nml')
+brio_wu.create_yz()
+# brio_wu.mag_field()
+# brio_wu.decrease_resolution(name='_n50')
+# brio_wu.increase_all_bifrost_params(factor=0.1, five_idx=[5])
+# E_values = [0.4, 0.9, 1.4, 1.9, 2,4]
+# U_values = [0.1, 0.2, 0.3, 0.4, 0.5]
+# d_values = [0.5, 2, 3.5, 5, 6.5]
+# brio_wu.single_bifrost_param_adjustment(idx=5, values=E_values)
+# brio_wu.single_bifrost_param_adjustment(idx=1, values=U_values)
+# brio_wu.single_bifrost_param_adjustment(idx=3, values=d_values)
