@@ -1,7 +1,8 @@
 Brio& Wu experimemts 
 =========================
 
-Here we will report the results of the Brio&Wu experiment
+Here we will report the results of the Brio&Wu experiment.
+These studies were wone using the develop branch of Dispatch-Bifrost and hash 299c6d5
 
 
 Bifrost Solver 
@@ -71,22 +72,73 @@ All density profiles overlap.
 
 Initial adjustments of the individual bifrost parameters
 --------------------------------------------------------
-We adjust the bifrost parameters one by one while the remaining five parameters are held fixed. Each parameter are increased by a factor 10 except from E, since E=9.0 led to an error while running. In the figure below, the densities from the different runs can be seen, where the legend indicates the parameter that has been adjusted includnig its corresponding value.
+We adjust the bifrost parameters one by one while the remaining five parameters are held fixed. Initially, each parameter is increased by a factor 10 except from E, since E=9.0 led to an error while running. E is therefore increased by a factor of 5 initially. We also reduce each parameter by a factor of 10, and compare with the original results. The figures below we plot the resulting densities, the x-components of the velocity and the y-components of the magnetic field. The figures on the left shows the result of parameter increase, while the figures on the right shows the parameter reductions. Each figure has a legend indicating which parameter has been adjusted, includnig its corresponding value. The original parameter result is included in all plots. 
+
+We start with the density, shown below. 
 
 .. image:: images_brio-wu_bifrost/brio-wu_init_adjust_rho.png  
+        :width: 45 %
+.. image:: images_brio-wu_bifrost/brio-wu_init_reduced_rho.png 
+        :width: 45 %
 
-
-Below shows the velocity in x-direction with the same parameter adjustments. 
+Image below shows the resulting velocities in x-direction from the parameter adjustments. 
 
 .. image:: images_brio-wu_bifrost/brio-wu_init_adjust_ux.png
+        :width: 45 %
+.. image:: images_brio-wu_bifrost/brio-wu_init_reduced_ux.png
+        :width: 45 %
 
-
-Below shows the y-component of the Magnetic field in the x-direction. 
+Below shows the y-component of the Magnetic field in the x-direction from the parameter adjustments. 
 
 .. image:: images_brio-wu_bifrost/brio-wu_init_adjust_by.png
+        :width: 45 %
+.. image:: images_brio-wu_bifrost/brio-wu_init_reduced_by.png
+        :width: 45 %
 
-different directions
-different solvers
+The increase of the bifrost parameter E visibly affects all quantities. Another noticeable quantity is U, which is evident in all plots where it has been decreased. Another parameter affecting the result is the increased d. This is easiest to see in the plot of the x-velocity, where it lies above the other lines for 0.7<x<0.8. We adjust these parameters further to study their behaviour individually. 
+
+
+Single parameter adjustments
+............................
+
+Adjusting U-parameter:
+
+.. image:: images_brio-wu_bifrost/U-adjust_initial/brio-wu_U-adjust_rho.png
+
+.. image:: images_brio-wu_bifrost/U-adjust_initial/brio-wu_U-adjust_ux.png
+
+.. image:: images_brio-wu_bifrost/U-adjust_initial/brio-wu_U-adjust_by.png
+
+
+Adjusting d-parameter:
+
+.. image:: images_brio-wu_bifrost/d-adjust_initial/brio-wu_d-adjust_rho.png
+
+.. image:: images_brio-wu_bifrost/d-adjust_initial/brio-wu_d-adjust_ux.png
+
+.. image:: images_brio-wu_bifrost/d-adjust_initial/brio-wu_d-adjust_by.png
+
+
+Adjusting E-parameter:
+
+.. image:: images_brio-wu_bifrost/E-adjust_initial/brio-wu_E-adjust_rho.png
+
+.. image:: images_brio-wu_bifrost/E-adjust_initial/brio-wu_E-adjust_ux.png
+
+.. image:: images_brio-wu_bifrost/E-adjust_initial/brio-wu_E-adjust_by.png
+
+
+Reduced resolution
+------------------
+In the cartesian_params we use size=1 in the x-direction with dims=5. All previous runs have used n=[100,1,1] in the patch_params. We now make plots with half the original resolution, using n=[50,1,1]. The plots below shows the resulting density, x-velocity and y-component of the Magnetic field, respectively. 
+
+.. image:: images_brio-wu_bifrost/resolution_decrease/brio-wu_bifrost_n50_rho.png 
+
+.. image:: images_brio-wu_bifrost/resolution_decrease/brio-wu_bifrost_n50_ux.png 
+
+.. image:: images_brio-wu_bifrost/resolution_decrease/brio-wu_bifrost_n50_by.png 
+
+
 
 references
 
