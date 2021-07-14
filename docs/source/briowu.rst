@@ -140,6 +140,23 @@ In the cartesian_params we use size=1 in the x-direction with dims=5. All previo
 
 
 
+Ramses/mhd_eos results
+======================
+
+Initial parameters:
+
+.. image:: images_ramses_brio-wu/brio-wu_ramses_xyz_rho.png
+
+
+
+
+
+
+
+
+
+
+
 references
 
 
