@@ -2,18 +2,20 @@ import f90nml
 import sys
 
 
-class nml_bifrost_params:
+class nml_params:
     """
-    Create nml-files with updated bifrost_params.
-    Two options available:
-      - Create nml file with each parameter subsequently scaled by an order of magnitude (or factor five)
-      - Create nml file with individual changes to a certain parameter
+    Edit nml-file parameters.
+    Options available:
+      - Change initial bifrost parameters subsequently
+      - Make multiple changes to a single bifrost parameter
+      - Reduce box resolution
     """
 
     def __init__(self, filename):
         self.filename = filename
         self.nml = f90nml.read(filename) # Contains the entire nml file
         self.bf_params = self.nml['bifrost_params']['nu'] # List of Paramters to adjust
+        self.box_size = self.nml['patch_params']['n'] # Resolution of experiment
 
 
     def patch_bifrost_params(self, param_list, name):
@@ -25,6 +27,15 @@ class nml_bifrost_params:
         mod_name = self.filename[:-4] + name + '.nml' # name of the output file
 
         f90nml.patch(self.filename, patch_nml, mod_name) # Create the new nml file
+
+    def decrease_resolution(self, name):
+        """
+        Create file with reduced box_size
+        """
+        new_box_size = [50, 1, 1] # New box size
+        patch_nml = {'patch_params': {'n': new_box_size}}
+        mod_name = self.filename[:-4] + name + '.nml'
+        f90nml.patch(self.filename, patch_nml, mod_name)
 
 
     def increase_all_bifrost_params(self, factor=10, five_idx=[]):
@@ -45,12 +56,12 @@ class nml_bifrost_params:
             params = self.bf_params.copy()
 
             params[i] *= factors[i]
-            name = '_mod' + str(i+1)
+            name = '_mod_reduced' + str(i+1)
 
             self.patch_bifrost_params(params, name)
 
 
-    def single_parameter_adjustment(self, idx, values = []):
+    def single_bifrost_param_adjustment(self, idx, values = []):
         """
         Create individual nml file for subsequent adjustments of one bifrost_param
         """
@@ -68,7 +79,5 @@ class nml_bifrost_params:
             mod_no += 1
 
 
-brio_wu = nml_bifrost_params('brio-wu_bifrost_x.nml')
-brio_wu.increase_all_bifrost_params(factor=10, five_idx=[5])
-E_values = [0.3, 0.5, 0.7, 0.9, 1.1, 1.3]
-brio_wu.single_parameter_adjustment(idx=5, values=E_values)
+brio_wu = nml_params('brio-wu_bifrost_x.nml')
+brio_wu.decrease_resolution(name='_n50')
