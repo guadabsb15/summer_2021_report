@@ -128,6 +128,16 @@ Adjusting E-parameter:
 .. image:: images_brio-wu_bifrost/E-adjust_initial/brio-wu_E-adjust_by.png
 
 
+Reduced resolution
+------------------
+In the cartesian_params we use size=1 in the x-direction with dims=5. All previous runs have used n=[100,1,1] in the patch_params. We now make plots with half the original resolution, using n=[50,1,1]. The plots below shows the resulting density, x-velocity and y-component of the Magnetic field, respectively. 
+
+.. image:: images_brio-wu_bifrost/resolution_decrease/brio-wu_bifrost_n50_rho.png 
+
+.. image:: images_brio-wu_bifrost/resolution_decrease/brio-wu_bifrost_n50_ux.png 
+
+.. image:: images_brio-wu_bifrost/resolution_decrease/brio-wu_bifrost_n50_by.png 
+
 
 
 references
