@@ -45,7 +45,7 @@ The initial Bifrost parameters for the Sod-problem are presented in the table ab
 Density for all directions
 --------------------------
 
-.. image:: images_brio-wu_bifrost/sod_bifrost_xyz_rho.png
+.. image:: images_sod_bifrost/sod_bifrost_xyz_rho.png
 
 Adjusting all initial bifrost parameters
 ----------------------------------------
