@@ -40,15 +40,12 @@ Below shows a table of the inital conditions for the left state and right state.
 | 0.01 | 0.3 | 0.1 | 0.5 | 0.5 | 0.9 |
 +------+-----+-----+-----+-----+-----+
 
-The initial Bifrost parameters for the Sod-problem are presented in the table below. During test verifications we are going to change these parameters one at a time, while holding the other parameters constant.
+The initial Bifrost parameters for the Sod-problem are presented in the table above. During test verifications we are going to change these parameters one at a time, while holding the other parameters constant.
 
 Density for all directions
 --------------------------
-.. figure:: images_sod_bifrost/sod_bifrost_xyz_rho.png
-   :scale: 70 %
-   :align: center
 
-   Plot showing the density rho for every direction x,y and z. Here we have used the initial Bifrost parameters which are presented above.
+.. image:: images_brio-wu_bifrost/sod_bifrost_xyz_rho.png
 
 Adjusting all initial bifrost parameters
 ----------------------------------------
@@ -60,7 +57,7 @@ Adjusting all initial bifrost parameters
     :scale: 70 %
     :width: 70 %
 
-Velocity plotted below:             sod_bifrost_x_single_param_adjust_d_ux.png
+Velocity plotted below:     
 
 .. image:: images_sod_bifrost/sod_bifrost_x_increase10_ux.png
     :scale: 70 %
@@ -72,40 +69,23 @@ Velocity plotted below:             sod_bifrost_x_single_param_adjust_d_ux.png
 Adjusting a single initial bifrost parameter
 ---------------------------------------------
 
-.. figure:: images_sod_bifrost/sod_bifrost_x_single_param_adjust_U_rho.png
-   :scale: 70 %
-   :align: center
+.. image:: images_sod_bifrost/sod_bifrost_x_single_param_adjust_U_rho.png
 
-   Plot showing the density rho in x direction. Here we have just modified the initial bifrost parameter U.
+.. image:: images_sod_bifrost/sod_bifrost_x_single_param_adjust_U_ux.png
 
-.. figure:: images_sod_bifrost/sod_bifrost_x_single_param_adjust_U_ux.png
-   :scale: 70 %
-   :align: center
 
-   Plot showing the horizontal velocity ux in x direction. Here we have just modified the initial bifrost parameter U.
 
-.. figure:: images_sod_bifrost/sod_bifrost_x_single_param_adjust_d_rho.png
-   :scale: 70 %
-   :align: center
+.. image:: images_sod_bifrost/sod_bifrost_x_single_param_adjust_d_rho.png
 
-   Plot showing the density rho in x direction. Here we have just modified the initial bifrost parameter d.
+.. image:: images_sod_bifrost/sod_bifrost_x_single_param_adjust_d_ux.png
 
-.. figure:: images_sod_bifrost/sod_bifrost_x_single_param_adjust_d_ux.png
-   :scale: 70 %
-   :align: center
 
-   Plot showing the horizontal velocity ux in x direction. Here we have just modified the initial bifrost parameter d.
 
-.. figure:: images_sod_bifrost/sod_bifrost_x_single_param_adjust_e_rho.png
-   :scale: 70 %
-   :align: center
+.. image:: images_sod_bifrost/sod_bifrost_x_single_param_adjust_e_rho.png
 
-   Plot showing the density rho in x direction. Here we have just modified the initial bifrost parameter e.
+.. image:: images_sod_bifrost/sod_bifrost_x_single_param_adjust_e_ux.png
 
-.. figure:: images_sod_bifrost/sod_bifrost_x_single_param_adjust_e_ux.png
-      :scale: 70 %
-   :align: center
+   
 
-   Plot showing the horizontal velocity ux in x direction. Here we have just modified the initial bifrost parameter e.
 
 
