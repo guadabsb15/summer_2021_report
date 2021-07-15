@@ -126,24 +126,35 @@
 </div>
 <div class="section" id="density-for-all-directions">
 <h2>Density for all directions<a class="headerlink" href="#density-for-all-directions" title="Permalink to this headline">¶</a></h2>
+<p>To verify that the experiment for the Sod problem is working as it should, we plot the density for every direction x,y and z. If the code works, all three densities should behave the same.</p>
 <img alt="_images/sod_bifrost_xyz_rho.png" src="_images/sod_bifrost_xyz_rho.png" />
+<p>As we can see from the figure above, all three denisty curves lie on top of eachother.</p>
 </div>
 <div class="section" id="adjusting-all-initial-bifrost-parameters">
 <h2>Adjusting all initial bifrost parameters<a class="headerlink" href="#adjusting-all-initial-bifrost-parameters" title="Permalink to this headline">¶</a></h2>
+<p>The main part of our verification on the Sod Bifrost problem begins now where we want to change the initial bifrost parameters that are presented in the table above. To see how the different parameters affect the results, we change only one Bifrost parameter at a time while holding the other parameters unchanged.</p>
+<p>Below shows the density in x direction, where each curve represent the density in which one of the initial Bifrost parameters is either increased (Left figure) or decreased (Right figure):</p>
 <a class="reference internal image-reference" href="_images/sod_bifrost_x_increase10_rho.png"><img alt="_images/sod_bifrost_x_increase10_rho.png" src="_images/sod_bifrost_x_increase10_rho.png" style="width: 49.0%; height: 336.0px;" /></a>
 <a class="reference internal image-reference" href="_images/sod_bifrost_x_decrease10_rho.png"><img alt="_images/sod_bifrost_x_decrease10_rho.png" src="_images/sod_bifrost_x_decrease10_rho.png" style="width: 49.0%; height: 336.0px;" /></a>
-<p>Velocity plotted below:</p>
+<p>Below shows the horizontal velocity ux in x direction, where each curve represent the velocity in which one of the initial Bifrost parameters is either increased (Left figure) or decreased (Right figure):</p>
 <a class="reference internal image-reference" href="_images/sod_bifrost_x_increase10_ux.png"><img alt="_images/sod_bifrost_x_increase10_ux.png" src="_images/sod_bifrost_x_increase10_ux.png" style="width: 49.0%; height: 336.0px;" /></a>
 <a class="reference internal image-reference" href="_images/sod_bifrost_x_decrease10_ux.png"><img alt="_images/sod_bifrost_x_decrease10_ux.png" src="_images/sod_bifrost_x_decrease10_ux.png" style="width: 49.0%; height: 336.0px;" /></a>
 </div>
 <div class="section" id="adjusting-a-single-initial-bifrost-parameter">
 <h2>Adjusting a single initial bifrost parameter<a class="headerlink" href="#adjusting-a-single-initial-bifrost-parameter" title="Permalink to this headline">¶</a></h2>
+<p>From the results we got when addjusting all parameters, we found that the density and vel</p>
 <img alt="_images/sod_bifrost_x_single_param_adjust_U_rho.png" src="_images/sod_bifrost_x_single_param_adjust_U_rho.png" />
 <img alt="_images/sod_bifrost_x_single_param_adjust_U_ux.png" src="_images/sod_bifrost_x_single_param_adjust_U_ux.png" />
 <img alt="_images/sod_bifrost_x_single_param_adjust_d_rho.png" src="_images/sod_bifrost_x_single_param_adjust_d_rho.png" />
 <img alt="_images/sod_bifrost_x_single_param_adjust_d_ux.png" src="_images/sod_bifrost_x_single_param_adjust_d_ux.png" />
 <img alt="_images/sod_bifrost_x_single_param_adjust_e_rho.png" src="_images/sod_bifrost_x_single_param_adjust_e_rho.png" />
 <img alt="_images/sod_bifrost_x_single_param_adjust_e_ux.png" src="_images/sod_bifrost_x_single_param_adjust_e_ux.png" />
+</div>
+<div class="section" id="resolution-comparison">
+<h2>Resolution comparison<a class="headerlink" href="#resolution-comparison" title="Permalink to this headline">¶</a></h2>
+<p>In all previous verifications for the Sod problem in the x-direction, we have splitted the x-axis in 5 different parts (dims = 5). For each part we divided the grid in n = 100 (&amp;patch_params in the nml-file). Now we want to decrease the resolution to n = 50 and compare results with n = 100 for density, velocity and pressure.</p>
+<img alt="_images/sod_bifrost_x_res_comparison_n50_n100_rho.png" src="_images/sod_bifrost_x_res_comparison_n50_n100_rho.png" />
+<img alt="_images/sod_bifrost_x_res_comparison_n50_n100_ux.png" src="_images/sod_bifrost_x_res_comparison_n50_n100_ux.png" />
 </div>
 </div>
 
@@ -173,6 +184,7 @@
 <li class="toctree-l2"><a class="reference internal" href="#density-for-all-directions">Density for all directions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#adjusting-all-initial-bifrost-parameters">Adjusting all initial bifrost parameters</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#adjusting-a-single-initial-bifrost-parameter">Adjusting a single initial bifrost parameter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#resolution-comparison">Resolution comparison</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="practiceV.html">Site for Vetle to do practice excercise</a></li>
