@@ -44,11 +44,17 @@ The initial Bifrost parameters for the Sod-problem are presented in the table ab
 
 Density for all directions
 --------------------------
+To verify that the experiment for the Sod problem is working as it should, we plot the density for every direction x,y and z. If the code works, all three densities should behave the same. 
 
 .. image:: images_sod_bifrost/sod_bifrost_xyz_rho.png
 
+As we can see from the figure above, all three denisty curves lie on top of eachother.
+
 Adjusting all initial bifrost parameters
 ----------------------------------------
+The main part of our verification on the Sod Bifrost problem begins now where we want to change the initial bifrost parameters that are presented in the table above. To see how the different parameters affect the results, we change only one Bifrost parameter at a time while holding the other parameters unchanged.
+
+Below shows the density in x direction, where each curve represent the density in which one of the initial Bifrost parameters is either increased (Left figure) or decreased (Right figure):
        
 .. image:: images_sod_bifrost/sod_bifrost_x_increase10_rho.png
     :scale: 70 %
@@ -57,7 +63,8 @@ Adjusting all initial bifrost parameters
     :scale: 70 %
     :width: 70 %
 
-Velocity plotted below:     
+
+Below shows the horizontal velocity ux in x direction, where each curve represent the velocity in which one of the initial Bifrost parameters is either increased (Left figure) or decreased (Right figure):            
 
 .. image:: images_sod_bifrost/sod_bifrost_x_increase10_ux.png
     :scale: 70 %
@@ -68,6 +75,7 @@ Velocity plotted below:
 
 Adjusting a single initial bifrost parameter
 ---------------------------------------------
+From the results we got when addjusting all parameters, we found that the density and vel
 
 .. image:: images_sod_bifrost/sod_bifrost_x_single_param_adjust_U_rho.png
 
@@ -85,7 +93,13 @@ Adjusting a single initial bifrost parameter
 
 .. image:: images_sod_bifrost/sod_bifrost_x_single_param_adjust_e_ux.png
 
-   
+Resolution comparison
+----------------------
+In all previous verifications for the Sod problem in the x-direction, we have splitted the x-axis in 5 different parts (dims = 5). For each part we divided the grid in n = 100 (&patch_params in the nml-file). Now we want to decrease the resolution to n = 50 and compare results with n = 100 for density, velocity and pressure.
+
+.. image:: images_sod_bifrost/sod_bifrost_x_res_comparison_n50_n100_rho.png
+
+.. image:: images_sod_bifrost/sod_bifrost_x_res_comparison_n50_n100_ux.png
 
 
 
