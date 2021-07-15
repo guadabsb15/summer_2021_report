@@ -75,19 +75,26 @@ Below shows the horizontal velocity ux in x direction, where each curve represen
 
 Adjusting a single initial bifrost parameter
 ---------------------------------------------
-From the results we got when addjusting all parameters, we found that the density and vel
+From the results we got when addjusting all parameters, we found that only the parameters
+       * U
+       * d
+       * e
+affected the different plots. We now want to study these parameters specifically by plotting density, velocity and pressure for several values of the same parameter, while holding the others unchanged.
+
+Below shows density in x direction and horizontal velocity, plotted for 6 different values of U: 
 
 .. image:: images_sod_bifrost/sod_bifrost_x_single_param_adjust_U_rho.png
 
 .. image:: images_sod_bifrost/sod_bifrost_x_single_param_adjust_U_ux.png
 
+Next we have the same results for 6 different values of d:
 
 
 .. image:: images_sod_bifrost/sod_bifrost_x_single_param_adjust_d_rho.png
 
 .. image:: images_sod_bifrost/sod_bifrost_x_single_param_adjust_d_ux.png
 
-
+And last but not least we have density and velocity for 6 different values of the e parameter:
 
 .. image:: images_sod_bifrost/sod_bifrost_x_single_param_adjust_e_rho.png
 
