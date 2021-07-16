@@ -183,7 +183,8 @@ The y-component of the mangetic field is shown below
 
 Comparing resolution with ramses/mhd_eos solver 
 ---------------------------------------
-Having used n=100 with dims=5 in the x-direction for the previous plots, we will compare these results with the ones we get from setting n=50. We begin by comparing the resulting densities, shown in the figure below. 
+Having used n=100 with dims=5 in the x-direction for the previous plots, we will compare these results with the ones we get from setting n=50.
+During the comparison tests we will continue to use slope_type=3.5. We begin by comparing the resulting densities, shown in the figure below. 
 
 .. image:: images_ramses_brio-wu/brio-wu_ramses_n50_rho.png
 
