@@ -164,7 +164,21 @@ The density in the x/y/z direction with the updated solver is plotted below.
 
 
 
+Adjusting the ramses_params
+--------------------------
+We now plot the density, x-velocity and y-component of the magnetic field in the x direction respectiely. In each plot we test different values of slope_types. The parameter option slope_types=-1 is omitted, as the program was unable to finish for this particular parameter. 
 
+The density is shown in the figure below 
+
+.. image:: images_ramses_brio-wu/brio-wu_ramses_x-slopes_rho.png
+
+Below is the x-component of the velocity 
+
+.. image:: images_ramses_brio-wu/brio-wu_ramses_x-slopes_ux.png
+
+The y-component of the mangetic field is shown below 
+
+.. image:: images_ramses_brio-wu/brio-wu_ramses_x-slopes_by.png
 
 
 
