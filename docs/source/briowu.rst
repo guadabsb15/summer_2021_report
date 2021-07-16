@@ -151,6 +151,16 @@ Below is the density in all directions.
 
 .. image:: images_ramses_brio-wu/brio-wu_ramses_xyz_rho.png
 
+After the above image were produced, an error in the solver was discovered and fixed. We update the solver before continuing testing. The following studies are completed with:
+        * Branch: develop
+        * hash: 5e8f853
+
+
+Densities with updated solver:
+-----------------------------
+The density in the x/y/z direction with the updated solver is plotted below. 
+
+.. image:: images_ramses_brio-wu/brio-wu_ramses_xyz_rho_updated.png
 
 
 
