@@ -18,6 +18,7 @@ class nml_params:
         self.bf_params = self.nml['bifrost_params']['nu'] # List of Paramters to adjust
         self.box_size = self.nml['patch_params']['n'] # Resolution of experiment
         self.IC = self.nml['IC_params']
+        self.ramses_params = self.nml['ramses_params']['slope_type']
 
 
     def patch_bifrost_params(self, param_list, name):
@@ -145,8 +146,20 @@ class nml_params:
             mod_no += 1
 
 
+    def ramses_slopes(self):
+        slopes = self.ramses_params
+        new_slopes = [3, 2, 1, -1]
+        for val in new_slopes:
+
+            patch = {'ramses_params': {'slope_type': val}}
+            name = self.filename[:-4] + '_slope' + str(val) + '.nml'
+
+            f90nml.patch(self.filename, patch, name)
+
+
 brio_wu = nml_params('brio-wu_ramses_x.nml')
-brio_wu.create_yz()
+# brio_wu.create_yz()
+brio_wu.ramses_slopes()
 # brio_wu.mag_field()
 # brio_wu.decrease_resolution(name='_n50')
 # brio_wu.increase_all_bifrost_params(factor=0.1, five_idx=[5])
