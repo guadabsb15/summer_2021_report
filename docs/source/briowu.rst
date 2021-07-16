@@ -143,7 +143,11 @@ In the cartesian_params we use size=1 in the x-direction with dims=5. All previo
 Ramses/mhd_eos results
 ======================
 
-Initial parameters:
+We run the same experiment with the solver ramses/mhd_eos. The quantities listed in the tables above are unchanged. 
+For this solver we set the ramses_params initially as:
+        * slope_type = 3.5
+
+Below is the density in all directions. 
 
 .. image:: images_ramses_brio-wu/brio-wu_ramses_xyz_rho.png
 
