@@ -181,8 +181,20 @@ The y-component of the mangetic field is shown below
 .. image:: images_ramses_brio-wu/brio-wu_ramses_x-slopes_by.png
 
 
+Comparing resolution with ramses/mhd_eos solver 
+---------------------------------------
+Having used n=100 with dims=5 in the x-direction for the previous plots, we will compare these results with the ones we get from setting n=50. We begin by comparing the resulting densities, shown in the figure below. 
+
+.. image:: images_ramses_brio-wu/brio-wu_ramses_n50_rho.png
 
 
+Now we compare the velocity in the x-direction
+
+.. image:: images_ramses_brio-wu/brio-wu_ramses_n50_ux.png
+
+Finally, we compare the y-component of the magnetic field
+
+.. image:: images_ramses_brio-wu/brio-wu_ramses_n50_by.png
 
 
 references
