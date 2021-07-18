@@ -157,13 +157,13 @@ class nml_params:
             f90nml.patch(self.filename, patch, name)
 
 
-brio_wu = nml_params('brio-wu_ramses_x.nml')
+sod = nml_params('brio-wu_ramses_x.nml')
 # brio_wu.create_yz()
-brio_wu.ramses_slopes()
+sod.ramses_slopes()
 # brio_wu.mag_field()
 # brio_wu.decrease_resolution(name='_n50')
 # brio_wu.increase_all_bifrost_params(factor=0.1, five_idx=[5])
-# E_values = [0.4, 0.9, 1.4, 1.9, 2,4]
+# E_values = [0.4, 0.9, 1.4, 1.9]
 # U_values = [0.1, 0.2, 0.3, 0.4, 0.5]
 # d_values = [0.5, 2, 3.5, 5, 6.5]
 # brio_wu.single_bifrost_param_adjustment(idx=5, values=E_values)

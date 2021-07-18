@@ -3,6 +3,8 @@ Sod experimemts
 
 Here we will report the results of the Sod experiment 
 
+Bifrost solver
+===============
 
 Initial conditions
 ------------------
@@ -109,4 +111,30 @@ In all previous verifications for the Sod problem in the x-direction, we have sp
 .. image:: images_sod_bifrost/sod_bifrost_x_res_comparison_n50_n100_ux.png
 
 
+Ramses/mhd_eos solver
+=====================
 
+
+Density for all directions
+--------------------------
+We do the same verification as for the bifrost solver, by plotting the density for every direction x,y and z. If the code works, all three densities should behave the same.
+
+.. image:: images_sod_ramses/sod_ramses_xyz_rho.png
+
+As we can see from the figure above, all three denisty curves lie on top of eachother.
+
+
+Adjusting slope type parameter
+------------------------------
+
+.. image:: images_sod_ramses/sod_ramses_x_different_slope_types_rho.png
+
+.. image:: images_sod_ramses/sod_ramses_x_different_slope_types_ux.png
+
+Resolution comparison with Ramses/mhd_eos solver
+-------------------------------------------------
+Now we want to decrease the resolution to n = 50 and compare results with n = 100 for density and velocity.
+
+.. image:: images_sod_ramses/sod_ramses_x_res_comparison_n50_n100_rho.png
+
+.. image:: images_sod_ramses/sod_ramses_x_res_comparison_n50_n100_ux.png
