@@ -35,6 +35,9 @@
   <div class="section" id="sod-experimemts">
 <h1>Sod experimemts<a class="headerlink" href="#sod-experimemts" title="Permalink to this headline">¶</a></h1>
 <p>Here we will report the results of the Sod experiment</p>
+</div>
+<div class="section" id="bifrost-solver">
+<h1>Bifrost solver<a class="headerlink" href="#bifrost-solver" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="initial-conditions">
 <h2>Initial conditions<a class="headerlink" href="#initial-conditions" title="Permalink to this headline">¶</a></h2>
 <dl class="simple">
@@ -168,6 +171,26 @@
 <img alt="_images/sod_bifrost_x_res_comparison_n50_n100_ux.png" src="_images/sod_bifrost_x_res_comparison_n50_n100_ux.png" />
 </div>
 </div>
+<div class="section" id="ramses-mhd-eos-solver">
+<h1>Ramses/mhd_eos solver<a class="headerlink" href="#ramses-mhd-eos-solver" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="id1">
+<h2>Density for all directions<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<p>We do the same verification as for the bifrost solver, by plotting the density for every direction x,y and z. If the code works, all three densities should behave the same.</p>
+<img alt="_images/sod_ramses_xyz_rho.png" src="_images/sod_ramses_xyz_rho.png" />
+<p>As we can see from the figure above, all three denisty curves lie on top of eachother.</p>
+</div>
+<div class="section" id="adjusting-slope-type-parameter">
+<h2>Adjusting slope type parameter<a class="headerlink" href="#adjusting-slope-type-parameter" title="Permalink to this headline">¶</a></h2>
+<img alt="_images/sod_ramses_x_different_slope_types_rho.png" src="_images/sod_ramses_x_different_slope_types_rho.png" />
+<img alt="_images/sod_ramses_x_different_slope_types_ux.png" src="_images/sod_ramses_x_different_slope_types_ux.png" />
+</div>
+<div class="section" id="resolution-comparison-with-ramses-mhd-eos-solver">
+<h2>Resolution comparison with Ramses/mhd_eos solver<a class="headerlink" href="#resolution-comparison-with-ramses-mhd-eos-solver" title="Permalink to this headline">¶</a></h2>
+<p>Now we want to decrease the resolution to n = 50 and compare results with n = 100 for density and velocity.</p>
+<img alt="_images/sod_ramses_x_res_comparison_n50_n100_rho.png" src="_images/sod_ramses_x_res_comparison_n50_n100_rho.png" />
+<img alt="_images/sod_ramses_x_res_comparison_n50_n100_ux.png" src="_images/sod_ramses_x_res_comparison_n50_n100_ux.png" />
+</div>
+</div>
 
 
           </div>
@@ -190,12 +213,19 @@
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="briowu.html">Brio&amp; Wu experimemts</a></li>
 <li class="toctree-l1"><a class="reference internal" href="briowu.html#ramses-mhd-eos-results">Ramses/mhd_eos results</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Sod experimemts</a><ul>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Sod experimemts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#bifrost-solver">Bifrost solver</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#initial-conditions">Initial conditions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#density-for-all-directions">Density for all directions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#adjusting-all-initial-bifrost-parameters">Adjusting all initial bifrost parameters</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#adjusting-a-single-initial-bifrost-parameter">Adjusting a single initial bifrost parameter</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#resolution-comparison">Resolution comparison</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="#ramses-mhd-eos-solver">Ramses/mhd_eos solver</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id1">Density for all directions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#adjusting-slope-type-parameter">Adjusting slope type parameter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#resolution-comparison-with-ramses-mhd-eos-solver">Resolution comparison with Ramses/mhd_eos solver</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="practiceV.html">Site for Vetle to do practice excercise</a></li>
