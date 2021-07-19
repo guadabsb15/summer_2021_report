@@ -133,7 +133,7 @@ As we can see from the figure above, all three denisty curves lie on top of each
 
 Adjusting slope type parameter (Ramses/mhd_eos solver)
 ------------------------------------------------------
-We addjust the slope type parameter by the following numbers
+Now we addjust the slope type parameter by the following numbers
    * slope_type1 = 1
    * slope_type2 = 2
    * slope_type3 = 3
