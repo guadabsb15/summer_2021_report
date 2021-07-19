@@ -5,43 +5,41 @@ import sys
 
 class nml_params:
     """
-    Edit nml-file parameters.
-    Options available:
-      - Change initial bifrost parameters subsequently
-      - Make multiple changes to a single bifrost parameter
-      - Reduce box resolution
+    Edit nml-files for verification tests. Creates copy of input file.
+    Includes option for editing environment paramaters,
+    bifrost parameters and ramses parameters
     """
 
     def __init__(self, filename):
         self.filename = filename
-        self.nml = f90nml.read(filename) # Contains the entire nml file
-        self.bf_params = self.nml['bifrost_params']['nu'] # List of Paramters to adjust
-        self.box_size = self.nml['patch_params']['n'] # Resolution of experiment
-        self.IC = self.nml['IC_params']
-        self.ramses_params = self.nml['ramses_params']['slope_type']
+        self.nml = f90nml.read(filename) # Contains the nml file. Dictionary
+        self.bf_params = self.nml['bifrost_params']['nu'] # List of Bifrost paramters
+        self.ramses_params = self.nml['ramses_params']['slope_type'] # Value of slope_type, default=3.5
+        self.box_size = self.nml['patch_params']['n'] # [x,y,z] number of points in grid cells
+        self.IC = self.nml['IC_params'] # Physical parameters, density, velocities etc.
 
 
     def patch_bifrost_params(self, param_list, name):
-        """
-        Generates the new nml file with updated bifrost_params.
-        Everything but the relevant parameters are left unchanged
-        """
+        # Generates new nml file with updated bifrost_params.
+
         patch_nml = {'bifrost_params': {'nu': param_list}} # the updated parameter values
         mod_name = self.filename[:-4] + name + '.nml' # name of the output file
 
         f90nml.patch(self.filename, patch_nml, mod_name) # Create the new nml file
 
     def decrease_resolution(self, name):
-        """
-        Create file with reduced box_size
-        """
-        new_box_size = [50, 1, 1] # New box size
+        # Create file with reduced box_size in x-direction
+
+        new_box_size = [50, 1, 1] # [x,y,z]
         patch_nml = {'patch_params': {'n': new_box_size}}
         mod_name = self.filename[:-4] + name + '.nml'
+
         f90nml.patch(self.filename, patch_nml, mod_name)
 
     def mag_field(self):
-        ### Permutation of magnetic field components
+        # Permutation of magnetic field components
+        # For generating the corresponding nml-files in y and z direction
+
         IC = self.IC
         IC_y = IC.copy()
         IC_z = IC.copy()
@@ -59,19 +57,21 @@ class nml_params:
 
 
     def create_yz(self, magnetic_field=True):
+        # Create y and z copies of nml file
+        # Includes option for permutating magnetic field
 
         cart_params = self.nml['cartesian_params']
-        p_params = self.nml['patch_params']
+        p_params    = self.nml['patch_params']
 
-        size_y = [0.003, 1, 0.003]
-        dims_y = [1, 5, 1]
+        size_y  = [0.003, 1, 0.003]
+        dims_y  = [1, 5, 1]
+        n_y     = [1, 100, 1]
         periodic_y = [True, False, True]
-        n_y = [1, 100, 1]
 
-        size_z = [0.003, 0.003, 1]
-        dims_z = [1, 1, 5]
+        size_z  = [0.003, 0.003, 1]
+        dims_z  = [1, 1, 5]
+        n_z     = [1, 1, 100]
         periodic_z = [True, True, False]
-        n_z = [1, 1, 100]
 
 
         if magnetic_field==True:
@@ -147,6 +147,8 @@ class nml_params:
 
 
     def ramses_slopes(self):
+        # Create nml-files for all slope_type values available
+        # slope_type=-1 may cause crash
         slopes = self.ramses_params
         new_slopes = [3, 2, 1, -1]
         for val in new_slopes:
@@ -158,14 +160,3 @@ class nml_params:
 
 
 brio_wu = nml_params('brio-wu_ramses_x.nml')
-# brio_wu.create_yz()
-brio_wu.ramses_slopes()
-# brio_wu.mag_field()
-# brio_wu.decrease_resolution(name='_n50')
-# brio_wu.increase_all_bifrost_params(factor=0.1, five_idx=[5])
-# E_values = [0.4, 0.9, 1.4, 1.9, 2,4]
-# U_values = [0.1, 0.2, 0.3, 0.4, 0.5]
-# d_values = [0.5, 2, 3.5, 5, 6.5]
-# brio_wu.single_bifrost_param_adjustment(idx=5, values=E_values)
-# brio_wu.single_bifrost_param_adjustment(idx=1, values=U_values)
-# brio_wu.single_bifrost_param_adjustment(idx=3, values=d_values)
