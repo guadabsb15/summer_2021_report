@@ -141,7 +141,7 @@ In the cartesian_params we use size=1 in the x-direction with dims=5. All previo
 
 
 Ramses/mhd_eos results
-======================
+----------------------
 
 We run the same experiment with the solver ramses/mhd_eos. The quantities listed in the tables above are unchanged. 
 For this solver we set the ramses_params initially as:

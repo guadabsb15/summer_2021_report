@@ -11,7 +11,9 @@ Welcome to Summer 2021 report's documentation!
    :caption: Contents:
    
    briowu
-   sod 
+   sod
+   mhd_blast
+   sedov 
    practiceV
    practiceI
 

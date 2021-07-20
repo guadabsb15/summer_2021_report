@@ -4,7 +4,7 @@ Sod experimemts
 Here we will report the results of the Sod experiment 
 
 Bifrost solver
-===============
+--------------
 First we are going to study the Sod experiment with the use of the Bifrost solver, that uses the initialBifrost parameters presented in the second table below.
 
 Initial conditions
@@ -113,7 +113,7 @@ In all previous verifications for the Sod problem in the x-direction, we have sp
 
 
 Ramses/mhd_eos solver
-=====================
+---------------------
 Now we want to study the same Sod experiment with the use of Ramses/mhd_eos solver. Here we want to analyze the density rho and hoizontal velocity ux in x-direction for different slope type parameters (&ramses_params). The default/unadjusted slope type parameter is
    * Unadjusted slope_type = 3.5
 
