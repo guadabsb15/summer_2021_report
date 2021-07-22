@@ -15,6 +15,9 @@ For the Sod problem we use
        * Final time = 0,2
 Below shows a table of the inital conditions for the left state and right state. These values will be used in all verifications for the Sod problem including the Bifrost solver and Ramses/mhd_eos solver.
 
+* r0 = 0.0125
+* centre = 0.0, 0.0, 0.0
+
 +----------------------------------------------+
 |              experiment_params               |
 +==============+==============+================+
@@ -30,10 +33,6 @@ Below shows a table of the inital conditions for the left state and right state.
 +--------------+--------------+----------------+
 |     bz0      |      0       |      0         |
 +--------------+--------------+----------------+
-
-And 
-    * r0 = 0.0125
-    * centre = 0.0, 0.0, 0.0
 
 
 +-----------------------------------+
@@ -82,23 +81,23 @@ Density, energy and velocity in all planes
 
 .. image:: images_sedov_bifrost/density_sedov_bifrost_xy_0.png
     :scale: 50 %
-    :width: 90 %
+    :width: 100 %
 .. image:: images_sedov_bifrost/density_sedov_bifrost_xy_10.png
     :scale: 50 %
-    :width: 90 %
+    :width: 100 %
 
 
 .. image:: images_sedov_bifrost/density_sedov_bifrost_xz_0.png
     :scale: 50 %
-    :width: 90 %
+    :width: 100 %
 .. image:: images_sedov_bifrost/density_sedov_bifrost_xz_10.png
     :scale: 50 %
-    :width: 90 %
+    :width: 100 %
 
 
 .. image:: images_sedov_bifrost/density_sedov_bifrost_yz_0.png
-    :scale: 70 %
-    :width: 70 %
+    :scale: 50 %
+    :width: 100 %
 .. image:: images_sedov_bifrost/density_sedov_bifrost_yz_10.png
-    :scale: 70 %
-    :width: 70 %
+    :scale: 50 %
+    :width: 100 %
