@@ -81,18 +81,18 @@ Density, energy and velocity in all planes
 ------------------------------------------
 
 .. image:: images_sedov_bifrost/density_sedov_bifrost_xy_0.png
-    :scale: 70 %
+    :scale: 50 %
     :width: 70 %
 .. image:: images_sedov_bifrost/density_sedov_bifrost_xy_10.png
-    :scale: 70 %
+    :scale: 50 %
     :width: 70 %
 
 
 .. image:: images_sedov_bifrost/density_sedov_bifrost_xz_0.png
-    :scale: 70 %
+    :scale: 50 %
     :width: 70 %
 .. image:: images_sedov_bifrost/density_sedov_bifrost_xz_10.png
-    :scale: 70 %
+    :scale: 50 %
     :width: 70 %
 
 
