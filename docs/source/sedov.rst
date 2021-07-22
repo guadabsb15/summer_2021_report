@@ -21,7 +21,7 @@ Below shows a table of the inital conditions for the left state and right state.
 +----------------------------------------------+
 |              experiment_params               |
 +==============+==============+================+
-|  Quantities  |  Left state  |  Right state   |
+|  Quantities  |    Inside    |    Outside     |
 +--------------+--------------+----------------+
 |      d0      |     1.0      |     1.0        |
 +--------------+--------------+----------------+
@@ -78,6 +78,12 @@ When using the Bifrost solver we are going to change the initial Bifrost paramet
 
 Density, energy and velocity in all planes
 ------------------------------------------
+Below shows the initial and final snapshot of the density in all 3 planes.
+
+
+Density
+-------
+First for the xy-plane:
 
 .. image:: images_sedov_bifrost/density_sedov_bifrost_xy_0.png
     :scale: 40 %
@@ -86,6 +92,7 @@ Density, energy and velocity in all planes
     :scale: 40 %
     :width: 100 %
 
+Then for the xz-plane:
 
 .. image:: images_sedov_bifrost/density_sedov_bifrost_xz_0.png
     :scale: 40 %
@@ -94,6 +101,7 @@ Density, energy and velocity in all planes
     :scale: 40 %
     :width: 100 %
 
+And lastly for yz-plane
 
 .. image:: images_sedov_bifrost/density_sedov_bifrost_yz_0.png
     :scale: 40 %
@@ -101,3 +109,64 @@ Density, energy and velocity in all planes
 .. image:: images_sedov_bifrost/density_sedov_bifrost_yz_10.png
     :scale: 40 %
     :width: 100 %
+
+Energy
+------
+xy:
+
+.. image:: images_sedov_bifrost/ee_sedov_bifrost_xy_0.png
+    :scale: 40 %
+    :width: 100 %
+.. image:: images_sedov_bifrost/ee_sedov_bifrost_xy_10.png
+    :scale: 40 %
+    :width: 100 %
+
+xz:
+
+.. image:: images_sedov_bifrost/ee_sedov_bifrost_xz_0.png
+    :scale: 40 %
+    :width: 100 %
+.. image:: images_sedov_bifrost/ee_sedov_bifrost_xz_10.png
+    :scale: 40 %
+    :width: 100 %
+
+yz:
+
+.. image:: images_sedov_bifrost/ee_sedov_bifrost_yz_0.png
+    :scale: 40 %
+    :width: 100 %
+.. image:: images_sedov_bifrost/ee_sedov_bifrost_yz_10.png
+    :scale: 40 %
+    :width: 100
+
+
+Velocity magnitude
+------------------
+xy:
+
+.. image:: images_sedov_bifrost/velocity_magnitude_sedov_bifrost_xy_0.png
+    :scale: 40 %
+    :width: 100 %
+.. image:: images_sedov_bifrost/velocity_magnitude_sedov_bifrost_xy_10.png
+    :scale: 40 %
+    :width: 100 %
+
+xz:
+
+.. image:: images_sedov_bifrost/velocity_magnitude_sedov_bifrost_xz_0.png
+    :scale: 40 %
+    :width: 100 %
+.. image:: images_sedov_bifrost/velocity_magnitude_sedov_bifrost_xz_10.png
+    :scale: 40 %
+    :width: 100 %
+
+yz:
+
+.. image:: images_sedov_bifrost/velocity_magnitude_sedov_bifrost_yz_0.png
+    :scale: 40 %
+    :width: 100 %
+.. image:: images_sedov_bifrost/velocity_magnitude_sedov_bifrost_yz_10.png
+    :scale: 40 %
+    :width: 100
+
+ 
