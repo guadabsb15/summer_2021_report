@@ -22,7 +22,7 @@ Below shows a table of the inital conditions for the left state and right state.
 |              experiment_params               |
 +==============+==============+================+
 |  Quantities  |  Left state  |  Right state   |
-+==============+==============+================+
++--------------+--------------+----------------+
 |      d0      |     1.0      |     1.0        |
 +--------------+--------------+----------------+
 |      p0      |     0.01     |     100        |
