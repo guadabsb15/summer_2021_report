@@ -137,7 +137,7 @@ yz:
     :width: 100 %
 .. image:: images_sedov_bifrost/ee_sedov_bifrost_yz_10.png
     :scale: 40 %
-    :width: 100
+    :width: 100 %
 
 
 Velocity magnitude
@@ -167,6 +167,6 @@ yz:
     :width: 100 %
 .. image:: images_sedov_bifrost/velocity_magnitude_sedov_bifrost_yz_10.png
     :scale: 40 %
-    :width: 100
+    :width: 100 %
 
  
