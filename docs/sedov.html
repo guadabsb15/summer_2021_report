@@ -42,13 +42,12 @@
 <div class="section" id="parameters-and-initial-conditions">
 <h2>Parameters and initial conditions<a class="headerlink" href="#parameters-and-initial-conditions" title="Permalink to this headline">¶</a></h2>
 <dl class="simple">
-<dt>For the Sod problem we use</dt><dd><ul class="simple">
-<li><p>gamma = 1.4</p></li>
-<li><p>Final time = 0,2</p></li>
+<dt>For the Sedov problem we use</dt><dd><ul class="simple">
+<li><p>gamma =´5/3</p></li>
 </ul>
 </dd>
 </dl>
-<p>Below shows a table of the inital conditions for the left state and right state. These values will be used in all verifications for the Sod problem including the Bifrost solver and Ramses/mhd_eos solver.</p>
+<p>Below shows a table of the inital conditions for the inside and outside of the blast. These values will be used in all verifications for the Sedov problem: In addition we have the following parameters</p>
 <ul class="simple">
 <li><p>r0 = 0.0125</p></li>
 <li><p>centre = 0.0, 0.0, 0.0</p></li>
@@ -90,6 +89,7 @@
 </tr>
 </tbody>
 </table>
+<p>Below shows output_params including end_time, out_time and print_time.</p>
 <table class="docutils align-default">
 <colgroup>
 <col style="width: 33%" />
@@ -111,6 +111,8 @@
 </tr>
 </tbody>
 </table>
+<p>The two follwing tables shows cartesian_params and åpatch_params for case = 2 (xy-plane). For case = 3 (xz-plane) and case = 4 (yz-plane) the tables below will look almost identical, except changing the order of every number so that it corresponds to the given case/plane you are looking at.</p>
+<p>For xy-plane we see that the first two numbers in size, dims, mpi_dims, origin and periodic is the same, but if you were to change into for instance xz-plane, then the x and z components would be the same but the y-component would be different in the same way as in the tables below:</p>
 <table class="docutils align-default">
 <colgroup>
 <col style="width: 20%" />
@@ -193,9 +195,9 @@
 </tbody>
 </table>
 <dl class="simple">
-<dt>The initial Bifrost parameters for the Sedov-problem are presented in the table above. During test verifications we will work on the follwing</dt><dd><ul class="simple">
+<dt>The initial Bifrost parameters for the Sedov-problem are presented in the table above. During test verifications we will work on the following</dt><dd><ul class="simple">
 <li><p>branch: develop</p></li>
-<li><p>commit message hash:</p></li>
+<li><p>commit message hash: 5e8f853</p></li>
 </ul>
 </dd>
 </dl>
@@ -203,10 +205,10 @@
 </div>
 <div class="section" id="density-energy-and-velocity-in-all-planes">
 <h2>Density, energy and velocity in all planes<a class="headerlink" href="#density-energy-and-velocity-in-all-planes" title="Permalink to this headline">¶</a></h2>
-<p>Below shows the initial and final snapshot of the density in all 3 planes.</p>
+<p>Below shows the initial and final snapshots of the density in xy-plane (case = 2), xz-plane (case = 3) and yz-plane (case = 4). All initial Bifrost parameters that are used, are unchanged and are given by the table above.</p>
 </div>
-<div class="section" id="density">
-<h2>Density<a class="headerlink" href="#density" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="density-for-xy-xz-and-yz">
+<h2>Density for xy, xz and yz<a class="headerlink" href="#density-for-xy-xz-and-yz" title="Permalink to this headline">¶</a></h2>
 <p>First for the xy-plane:</p>
 <a class="reference internal image-reference" href="_images/density_sedov_bifrost_xy_0.png"><img alt="_images/density_sedov_bifrost_xy_0.png" src="_images/density_sedov_bifrost_xy_0.png" style="width: 48%;" /></a>
 <a class="reference internal image-reference" href="_images/density_sedov_bifrost_xy_10.png"><img alt="_images/density_sedov_bifrost_xy_10.png" src="_images/density_sedov_bifrost_xy_10.png" style="width: 48%;" /></a>
@@ -214,38 +216,42 @@
 <a class="reference internal image-reference" href="_images/density_sedov_bifrost_xz_0.png"><img alt="_images/density_sedov_bifrost_xz_0.png" src="_images/density_sedov_bifrost_xz_0.png" style="width: 48%;" /></a>
 <a class="reference internal image-reference" href="_images/density_sedov_bifrost_xz_10.png"><img alt="_images/density_sedov_bifrost_xz_10.png" src="_images/density_sedov_bifrost_xz_10.png" style="width: 48%;" /></a>
 <p>And lastly for yz-plane</p>
+<img alt="_images/density_sedov_bifrost_yz_0.png" src="_images/density_sedov_bifrost_yz_0.png" />
+<a class="reference internal image-reference" href="_images/density_sedov_bifrost_xz_10.png"><img alt="_images/density_sedov_bifrost_xz_10.png" src="_images/density_sedov_bifrost_xz_10.png" style="width: 48%;" /></a>
+<p>And lastly for yz-plane</p>
 <a class="reference internal image-reference" href="_images/density_sedov_bifrost_yz_0.png"><img alt="_images/density_sedov_bifrost_yz_0.png" src="_images/density_sedov_bifrost_yz_0.png" style="width: 48%;" /></a>
 <a class="reference internal image-reference" href="_images/density_sedov_bifrost_yz_10.png"><img alt="_images/density_sedov_bifrost_yz_10.png" src="_images/density_sedov_bifrost_yz_10.png" style="width: 48%;" /></a>
 </div>
-<div class="section" id="energy">
-<h2>Energy<a class="headerlink" href="#energy" title="Permalink to this headline">¶</a></h2>
-<p>xy:</p>
+<div class="section" id="energy-for-xy-xz-and-yz">
+<h2>Energy for xy, xz and yz<a class="headerlink" href="#energy-for-xy-xz-and-yz" title="Permalink to this headline">¶</a></h2>
+<p>First for the xy-plane:</p>
 <a class="reference internal image-reference" href="_images/ee_sedov_bifrost_xy_0.png"><img alt="_images/ee_sedov_bifrost_xy_0.png" src="_images/ee_sedov_bifrost_xy_0.png" style="width: 48%;" /></a>
 <a class="reference internal image-reference" href="_images/ee_sedov_bifrost_xy_10.png"><img alt="_images/ee_sedov_bifrost_xy_10.png" src="_images/ee_sedov_bifrost_xy_10.png" style="width: 48%;" /></a>
-<p>xz:</p>
+<p>Then for the xz-plane:</p>
 <a class="reference internal image-reference" href="_images/ee_sedov_bifrost_xz_0.png"><img alt="_images/ee_sedov_bifrost_xz_0.png" src="_images/ee_sedov_bifrost_xz_0.png" style="width: 48%;" /></a>
 <a class="reference internal image-reference" href="_images/ee_sedov_bifrost_xz_10.png"><img alt="_images/ee_sedov_bifrost_xz_10.png" src="_images/ee_sedov_bifrost_xz_10.png" style="width: 48%;" /></a>
-<p>yz:</p>
+<p>And lastly for yz-plane:</p>
 <a class="reference internal image-reference" href="_images/ee_sedov_bifrost_yz_0.png"><img alt="_images/ee_sedov_bifrost_yz_0.png" src="_images/ee_sedov_bifrost_yz_0.png" style="width: 48%;" /></a>
 <a class="reference internal image-reference" href="_images/ee_sedov_bifrost_yz_10.png"><img alt="_images/ee_sedov_bifrost_yz_10.png" src="_images/ee_sedov_bifrost_yz_10.png" style="width: 48%;" /></a>
 </div>
-<div class="section" id="velocity-magnitude">
-<h2>Velocity magnitude<a class="headerlink" href="#velocity-magnitude" title="Permalink to this headline">¶</a></h2>
-<p>xy:</p>
+<div class="section" id="velocity-magnitude-for-xy-xz-and-yz">
+<h2>Velocity magnitude for xy, xz and yz<a class="headerlink" href="#velocity-magnitude-for-xy-xz-and-yz" title="Permalink to this headline">¶</a></h2>
+<p>First for the xy-plane:</p>
 <a class="reference internal image-reference" href="_images/velocity_magnitude_sedov_bifrost_xy_0.png"><img alt="_images/velocity_magnitude_sedov_bifrost_xy_0.png" src="_images/velocity_magnitude_sedov_bifrost_xy_0.png" style="width: 48%;" /></a>
 <a class="reference internal image-reference" href="_images/velocity_magnitude_sedov_bifrost_xy_10.png"><img alt="_images/velocity_magnitude_sedov_bifrost_xy_10.png" src="_images/velocity_magnitude_sedov_bifrost_xy_10.png" style="width: 48%;" /></a>
-<p>xz:</p>
+<p>Then for the xz-plane:</p>
 <a class="reference internal image-reference" href="_images/velocity_magnitude_sedov_bifrost_xz_0.png"><img alt="_images/velocity_magnitude_sedov_bifrost_xz_0.png" src="_images/velocity_magnitude_sedov_bifrost_xz_0.png" style="width: 48%;" /></a>
 <a class="reference internal image-reference" href="_images/velocity_magnitude_sedov_bifrost_xz_10.png"><img alt="_images/velocity_magnitude_sedov_bifrost_xz_10.png" src="_images/velocity_magnitude_sedov_bifrost_xz_10.png" style="width: 48%;" /></a>
-<p>yz:</p>
+<p>And lastly for yz-plane:</p>
 <a class="reference internal image-reference" href="_images/velocity_magnitude_sedov_bifrost_yz_0.png"><img alt="_images/velocity_magnitude_sedov_bifrost_yz_0.png" src="_images/velocity_magnitude_sedov_bifrost_yz_0.png" style="width: 48%;" /></a>
 <a class="reference internal image-reference" href="_images/velocity_magnitude_sedov_bifrost_yz_10.png"><img alt="_images/velocity_magnitude_sedov_bifrost_yz_10.png" src="_images/velocity_magnitude_sedov_bifrost_yz_10.png" style="width: 48%;" /></a>
 </div>
 <div class="section" id="addjusting-bifrost-parameters">
 <h2>Addjusting Bifrost parameters<a class="headerlink" href="#addjusting-bifrost-parameters" title="Permalink to this headline">¶</a></h2>
+<p>Every image on the left side is the given quantity in the xy-plane with unadjusted Bifrost parameters.</p>
 </div>
-<div class="section" id="id1">
-<h2>Density<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="addjusted-density">
+<h2>Addjusted density<a class="headerlink" href="#addjusted-density" title="Permalink to this headline">¶</a></h2>
 <p>Right image is Ca increased by a factor of 10:</p>
 <a class="reference internal image-reference" href="_images/density_sedov_bifrost_xy_10.png"><img alt="_images/density_sedov_bifrost_xy_10.png" src="_images/density_sedov_bifrost_xy_10.png" style="width: 45%;" /></a>
 <a class="reference internal image-reference" href="_images/density_sedov_bifrost_xy_increase10_Ca_10.png"><img alt="_images/density_sedov_bifrost_xy_increase10_Ca_10.png" src="_images/density_sedov_bifrost_xy_increase10_Ca_10.png" style="width: 45%;" /></a>
@@ -256,8 +262,8 @@
 <a class="reference internal image-reference" href="_images/density_sedov_bifrost_xy_10.png"><img alt="_images/density_sedov_bifrost_xy_10.png" src="_images/density_sedov_bifrost_xy_10.png" style="width: 45%;" /></a>
 <a class="reference internal image-reference" href="_images/density_sedov_bifrost_xy_decrease10_U_10.png"><img alt="_images/density_sedov_bifrost_xy_decrease10_U_10.png" src="_images/density_sedov_bifrost_xy_decrease10_U_10.png" style="width: 45%;" /></a>
 </div>
-<div class="section" id="id2">
-<h2>Energy<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="addjusted-energy">
+<h2>Addjusted energy<a class="headerlink" href="#addjusted-energy" title="Permalink to this headline">¶</a></h2>
 <p>Right image is parameter Ca increased (first line) by a factor of 10 and then Ca reduced (second line) by a factor of 10:</p>
 <a class="reference internal image-reference" href="_images/ee_sedov_bifrost_xy_10.png"><img alt="_images/ee_sedov_bifrost_xy_10.png" src="_images/ee_sedov_bifrost_xy_10.png" style="width: 48%;" /></a>
 <a class="reference internal image-reference" href="_images/ee_sedov_bifrost_xy_increase10_Ca_10.png"><img alt="_images/ee_sedov_bifrost_xy_increase10_Ca_10.png" src="_images/ee_sedov_bifrost_xy_increase10_Ca_10.png" style="width: 48%;" /></a>
@@ -274,12 +280,9 @@
 <p>Right image is parameter e increased by a factor of 10:</p>
 <a class="reference internal image-reference" href="_images/ee_sedov_bifrost_xy_10.png"><img alt="_images/ee_sedov_bifrost_xy_10.png" src="_images/ee_sedov_bifrost_xy_10.png" style="width: 48%;" /></a>
 <a class="reference internal image-reference" href="_images/ee_sedov_bifrost_xy_increase10_e_10.png"><img alt="_images/ee_sedov_bifrost_xy_increase10_e_10.png" src="_images/ee_sedov_bifrost_xy_increase10_e_10.png" style="width: 48%;" /></a>
-<p>Right image is parameter Uv increased by a factor of 10:</p>
-<a class="reference internal image-reference" href="_images/ee_sedov_bifrost_xy_10.png"><img alt="_images/ee_sedov_bifrost_xy_10.png" src="_images/ee_sedov_bifrost_xy_10.png" style="width: 48%;" /></a>
-<a class="reference internal image-reference" href="_images/ee_sedov_bifrost_xy_increase10_Uv_10.png"><img alt="_images/ee_sedov_bifrost_xy_increase10_Uv_10.png" src="_images/ee_sedov_bifrost_xy_increase10_Uv_10.png" style="width: 48%;" /></a>
 </div>
-<div class="section" id="id3">
-<h2>Velocity magnitude<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="addjusted-velocity-magnitude">
+<h2>Addjusted velocity magnitude<a class="headerlink" href="#addjusted-velocity-magnitude" title="Permalink to this headline">¶</a></h2>
 <p>Right image is parameter Ca reduced by a factor of 10:</p>
 <a class="reference internal image-reference" href="_images/velocity_magnitude_sedov_bifrost_xy_10.png"><img alt="_images/velocity_magnitude_sedov_bifrost_xy_10.png" src="_images/velocity_magnitude_sedov_bifrost_xy_10.png" style="width: 48%;" /></a>
 <a class="reference internal image-reference" href="_images/velocity_magnitude_sedov_bifrost_xy_decrease10_Ca_10.png"><img alt="_images/velocity_magnitude_sedov_bifrost_xy_decrease10_Ca_10.png" src="_images/velocity_magnitude_sedov_bifrost_xy_decrease10_Ca_10.png" style="width: 48%;" /></a>
@@ -323,13 +326,13 @@
 <li class="toctree-l2"><a class="reference internal" href="#bifrost-solver">Bifrost solver</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#parameters-and-initial-conditions">Parameters and initial conditions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#density-energy-and-velocity-in-all-planes">Density, energy and velocity in all planes</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#density">Density</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#energy">Energy</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#velocity-magnitude">Velocity magnitude</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#density-for-xy-xz-and-yz">Density for xy, xz and yz</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#energy-for-xy-xz-and-yz">Energy for xy, xz and yz</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#velocity-magnitude-for-xy-xz-and-yz">Velocity magnitude for xy, xz and yz</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#addjusting-bifrost-parameters">Addjusting Bifrost parameters</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id1">Density</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id2">Energy</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id3">Velocity magnitude</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#addjusted-density">Addjusted density</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#addjusted-energy">Addjusted energy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#addjusted-velocity-magnitude">Addjusted velocity magnitude</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="practiceV.html">Site for Vetle to do practice excercise</a></li>
