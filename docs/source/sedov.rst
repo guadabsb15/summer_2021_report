@@ -86,58 +86,46 @@ Density
 First for the xy-plane:
 
 .. image:: images_sedov_bifrost/density_sedov_bifrost_xy_0.png
-    :scale: 40 %
-    :width: 100 %
+    :width: 48 %
 .. image:: images_sedov_bifrost/density_sedov_bifrost_xy_10.png
-    :scale: 40 %
-    :width: 100 %
+    :width: 48 %
 
 Then for the xz-plane:
 
 .. image:: images_sedov_bifrost/density_sedov_bifrost_xz_0.png
-    :scale: 40 %
-    :width: 100 %
+    :width: 48 %
 .. image:: images_sedov_bifrost/density_sedov_bifrost_xz_10.png
-    :scale: 40 %
-    :width: 100 %
+    :width: 48 %
 
 And lastly for yz-plane
 
 .. image:: images_sedov_bifrost/density_sedov_bifrost_yz_0.png
-    :scale: 40 %
-    :width: 100 %
+    :width: 48 %
 .. image:: images_sedov_bifrost/density_sedov_bifrost_yz_10.png
-    :scale: 40 %
-    :width: 100 %
+    :width: 48 %
 
 Energy
 ------
 xy:
 
 .. image:: images_sedov_bifrost/ee_sedov_bifrost_xy_0.png
-    :scale: 40 %
-    :width: 100 %
+    :width: 48 %
 .. image:: images_sedov_bifrost/ee_sedov_bifrost_xy_10.png
-    :scale: 40 %
-    :width: 100 %
+    :width: 48 %
 
 xz:
 
 .. image:: images_sedov_bifrost/ee_sedov_bifrost_xz_0.png
-    :scale: 40 %
-    :width: 100 %
+    :width: 48 %
 .. image:: images_sedov_bifrost/ee_sedov_bifrost_xz_10.png
-    :scale: 40 %
-    :width: 100 %
+    :width: 48 %
 
 yz:
 
 .. image:: images_sedov_bifrost/ee_sedov_bifrost_yz_0.png
-    :scale: 40 %
-    :width: 100 %
+    :width: 48 %
 .. image:: images_sedov_bifrost/ee_sedov_bifrost_yz_10.png
-    :scale: 40 %
-    :width: 100 %
+    :width: 48 %
 
 
 Velocity magnitude
@@ -145,48 +133,172 @@ Velocity magnitude
 xy:
 
 .. image:: images_sedov_bifrost/velocity_magnitude_sedov_bifrost_xy_0.png
-    :scale: 40 %
-    :width: 100 %
+    :width: 48 %
 .. image:: images_sedov_bifrost/velocity_magnitude_sedov_bifrost_xy_10.png
-    :scale: 40 %
-    :width: 100 %
+    :width: 48 %
 
 xz:
 
 .. image:: images_sedov_bifrost/velocity_magnitude_sedov_bifrost_xz_0.png
-    :scale: 40 %
-    :width: 100 %
+    :width: 48 %
 .. image:: images_sedov_bifrost/velocity_magnitude_sedov_bifrost_xz_10.png
-    :scale: 40 %
-    :width: 100 %
+    :width: 48 %
 
 yz:
 
 .. image:: images_sedov_bifrost/velocity_magnitude_sedov_bifrost_yz_0.png
-    :scale: 40 %
-    :width: 100 %
+    :width: 48 %
 .. image:: images_sedov_bifrost/velocity_magnitude_sedov_bifrost_yz_10.png
-    :scale: 40 %
-    :width: 100 %
+    :width: 48 %
 
 Addjusting Bifrost parameters
 -----------------------------
 
 Density
 -------
+Right image is Ca increased by a factor of 10:
 
 .. image:: images_sedov_bifrost/density_sedov_bifrost_xy_10.png
     :width: 45 %
 .. image:: images_sedov_bifrost/density_sedov_bifrost_xy_increase10_Ca_10.png
     :width: 45 %
 
+Right image is U increased by a factor of 10:
 
 .. image:: images_sedov_bifrost/density_sedov_bifrost_xy_10.png
     :width: 45 %
 .. image:: images_sedov_bifrost/density_sedov_bifrost_xy_increase10_U_10.png
     :width: 45 %
 
+Right image is U reduced by a factor of 10:
+
 .. image:: images_sedov_bifrost/density_sedov_bifrost_xy_10.png
     :width: 45 %
 .. image:: images_sedov_bifrost/density_sedov_bifrost_xy_decrease10_U_10.png
     :width: 45 %
+
+
+Energy
+------
+
+Right image is parameter Ca increased (first line) by a factor of 10 and then Ca reduced (second line) by a factor of 10:
+
+.. image:: images_sedov_bifrost/ee_sedov_bifrost_xy_10.png
+    :width: 48 %
+.. image:: images_sedov_bifrost/ee_sedov_bifrost_xy_increase10_Ca_10.png
+    :width: 48 %
+
+
+.. image:: images_sedov_bifrost/ee_sedov_bifrost_xy_10.png
+    :width: 48 %
+.. image:: images_sedov_bifrost/ee_sedov_bifrost_xy_decrease10_Ca_10.png
+    :width: 48 %
+
+
+Right image is parameter U increased (first line) by a factor of 10 and then U reduced (second line) by a factor of 10:
+
+.. image:: images_sedov_bifrost/ee_sedov_bifrost_xy_10.png
+    :width: 48 %
+.. image:: images_sedov_bifrost/ee_sedov_bifrost_xy_increase10_U_10.png
+    :width: 48 %
+
+.. image:: images_sedov_bifrost/ee_sedov_bifrost_xy_10.png
+    :width: 48 %
+.. image:: images_sedov_bifrost/ee_sedov_bifrost_xy_decrease10_U_10.png
+    :width: 48 %
+
+
+Right image is parameter d increased (first line) by a factor of 10 and then d reduced (second line) by a factor of 10:
+
+.. image:: images_sedov_bifrost/ee_sedov_bifrost_xy_10.png
+    :width: 48 %
+.. image:: images_sedov_bifrost/ee_sedov_bifrost_xy_increase10_d_10.png
+    :width: 48 %
+
+.. image:: images_sedov_bifrost/ee_sedov_bifrost_xy_10.png
+    :width: 48 %
+.. image:: images_sedov_bifrost/ee_sedov_bifrost_xy_decrease10_d_10.png
+    :width: 48 %
+
+Right image is parameter e increased (first line) by a factor of 10 and then e reduced (second line) by a factor of 10:
+
+.. image:: images_sedov_bifrost/ee_sedov_bifrost_xy_10.png
+    :width: 48 %
+.. image:: images_sedov_bifrost/ee_sedov_bifrost_xy_increase10_e_10.png
+    :width: 48 %
+
+.. image:: images_sedov_bifrost/ee_sedov_bifrost_xy_10.png
+    :width: 48 %
+.. image:: images_sedov_bifrost/ee_sedov_bifrost_xy_decrease10_e_10.png
+    :width: 48 %
+
+Right image is parameter Uv increased by a factor of 10:
+
+.. image:: images_sedov_bifrost/ee_sedov_bifrost_xy_10.png
+    :width: 48 %
+.. image:: images_sedov_bifrost/ee_sedov_bifrost_xy_increase10_Uv_10.png
+    :width: 48 %
+
+
+Velocity magnitude
+------------------
+
+Right image is parameter Ca increased (first line) by a factor of 10 and then Ca reduced (second line) by a factor of 10:
+
+.. image:: images_sedov_bifrost/velocity_magnitude_sedov_bifrost_xy_10.png
+    :width: 48 %
+.. image:: images_sedov_bifrost/velocity_magnitude_sedov_bifrost_xy_increase10_Ca_10.png
+    :width: 48 %
+
+
+.. image:: images_sedov_bifrost/velocity_magnitude_sedov_bifrost_xy_10.png
+    :width: 48 %
+.. image:: images_sedov_bifrost/velocity_magnitude_sedov_bifrost_xy_decrease10_Ca_10.png
+    :width: 48 %
+
+
+Right image is parameter U increased (first line) by a factor of 10 and then U reduced (second line) by a factor of 10:
+
+.. image:: images_sedov_bifrost/velocity_magnitude_sedov_bifrost_xy_10.png
+    :width: 48 %
+.. image:: images_sedov_bifrost/velocity_magnitude_sedov_bifrost_xy_increase10_U_10.png
+    :width: 48 %
+
+.. image:: images_sedov_bifrost/velocity_magnitude_sedov_bifrost_xy_10.png
+    :width: 48 %
+.. image:: images_sedov_bifrost/velocity_magnitude_sedov_bifrost_xy_decrease10_U_10.png
+    :width: 48 %
+
+
+Right image is parameter d increased (first line) by a factor of 10 and then d reduced (second line) by a factor of 10:
+
+.. image:: images_sedov_bifrost/velocity_magnitude_sedov_bifrost_xy_10.png
+    :width: 48 %
+.. image:: images_sedov_bifrost/velocity_magnitude_sedov_bifrost_xy_increase10_d_10.png
+    :width: 48 %
+
+.. image:: images_sedov_bifrost/velocity_magnitude_sedov_bifrost_xy_10.png
+    :width: 48 %
+.. image:: images_sedov_bifrost/velocity_magnitude_sedov_bifrost_xy_decrease10_d_10.png
+    :width: 48 %
+
+Right image is parameter e increased (first line) by a factor of 10 and then e reduced (second line) by a factor of 10:
+
+.. image:: images_sedov_bifrost/velocity_magnitude_sedov_bifrost_xy_10.png
+    :width: 48 %
+.. image:: images_sedov_bifrost/velocity_magnitude_sedov_bifrost_xy_increase10_e_10.png
+    :width: 48 %
+
+.. image:: images_sedov_bifrost/velocity_magnitude_sedov_bifrost_xy_10.png
+    :width: 48 %
+.. image:: images_sedov_bifrost/velocity_magnitude_sedov_bifrost_xy_decrease10_e_10.png
+    :width: 48 %
+
+Right image is parameter Uv increased by a factor of 10:
+
+.. image:: images_sedov_bifrost/velocity_magnitude_sedov_bifrost_xy_10.png
+    :width: 48 %
+.. image:: images_sedov_bifrost/velocity_magnitude_sedov_bifrost_xy_increase10_Uv_10.png
+    :width: 48 %
+
+
