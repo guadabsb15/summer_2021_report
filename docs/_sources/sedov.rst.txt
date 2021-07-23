@@ -169,4 +169,30 @@ yz:
     :scale: 40 %
     :width: 100 %
 
- 
+Addjusting Bifrost parameters
+-----------------------------
+
+Density
+-------
+
+.. image:: images_sedov_bifrost/density_sedov_bifrost_xy_10.png
+    :scale: 40 %
+    :width: 100 %
+.. image:: images_sedov_bifrost/density_sedov_bifrost_xy_increase10_Ca_10.png
+    :scale: 40 %
+    :width: 100 %
+
+
+.. image:: images_sedov_bifrost/density_sedov_bifrost_xy_10.png
+    :scale: 40 %
+    :width: 100 %
+.. image:: images_sedov_bifrost/density_sedov_bifrost_xy_increase10_U_10.png
+    :scale: 40 %
+    :width: 100 %
+
+.. image:: images_sedov_bifrost/density_sedov_bifrost_xy_10.png
+    :scale: 40 %
+    :width: 100 %
+.. image:: images_sedov_bifrost/density_sedov_bifrost_xy_decrease10_U_10.png
+    :scale: 40 %
+    :width: 100 %
