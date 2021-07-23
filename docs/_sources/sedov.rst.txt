@@ -44,7 +44,7 @@ Below shows output_params including end_time, out_time and print_time.
 |    0.1    |   1e-2   |     0      | 
 +-----------+----------+------------+
 
-The two follwing tables shows cartesian_params and åpatch_params for case = 2 (xy-plane). For case = 3 (xz-plane) and case = 4 (yz-plane) the tables below will look almost identical, except changing the order of every number so that it corresponds to the given case/plane you are looking at.
+The two follwing tables shows cartesian_params and patch_params for case = 2 (xy-plane). For case = 3 (xz-plane) and case = 4 (yz-plane) the tables below will look almost identical, except changing the order of every number so that it corresponds to the given case/plane you are looking at.
 
 For xy-plane we see that the first two numbers in size, dims, mpi_dims, origin and periodic is the same, but if you were to change into for instance xz-plane, then the x and z components would be the same but the y-component would be different in the same way as in the tables below:
 
@@ -104,6 +104,7 @@ Then for the xz-plane:
 And lastly for yz-plane
 
 .. image:: images_sedov_bifrost/density_sedov_bifrost_yz_0.png
+    :width: 48 %
 .. image:: images_sedov_bifrost/density_sedov_bifrost_xz_10.png
     :width: 48 %
 
@@ -170,23 +171,23 @@ Addjusted density
 Right image is Ca increased by a factor of 10:
 
 .. image:: images_sedov_bifrost/density_sedov_bifrost_xy_10.png
-    :width: 45 %
+    :width: 48 %
 .. image:: images_sedov_bifrost/density_sedov_bifrost_xy_increase10_Ca_10.png
-    :width: 45 %
+    :width: 48 %
 
 Right image is U increased by a factor of 10:
 
 .. image:: images_sedov_bifrost/density_sedov_bifrost_xy_10.png
-    :width: 45 %
+    :width: 48 %
 .. image:: images_sedov_bifrost/density_sedov_bifrost_xy_increase10_U_10.png
-    :width: 45 %
+    :width: 48 %
 
 Right image is U reduced by a factor of 10:
 
 .. image:: images_sedov_bifrost/density_sedov_bifrost_xy_10.png
-    :width: 45 %
+    :width: 48 %
 .. image:: images_sedov_bifrost/density_sedov_bifrost_xy_decrease10_U_10.png
-    :width: 45 %
+    :width: 48 %
 
 
 Addjusted energy
