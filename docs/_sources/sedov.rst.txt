@@ -208,28 +208,18 @@ Right image is parameter U increased (first line) by a factor of 10 and then U r
     :width: 48 %
 
 
-Right image is parameter d increased (first line) by a factor of 10 and then d reduced (second line) by a factor of 10:
+Right image is parameter d increased by a factor of 10:
 
 .. image:: images_sedov_bifrost/ee_sedov_bifrost_xy_10.png
     :width: 48 %
 .. image:: images_sedov_bifrost/ee_sedov_bifrost_xy_increase10_d_10.png
     :width: 48 %
 
-.. image:: images_sedov_bifrost/ee_sedov_bifrost_xy_10.png
-    :width: 48 %
-.. image:: images_sedov_bifrost/ee_sedov_bifrost_xy_decrease10_d_10.png
-    :width: 48 %
-
-Right image is parameter e increased (first line) by a factor of 10 and then e reduced (second line) by a factor of 10:
+Right image is parameter e increased by a factor of 10:
 
 .. image:: images_sedov_bifrost/ee_sedov_bifrost_xy_10.png
     :width: 48 %
 .. image:: images_sedov_bifrost/ee_sedov_bifrost_xy_increase10_e_10.png
-    :width: 48 %
-
-.. image:: images_sedov_bifrost/ee_sedov_bifrost_xy_10.png
-    :width: 48 %
-.. image:: images_sedov_bifrost/ee_sedov_bifrost_xy_decrease10_e_10.png
     :width: 48 %
 
 Right image is parameter Uv increased by a factor of 10:
@@ -243,12 +233,7 @@ Right image is parameter Uv increased by a factor of 10:
 Velocity magnitude
 ------------------
 
-Right image is parameter Ca increased (first line) by a factor of 10 and then Ca reduced (second line) by a factor of 10:
-
-.. image:: images_sedov_bifrost/velocity_magnitude_sedov_bifrost_xy_10.png
-    :width: 48 %
-.. image:: images_sedov_bifrost/velocity_magnitude_sedov_bifrost_xy_increase10_Ca_10.png
-    :width: 48 %
+Right image is parameter Ca reduced by a factor of 10:
 
 
 .. image:: images_sedov_bifrost/velocity_magnitude_sedov_bifrost_xy_10.png
@@ -270,29 +255,13 @@ Right image is parameter U increased (first line) by a factor of 10 and then U r
     :width: 48 %
 
 
-Right image is parameter d increased (first line) by a factor of 10 and then d reduced (second line) by a factor of 10:
+Right image is parameter d increased by a factor of 10:
 
 .. image:: images_sedov_bifrost/velocity_magnitude_sedov_bifrost_xy_10.png
     :width: 48 %
 .. image:: images_sedov_bifrost/velocity_magnitude_sedov_bifrost_xy_increase10_d_10.png
     :width: 48 %
 
-.. image:: images_sedov_bifrost/velocity_magnitude_sedov_bifrost_xy_10.png
-    :width: 48 %
-.. image:: images_sedov_bifrost/velocity_magnitude_sedov_bifrost_xy_decrease10_d_10.png
-    :width: 48 %
-
-Right image is parameter e increased (first line) by a factor of 10 and then e reduced (second line) by a factor of 10:
-
-.. image:: images_sedov_bifrost/velocity_magnitude_sedov_bifrost_xy_10.png
-    :width: 48 %
-.. image:: images_sedov_bifrost/velocity_magnitude_sedov_bifrost_xy_increase10_e_10.png
-    :width: 48 %
-
-.. image:: images_sedov_bifrost/velocity_magnitude_sedov_bifrost_xy_10.png
-    :width: 48 %
-.. image:: images_sedov_bifrost/velocity_magnitude_sedov_bifrost_xy_decrease10_e_10.png
-    :width: 48 %
 
 Right image is parameter Uv increased by a factor of 10:
 
