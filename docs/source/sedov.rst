@@ -10,10 +10,10 @@ First we are going to look at the Sedov problem using the Bifrost solver.
 
 Parameters and initial conditions
 ----------------------------------
-For the Sod problem we use
-       * gamma = 1.4
-       * Final time = 0,2
-Below shows a table of the inital conditions for the left state and right state. These values will be used in all verifications for the Sod problem including the Bifrost solver and Ramses/mhd_eos solver.
+For the Sedov problem we use
+       * gamma =´5/3
+ 
+Below shows a table of the inital conditions for the inside and outside of the blast. These values will be used in all verifications for the Sedov problem: In addition we have the following parameters
 
 * r0 = 0.0125
 * centre = 0.0, 0.0, 0.0
@@ -34,6 +34,7 @@ Below shows a table of the inital conditions for the left state and right state.
 |     bz0      |      0       |      0         |
 +--------------+--------------+----------------+
 
+Below shows output_params including end_time, out_time and print_time.
 
 +-----------------------------------+
 |           output_params           |           
@@ -42,6 +43,10 @@ Below shows a table of the inital conditions for the left state and right state.
 +-----------+----------+------------+
 |    0.1    |   1e-2   |     0      | 
 +-----------+----------+------------+
+
+The two follwing tables shows cartesian_params and åpatch_params for case = 2 (xy-plane). For case = 3 (xz-plane) and case = 4 (yz-plane) the tables below will look almost identical, except changing the order of every number so that it corresponds to the given case/plane you are looking at.
+
+For xy-plane we see that the first two numbers in size, dims, mpi_dims, origin and periodic is the same, but if you were to change into for instance xz-plane, then the x and z components would be the same but the y-component would be different in the same way as in the tables below:
 
 +------------------------------------------------------+
 |             cartesian_params (xy-case = 2)           |
@@ -69,20 +74,19 @@ Below shows a table of the inital conditions for the left state and right state.
 | 0.03 | 0.3 | 0.1 | 0.05| 0.05| 0.9 |
 +------+-----+-----+-----+-----+-----+
 
-The initial Bifrost parameters for the Sedov-problem are presented in the table above. During test verifications we will work on the follwing
+The initial Bifrost parameters for the Sedov-problem are presented in the table above. During test verifications we will work on the following
    * branch: develop
-   * commit message hash: 
+   * commit message hash: 5e8f853 
 
 When using the Bifrost solver we are going to change the initial Bifrost parameters one at a time, while holding the other parameters constant.
 
 
 Density, energy and velocity in all planes
 ------------------------------------------
-Below shows the initial and final snapshot of the density in all 3 planes.
+Below shows the initial and final snapshots of the density in xy-plane (case = 2), xz-plane (case = 3) and yz-plane (case = 4). All initial Bifrost parameters that are used, are unchanged and are given by the table above.
 
-
-Density
--------
+Density for xy, xz and yz
+---------------------------
 First for the xy-plane:
 
 .. image:: images_sedov_bifrost/density_sedov_bifrost_xy_0.png
@@ -100,27 +104,33 @@ Then for the xz-plane:
 And lastly for yz-plane
 
 .. image:: images_sedov_bifrost/density_sedov_bifrost_yz_0.png
+.. image:: images_sedov_bifrost/density_sedov_bifrost_xz_10.png
+    :width: 48 %
+
+And lastly for yz-plane
+
+.. image:: images_sedov_bifrost/density_sedov_bifrost_yz_0.png
     :width: 48 %
 .. image:: images_sedov_bifrost/density_sedov_bifrost_yz_10.png
     :width: 48 %
 
-Energy
-------
-xy:
+Energy for xy, xz and yz
+-------------------------
+First for the xy-plane:
 
 .. image:: images_sedov_bifrost/ee_sedov_bifrost_xy_0.png
     :width: 48 %
 .. image:: images_sedov_bifrost/ee_sedov_bifrost_xy_10.png
     :width: 48 %
 
-xz:
+Then for the xz-plane:
 
 .. image:: images_sedov_bifrost/ee_sedov_bifrost_xz_0.png
     :width: 48 %
 .. image:: images_sedov_bifrost/ee_sedov_bifrost_xz_10.png
     :width: 48 %
 
-yz:
+And lastly for yz-plane:
 
 .. image:: images_sedov_bifrost/ee_sedov_bifrost_yz_0.png
     :width: 48 %
@@ -128,23 +138,23 @@ yz:
     :width: 48 %
 
 
-Velocity magnitude
-------------------
-xy:
+Velocity magnitude for xy, xz and yz
+-------------------------------------
+First for the xy-plane:
 
 .. image:: images_sedov_bifrost/velocity_magnitude_sedov_bifrost_xy_0.png
     :width: 48 %
 .. image:: images_sedov_bifrost/velocity_magnitude_sedov_bifrost_xy_10.png
     :width: 48 %
 
-xz:
+Then for the xz-plane:
 
 .. image:: images_sedov_bifrost/velocity_magnitude_sedov_bifrost_xz_0.png
     :width: 48 %
 .. image:: images_sedov_bifrost/velocity_magnitude_sedov_bifrost_xz_10.png
     :width: 48 %
 
-yz:
+And lastly for yz-plane:
 
 .. image:: images_sedov_bifrost/velocity_magnitude_sedov_bifrost_yz_0.png
     :width: 48 %
@@ -153,9 +163,10 @@ yz:
 
 Addjusting Bifrost parameters
 -----------------------------
+Every image on the left side is the given quantity in the xy-plane with unadjusted Bifrost parameters.
 
-Density
--------
+Addjusted density
+------------------
 Right image is Ca increased by a factor of 10:
 
 .. image:: images_sedov_bifrost/density_sedov_bifrost_xy_10.png
@@ -178,9 +189,8 @@ Right image is U reduced by a factor of 10:
     :width: 45 %
 
 
-Energy
-------
-
+Addjusted energy
+-----------------
 Right image is parameter Ca increased (first line) by a factor of 10 and then Ca reduced (second line) by a factor of 10:
 
 .. image:: images_sedov_bifrost/ee_sedov_bifrost_xy_10.png
@@ -222,16 +232,9 @@ Right image is parameter e increased by a factor of 10:
 .. image:: images_sedov_bifrost/ee_sedov_bifrost_xy_increase10_e_10.png
     :width: 48 %
 
-Right image is parameter Uv increased by a factor of 10:
 
-.. image:: images_sedov_bifrost/ee_sedov_bifrost_xy_10.png
-    :width: 48 %
-.. image:: images_sedov_bifrost/ee_sedov_bifrost_xy_increase10_Uv_10.png
-    :width: 48 %
-
-
-Velocity magnitude
-------------------
+Addjusted velocity magnitude
+----------------------------
 
 Right image is parameter Ca reduced by a factor of 10:
 
