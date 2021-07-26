@@ -102,6 +102,13 @@ For the **xy-plane** we have
 .. image:: img_bifrost_blast/densities/density_blast_bifrost_xy_21.png
     :width: 48 %
 
+We also include an image of the density in the xy-plane after t=1.0ms to compare the evolution when we adjust the bifrost parameters, shown below. 
+
+.. image:: img_bifrost_blast/densities/density_blast_bifrost_xy_10.png
+
+
+
+
 For the **xz-plane** we get 
 
 .. image:: img_bifrost_blast/densities/density_blast_bifrost_xz_1.png
