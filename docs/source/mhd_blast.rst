@@ -144,7 +144,7 @@ Finally, the magnetic pressure in the **xy-plane** is shown below.
 
 .. image:: img_bifrost_blast/magnetic_pressure/magnetic_pressure_blast_bifrost_xy_1.png
     :width: 48 %
-.. image:: img_bifrost_blast/magnetic_pressure/magnetic_pressure_bifrost_xy_21.png
+.. image:: img_bifrost_blast/magnetic_pressure/magnetic_pressure_blast_bifrost_xy_21.png
     :width: 48 %
 
 
