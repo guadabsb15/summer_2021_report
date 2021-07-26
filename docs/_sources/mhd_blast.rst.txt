@@ -90,7 +90,7 @@ The initial bifrost parameters that were used are listed in the table below. The
 Initial simulations for all three planes 
 #########################################
 
-We will now plot the density, energy, velocity magnitude and magnetic pressure for the xy-plane, xz-plane and yz-plane. In each plot, we will include a figure of the initial configuration at t=1ms and at t=21ms.
+We will now plot the density, energy, velocity magnitude and magnetic pressure with the initial bifrost_params unadjusted. For the density, we will include plots in the xy-plane, xz-plane and yz-plane. For the remaining quantites, we will plot in the xy-plane only. In each plot, we will include a figure of the initial configuration at t=1ms and at t=21ms.
 
 Densities
 **********
@@ -101,6 +101,16 @@ For the **xy-plane** we have
     :width: 48 %
 .. image:: img_bifrost_blast/densities/density_blast_bifrost_xy_21.png
     :width: 48 %
+
+For the **xz-plane** we get 
+
+.. image:: img_bifrost_blast/densities/density_blast_bifrost_xz_1.png
+   :width: 48 % 
+.. image:: img_bifrost_blast/densities/density_blast_bifrost_xz_21.png                                                   :width: 48 %
+
+Finally, for the **yz-plane** we get 
+.. image:: img_bifrost_blast/densities/density_blast_bifrost_yz_1.png                                                   :width: 48 %
+.. image:: img_bifrost_blast/densities/density_blast_bifrost_yz_21.png                                                   :width: 48 %
 
 
 
