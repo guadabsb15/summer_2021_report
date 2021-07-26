@@ -34,53 +34,21 @@
             
   <div class="section" id="mhd-blast-experiment">
 <h1>MHD Blast experiment<a class="headerlink" href="#mhd-blast-experiment" title="Permalink to this headline">¶</a></h1>
-<p>Here we will report the results of the 2D magnetohydrodynamics experiment blast. The experiment were run on the develop branch with the hash 5e8f853.</p>
-<p>cartesian_params</p>
-<table class="docutils align-default">
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 22%" />
-<col style="width: 22%" />
-<col style="width: 22%" />
-</colgroup>
-<thead>
-<tr class="row-odd"><th class="head"><p>Variable</p></th>
-<th class="head"><p>x</p></th>
-<th class="head"><p>y</p></th>
-<th class="head"><p>z</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>size</p></td>
-<td><p>1</p></td>
-<td><p>1</p></td>
-<td><p>0.004</p></td>
-</tr>
-<tr class="row-odd"><td><p>dims</p></td>
-<td><p>8</p></td>
-<td><p>8</p></td>
-<td><p>1</p></td>
-</tr>
-<tr class="row-even"><td><p>mpi_dims</p></td>
-<td><p>2</p></td>
-<td><p>2</p></td>
-<td><p>1</p></td>
-</tr>
-<tr class="row-odd"><td><p>origin</p></td>
-<td><p>-0.5</p></td>
-<td><p>-0.5</p></td>
-<td><p>0</p></td>
-</tr>
-<tr class="row-even"><td><p>periodic</p></td>
-<td><p>t</p></td>
-<td><p>t</p></td>
-<td><p>t</p></td>
-</tr>
-</tbody>
-</table>
-<p>patch_params</p>
-<p>n=32,32,1</p>
-<p>experiment_params:</p>
+<dl class="simple">
+<dt>Here we will report the results of the 2D magnetohydrodynamics experiment blast. The simulations were performed with</dt><dd><ul class="simple">
+<li><p>export OMP_NUM_THREADS=4</p></li>
+</ul>
+</dd>
+</dl>
+<div class="section" id="experiment-parameters">
+<h2>Experiment parameters<a class="headerlink" href="#experiment-parameters" title="Permalink to this headline">¶</a></h2>
+<dl class="simple">
+<dt>In this experiment we use a gamma law equation of state with</dt><dd><ul class="simple">
+<li><p>gamma = 5/3</p></li>
+</ul>
+</dd>
+</dl>
+<p>We use the following parameters for the experiment setup, corresponding to the inside and outside of a circle in the computational box, given in the table below</p>
 <table class="docutils align-default">
 <colgroup>
 <col style="width: 42%" />
@@ -88,39 +56,174 @@
 <col style="width: 29%" />
 </colgroup>
 <thead>
-<tr class="row-odd"><th class="head"><p>Quantity</p></th>
+<tr class="row-odd"><th class="head" colspan="3"><p>experiment_params</p></th>
+</tr>
+<tr class="row-even"><th class="head"><p>Quantity</p></th>
 <th class="head"><p>Inside</p></th>
 <th class="head"><p>Outside</p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>d0</p></td>
+<tr class="row-odd"><td><p>d0</p></td>
 <td><p>1</p></td>
 <td><p>1</p></td>
 </tr>
-<tr class="row-odd"><td><p>p0</p></td>
+<tr class="row-even"><td><p>p0</p></td>
 <td><p>100</p></td>
 <td><p>1</p></td>
 </tr>
-<tr class="row-even"><td><p>bx0</p></td>
+<tr class="row-odd"><td><p>bx0</p></td>
 <td><p>7.0711</p></td>
 <td><p>7.0711</p></td>
 </tr>
-<tr class="row-odd"><td><p>by0</p></td>
+<tr class="row-even"><td><p>by0</p></td>
 <td><p>7.0711</p></td>
 <td><p>7.0711</p></td>
 </tr>
-<tr class="row-even"><td><p>bz0</p></td>
+<tr class="row-odd"><td><p>bz0</p></td>
 <td><p>7.0711</p></td>
 <td><p>7.0711</p></td>
 </tr>
 </tbody>
 </table>
-<p>r0 = 0.125
-centre=0,0,0
-case=2</p>
-<p>eos: Gamma law.
-Gamma = 5/3</p>
+<dl class="simple">
+<dt>In addition to these, the experiment_params include the case we’re studying, the radius of the circle and the corrdinate of the circle center, given below. Using case=2 corresponds to the xy-plane, and we use case=3 for the xz-plane and case=4 for the yz-plane.</dt><dd><ul class="simple">
+<li><p>case = 2</p></li>
+<li><p>r0 = 0.125</p></li>
+<li><p>centre=0,0,0</p></li>
+</ul>
+</dd>
+</dl>
+<p>For the output we have</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 30%" />
+<col style="width: 36%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head" colspan="3"><p>out_params</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>end_time</p></td>
+<td><p>out_time</p></td>
+<td><p>print_time</p></td>
+</tr>
+<tr class="row-odd"><td><p>0.022</p></td>
+<td><p>1e-3</p></td>
+<td><p>0</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="xy-plane-case-2">
+<h2>XY-plane - case 2<a class="headerlink" href="#xy-plane-case-2" title="Permalink to this headline">¶</a></h2>
+<p>We will list the cartesian parameters and patch parameters for the simulation in the xy-direction in the two tables below. For the xz-plane, the y and z component of the parameters must be interchanged. Interchaning the x and z values yields the appropriate setup for the yz-plane.</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 14%" />
+<col style="width: 22%" />
+<col style="width: 26%" />
+<col style="width: 18%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head" colspan="5"><p>cartesian_params (xy-case = 2)</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>size</p></td>
+<td><p>dims</p></td>
+<td><p>mpi_dims</p></td>
+<td><p>origin</p></td>
+<td><p>periodic</p></td>
+</tr>
+<tr class="row-odd"><td><p>1,1,0.004</p></td>
+<td><p>8,8,1</p></td>
+<td><p>2,2,1</p></td>
+<td><p>-0.5,-0.5,0</p></td>
+<td><p>t,t,t</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 33%" />
+<col style="width: 17%" />
+<col style="width: 30%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head" colspan="4"><p>patch_params (xy-case = 2)</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>n</p></td>
+<td><p>do_check_nan</p></td>
+<td><p>grace</p></td>
+<td><p>no_mans_land</p></td>
+</tr>
+<tr class="row-odd"><td><p>32,32,1</p></td>
+<td><p>t</p></td>
+<td><p>0.1</p></td>
+<td><p>t</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="bifrost-solver">
+<h2>Bifrost solver<a class="headerlink" href="#bifrost-solver" title="Permalink to this headline">¶</a></h2>
+<p>We begin by running the experiment with the Bifrost solver.
+The tests were performed on</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>branch: develop</p></li>
+<li><p>hash: 5e8f853</p></li>
+</ul>
+</div></blockquote>
+<p>The initial bifrost parameters that were used are listed in the table below. These parameters are the ones we will adjust later for verification tests.</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 19%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head" colspan="6"><p>bifrost_params:</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Ca</p></td>
+<td><p>U</p></td>
+<td><p>Uv</p></td>
+<td><p>d</p></td>
+<td><p>e</p></td>
+<td><p>E</p></td>
+</tr>
+<tr class="row-odd"><td><p>0.03</p></td>
+<td><p>0.3</p></td>
+<td><p>0.1</p></td>
+<td><p>0.05</p></td>
+<td><p>0.05</p></td>
+<td><p>0.9</p></td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="initial-simulations-for-all-three-planes">
+<h3>Initial simulations for all three planes<a class="headerlink" href="#initial-simulations-for-all-three-planes" title="Permalink to this headline">¶</a></h3>
+<p>We will now plot the density, energy, velocity magnitude and magnetic pressure for the xy-plane, xz-plane and yz-plane. In each plot, we will include a figure of the initial configuration at t=1ms and at t=21ms.</p>
+<div class="section" id="densities">
+<h4>Densities<a class="headerlink" href="#densities" title="Permalink to this headline">¶</a></h4>
+<p>For the <strong>xy-plane</strong> we have</p>
+<a class="reference internal image-reference" href="_images/density_blast_bifrost_xy_1.png"><img alt="_images/density_blast_bifrost_xy_1.png" src="_images/density_blast_bifrost_xy_1.png" style="width: 48%;" /></a>
+<a class="reference internal image-reference" href="_images/density_blast_bifrost_xy_21.png"><img alt="_images/density_blast_bifrost_xy_21.png" src="_images/density_blast_bifrost_xy_21.png" style="width: 48%;" /></a>
+</div>
+</div>
+</div>
 </div>
 
 
@@ -144,7 +247,12 @@ Gamma = 5/3</p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="briowu.html">Brio&amp; Wu experimemts</a></li>
 <li class="toctree-l1"><a class="reference internal" href="sod.html">Sod experimemts</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">MHD Blast experiment</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">MHD Blast experiment</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#experiment-parameters">Experiment parameters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#xy-plane-case-2">XY-plane - case 2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#bifrost-solver">Bifrost solver</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="sedov.html">Sedov-Taylor experiment</a></li>
 <li class="toctree-l1"><a class="reference internal" href="practiceV.html">Site for Vetle to do practice excercise</a></li>
 <li class="toctree-l1"><a class="reference internal" href="practiceI.html">Site for Isak to do practice excercise</a></li>
