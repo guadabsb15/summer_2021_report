@@ -117,6 +117,36 @@ Finally, for the **yz-plane** we get
     :width: 48 %
 
 
+Energy
+******
+
+The energy in the **xy-plane** looks like this 
+
+.. image:: img_bifrost_blast/ee/ee_blast_bifrost_xy_1.png
+    :width: 48 %
+.. image:: img_bifrost_blast/ee/ee_blast_bifrost_xy_21.png
+    :width: 48 %
+
+Velocity mangnitude
+*******************
+
+The velocity magntiude in the **xy-plane** becomes 
+
+.. image:: img_bifrost_blast/velocity_magnitude/velocity_magnitude_blast_bifrost_xy_1.png
+    :width: 48 % 
+.. image:: img_bifrost_blast/velocity_magnitude/velocity_magnitude_blast_bifrost_xy_21.png
+    :width: 48 %
+
+Magnetic pressure
+*****************
+
+Finally, the magnetic pressure in the **xy-plane** is shown below.  
+
+.. image:: img_bifrost_blast/magnetic_pressure/magnetic_pressure_blast_bifrost_xy_1.png
+    :width: 48 %
+.. image:: img_bifrost_blast/magnetic_pressure/magnetic_pressure_bifrost_xy_21.png
+    :width: 48 %
+
 
 
 
