@@ -106,13 +106,15 @@ For the **xz-plane** we get
 
 .. image:: img_bifrost_blast/densities/density_blast_bifrost_xz_1.png
     :width: 48 % 
-.. image:: img_bifrost_blast/densities/density_blast_bifrost_xz_21.png                                                   :width: 48 %
+.. image:: img_bifrost_blast/densities/density_blast_bifrost_xz_21.png
+    :width: 48 %
 
 Finally, for the **yz-plane** we get 
 
 .. image:: img_bifrost_blast/densities/density_blast_bifrost_yz_1.png
     :width: 48 %
-.. image:: img_bifrost_blast/densities/density_blast_bifrost_yz_21.png                                                   :width: 48 %
+.. image:: img_bifrost_blast/densities/density_blast_bifrost_yz_21.png
+    :width: 48 %
 
 
 
