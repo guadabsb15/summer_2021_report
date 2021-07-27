@@ -47,7 +47,7 @@ For the output we have
 
 XY-plane - case 2
 -----------------
-We will list the cartesian parameters and patch parameters for the simulation in the xy-direction in the two tables below. For the xz-plane, the y and z component of the parameters must be interchanged. Interchaning the x and z values yields the appropriate setup for the yz-plane. 
+We will list the cartesian parameters and patch parameters for the simulation in the xy-plane in the two tables below. For the xz-plane, the y and z component of the parameters must be interchanged. Interchaning the x and z values yields the appropriate setup for the yz-plane. 
 
 +------------------------------------------------------+
 | cartesian_params (xy-case = 2)                       |
@@ -210,4 +210,320 @@ Increasing bifrost_params
 -------------------------
 
 Now, we will subsequently increase each bifrost_param while keeping all other parameters fixed. All parameters are increased be a factor 10, except from E=0.9, which was increased by a factor 5, since E=9 caused the simulation to crash towards the end. We start by plotting the density when each parameter has been changed. 
+
+
+Densities
+**********
+
+.. image:: img_bifrost_blast/densities/increase/density_blast_bifrost_xy_mod_increase1_1.png
+   :width: 48 %
+.. image:: img_bifrost_blast/densities/increase/density_blast_bifrost_xy_mod_increase1_21.png
+   :width: 48 % 
+
+
+.. image:: img_bifrost_blast/densities/increase/density_blast_bifrost_xy_mod_increase2_1.png
+   :width: 48 %
+.. image:: img_bifrost_blast/densities/increase/density_blast_bifrost_xy_mod_increase2_21.png
+   :width: 48 % 
+
+
+.. image:: img_bifrost_blast/densities/increase/density_blast_bifrost_xy_mod_increase3_1.png
+   :width: 48 %
+.. image:: img_bifrost_blast/densities/increase/density_blast_bifrost_xy_mod_increase3_21.png
+   :width: 48 % 
+
+.. image:: img_bifrost_blast/densities/increase/density_blast_bifrost_xy_mod_increase4_1.png
+   :width: 48 %
+.. image:: img_bifrost_blast/densities/increase/density_blast_bifrost_xy_mod_increase4_21.png
+   :width: 48 % 
+
+.. image:: img_bifrost_blast/densities/increase/density_blast_bifrost_xy_mod_increase5_1.png
+   :width: 48 %
+.. image:: img_bifrost_blast/densities/increase/density_blast_bifrost_xy_mod_increase5_21.png
+   :width: 48 % 
+
+.. image:: img_bifrost_blast/densities/increase/density_blast_bifrost_xy_mod_increase6_1.png
+   :width: 48 %
+.. image:: img_bifrost_blast/densities/increase/density_blast_bifrost_xy_mod_increase6_10.png
+   :width: 48 % 
+.. image:: img_bifrost_blast/densities/increase/density_blast_bifrost_xy_mod_increase6_21.png
+
+
+Energy (Ee)
+***********
+
+.. image:: img_bifrost_blast/ee/increase/ee_blast_bifrost_xy_mod_increase1_1.png
+   :width: 48 % 
+.. image:: img_bifrost_blast/ee/increase/ee_blast_bifrost_xy_mod_increase1_21.png
+   :width: 48 %
+
+
+.. image:: img_bifrost_blast/ee/increase/ee_blast_bifrost_xy_mod_increase2_1.png
+   :width: 48 % 
+.. image:: img_bifrost_blast/ee/increase/ee_blast_bifrost_xy_mod_increase2_21.png
+   :width: 48 %
+
+
+.. image:: img_bifrost_blast/ee/increase/ee_blast_bifrost_xy_mod_increase3_1.png
+   :width: 48 % 
+.. image:: img_bifrost_blast/ee/increase/ee_blast_bifrost_xy_mod_increase3_21.png
+   :width: 48 %
+
+
+.. image:: img_bifrost_blast/ee/increase/ee_blast_bifrost_xy_mod_increase4_1.png
+   :width: 48 % 
+.. image:: img_bifrost_blast/ee/increase/ee_blast_bifrost_xy_mod_increase4_21.png
+   :width: 48 %
+
+
+.. image:: img_bifrost_blast/ee/increase/ee_blast_bifrost_xy_mod_increase5_1.png
+   :width: 48 % 
+.. image:: img_bifrost_blast/ee/increase/ee_blast_bifrost_xy_mod_increase5_21.png
+   :width: 48 %
+
+
+.. image:: img_bifrost_blast/ee/increase/ee_blast_bifrost_xy_mod_increase6_1.png
+   :width: 48 % 
+.. image:: img_bifrost_blast/ee/increase/ee_blast_bifrost_xy_mod_increase6_21.png
+   :width: 48 %
+
+
+
+Velocity magnitude
+*******************
+
+.. image:: img_bifrost_blast/velocity_magnitude/increase/velocity_magnitude_blast_bifrost_xy_mod_increase1_1.png
+   :width: 48 %
+.. image:: img_bifrost_blast/velocity_magnitude/increase/velocity_magnitude_blast_bifrost_xy_mod_increase1_21.png
+   :width: 48 %
+
+
+.. image:: img_bifrost_blast/velocity_magnitude/increase/velocity_magnitude_blast_bifrost_xy_mod_increase2_1.png
+   :width: 48 %
+.. image:: img_bifrost_blast/velocity_magnitude/increase/velocity_magnitude_blast_bifrost_xy_mod_increase2_21.png
+   :width: 48 %
+
+
+.. image:: img_bifrost_blast/velocity_magnitude/increase/velocity_magnitude_blast_bifrost_xy_mod_increase3_1.png
+   :width: 48 %
+.. image:: img_bifrost_blast/velocity_magnitude/increase/velocity_magnitude_blast_bifrost_xy_mod_increase3_21.png
+   :width: 48 %
+
+
+.. image:: img_bifrost_blast/velocity_magnitude/increase/velocity_magnitude_blast_bifrost_xy_mod_increase4_1.png
+   :width: 48 %
+.. image:: img_bifrost_blast/velocity_magnitude/increase/velocity_magnitude_blast_bifrost_xy_mod_increase4_21.png
+   :width: 48 %
+
+
+.. image:: img_bifrost_blast/velocity_magnitude/increase/velocity_magnitude_blast_bifrost_xy_mod_increase5_1.png
+   :width: 48 %
+.. image:: img_bifrost_blast/velocity_magnitude/increase/velocity_magnitude_blast_bifrost_xy_mod_increase5_21.png
+   :width: 48 %
+
+
+.. image:: img_bifrost_blast/velocity_magnitude/increase/velocity_magnitude_blast_bifrost_xy_mod_increase6_1.png
+   :width: 48 %
+.. image:: img_bifrost_blast/velocity_magnitude/increase/velocity_magnitude_blast_bifrost_xy_mod_increase6_21.png
+   :width: 48 %
+
+
+Magnetic pressure
+******************
+
+.. image:: img_bifrost_blast/magnetic_pressure/increase/magnetic_pressure_blast_bifrost_xy_mod_increase1_1.png
+   :width: 48 %
+.. image:: img_bifrost_blast/magnetic_pressure/increase/magnetic_pressure_blast_bifrost_xy_mod_increase1_21.png
+   :width: 48 %
+
+
+.. image:: img_bifrost_blast/magnetic_pressure/increase/magnetic_pressure_blast_bifrost_xy_mod_increase2_1.png
+   :width: 48 %
+.. image:: img_bifrost_blast/magnetic_pressure/increase/magnetic_pressure_blast_bifrost_xy_mod_increase2_21.png
+   :width: 48 %
+
+
+.. image:: img_bifrost_blast/magnetic_pressure/increase/magnetic_pressure_blast_bifrost_xy_mod_increase3_1.png
+   :width: 48 %
+.. image:: img_bifrost_blast/magnetic_pressure/increase/magnetic_pressure_blast_bifrost_xy_mod_increase3_21.png
+   :width: 48 %
+
+
+.. image:: img_bifrost_blast/magnetic_pressure/increase/magnetic_pressure_blast_bifrost_xy_mod_increase4_1.png
+   :width: 48 %
+.. image:: img_bifrost_blast/magnetic_pressure/increase/magnetic_pressure_blast_bifrost_xy_mod_increase4_21.png
+   :width: 48 %
+
+
+.. image:: img_bifrost_blast/magnetic_pressure/increase/magnetic_pressure_blast_bifrost_xy_mod_increase5_1.png
+   :width: 48 %
+.. image:: img_bifrost_blast/magnetic_pressure/increase/magnetic_pressure_blast_bifrost_xy_mod_increase5_21.png
+   :width: 48 %
+
+
+.. image:: img_bifrost_blast/magnetic_pressure/increase/magnetic_pressure_blast_bifrost_xy_mod_increase6_1.png
+   :width: 48 %
+.. image:: img_bifrost_blast/magnetic_pressure/increase/magnetic_pressure_blast_bifrost_xy_mod_increase6_21.png
+   :width: 48 %
+
+
+Decreasing bifrost parameters
+--------------------------------
+
+Densities
+*********
+
+.. image:: img_bifrost_blast/densities/decrease/density_blast_bifrost_xy_mod_decrease1_1.png
+   :width: 48 %
+.. image:: img_bifrost_blast/densities/decrease/density_blast_bifrost_xy_mod_decrease1_21.png
+   :width: 48 % 
+
+
+.. image:: img_bifrost_blast/densities/decrease/density_blast_bifrost_xy_mod_decrease2_1.png
+   :width: 48 %
+.. image:: img_bifrost_blast/densities/decrease/density_blast_bifrost_xy_mod_decrease2_21.png
+   :width: 48 % 
+
+
+.. image:: img_bifrost_blast/densities/decrease/density_blast_bifrost_xy_mod_decrease3_1.png
+   :width: 48 %
+.. image:: img_bifrost_blast/densities/decrease/density_blast_bifrost_xy_mod_decrease3_21.png
+   :width: 48 % 
+
+.. image:: img_bifrost_blast/densities/decrease/density_blast_bifrost_xy_mod_decrease4_1.png
+   :width: 48 %
+.. image:: img_bifrost_blast/densities/decrease/density_blast_bifrost_xy_mod_decrease4_21.png
+   :width: 48 % 
+
+.. image:: img_bifrost_blast/densities/decrease/density_blast_bifrost_xy_mod_decrease5_1.png
+   :width: 48 %
+.. image:: img_bifrost_blast/densities/decrease/density_blast_bifrost_xy_mod_decrease5_21.png
+   :width: 48 % 
+
+.. image:: img_bifrost_blast/densities/decrease/density_blast_bifrost_xy_mod_decrease6_1.png
+   :width: 48 %
+.. image:: img_bifrost_blast/densities/decrease/density_blast_bifrost_xy_mod_decrease6_10.png
+   :width: 48 % 
+.. image:: img_bifrost_blast/densities/decrease/density_blast_bifrost_xy_mod_decrease6_21.png
+
+
+
+Energy (Ee)
+************
+
+.. image:: img_bifrost_blast/ee/decrease/ee_blast_bifrost_xy_mod_decrease1_1.png
+   :width: 48 % 
+.. image:: img_bifrost_blast/ee/decrease/ee_blast_bifrost_xy_mod_decrease1_21.png
+   :width: 48 %
+
+
+.. image:: img_bifrost_blast/ee/decrease/ee_blast_bifrost_xy_mod_decrease2_1.png
+   :width: 48 % 
+.. image:: img_bifrost_blast/ee/decrease/ee_blast_bifrost_xy_mod_decrease2_21.png
+   :width: 48 %
+
+
+.. image:: img_bifrost_blast/ee/decrease/ee_blast_bifrost_xy_mod_decrease3_1.png
+   :width: 48 % 
+.. image:: img_bifrost_blast/ee/decrease/ee_blast_bifrost_xy_mod_decrease3_21.png
+   :width: 48 %
+
+
+.. image:: img_bifrost_blast/ee/decrease/ee_blast_bifrost_xy_mod_decrease4_1.png
+   :width: 48 % 
+.. image:: img_bifrost_blast/ee/decrease/ee_blast_bifrost_xy_mod_decrease4_21.png
+   :width: 48 %
+
+
+.. image:: img_bifrost_blast/ee/decrease/ee_blast_bifrost_xy_mod_decrease5_1.png
+   :width: 48 % 
+.. image:: img_bifrost_blast/ee/decrease/ee_blast_bifrost_xy_mod_decrease5_21.png
+   :width: 48 %
+
+
+.. image:: img_bifrost_blast/ee/decrease/ee_blast_bifrost_xy_mod_decrease6_1.png
+   :width: 48 % 
+.. image:: img_bifrost_blast/ee/decrease/ee_blast_bifrost_xy_mod_decrease6_21.png
+   :width: 48 %
+
+
+Velocity magnitude
+*******************
+
+
+.. image:: img_bifrost_blast/velocity_magnitude/decrease/velocity_magnitude_blast_bifrost_xy_mod_decrease1_1.png
+   :width: 48 %
+.. image:: img_bifrost_blast/velocity_magnitude/decrease/velocity_magnitude_blast_bifrost_xy_mod_decrease1_21.png
+   :width: 48 %
+
+
+.. image:: img_bifrost_blast/velocity_magnitude/decrease/velocity_magnitude_blast_bifrost_xy_mod_decrease2_1.png
+   :width: 48 %
+.. image:: img_bifrost_blast/velocity_magnitude/decrease/velocity_magnitude_blast_bifrost_xy_mod_decrease2_21.png
+   :width: 48 %
+
+
+.. image:: img_bifrost_blast/velocity_magnitude/decrease/velocity_magnitude_blast_bifrost_xy_mod_decrease3_1.png
+   :width: 48 %
+.. image:: img_bifrost_blast/velocity_magnitude/decrease/velocity_magnitude_blast_bifrost_xy_mod_decrease3_21.png
+   :width: 48 %
+
+
+.. image:: img_bifrost_blast/velocity_magnitude/decrease/velocity_magnitude_blast_bifrost_xy_mod_decrease4_1.png
+   :width: 48 %
+.. image:: img_bifrost_blast/velocity_magnitude/decrease/velocity_magnitude_blast_bifrost_xy_mod_decrease4_21.png
+   :width: 48 %
+
+
+.. image:: img_bifrost_blast/velocity_magnitude/decrease/velocity_magnitude_blast_bifrost_xy_mod_decrease5_1.png
+   :width: 48 %
+.. image:: img_bifrost_blast/velocity_magnitude/decrease/velocity_magnitude_blast_bifrost_xy_mod_decrease5_21.png
+   :width: 48 %
+
+
+.. image:: img_bifrost_blast/velocity_magnitude/decrease/velocity_magnitude_blast_bifrost_xy_mod_decrease6_1.png
+   :width: 48 %
+.. image:: img_bifrost_blast/velocity_magnitude/decrease/velocity_magnitude_blast_bifrost_xy_mod_decrease6_21.png
+   :width: 48 %
+
+
+Magnetic pressure
+******************
+
+
+.. image:: img_bifrost_blast/magnetic_pressure/decrease/magnetic_pressure_blast_bifrost_xy_mod_decrease1_1.png
+   :width: 48 %
+.. image:: img_bifrost_blast/magnetic_pressure/decrease/magnetic_pressure_blast_bifrost_xy_mod_decrease1_21.png
+   :width: 48 %
+
+
+.. image:: img_bifrost_blast/magnetic_pressure/decrease/magnetic_pressure_blast_bifrost_xy_mod_decrease2_1.png
+   :width: 48 %
+.. image:: img_bifrost_blast/magnetic_pressure/decrease/magnetic_pressure_blast_bifrost_xy_mod_decrease2_21.png
+   :width: 48 %
+
+
+.. image:: img_bifrost_blast/magnetic_pressure/decrease/magnetic_pressure_blast_bifrost_xy_mod_decrease3_1.png
+   :width: 48 %
+.. image:: img_bifrost_blast/magnetic_pressure/decrease/magnetic_pressure_blast_bifrost_xy_mod_decrease3_21.png
+   :width: 48 %
+
+
+.. image:: img_bifrost_blast/magnetic_pressure/decrease/magnetic_pressure_blast_bifrost_xy_mod_decrease4_1.png
+   :width: 48 %
+.. image:: img_bifrost_blast/magnetic_pressure/decrease/magnetic_pressure_blast_bifrost_xy_mod_decrease4_21.png
+   :width: 48 %
+
+
+.. image:: img_bifrost_blast/magnetic_pressure/decrease/magnetic_pressure_blast_bifrost_xy_mod_decrease5_1.png
+   :width: 48 %
+.. image:: img_bifrost_blast/magnetic_pressure/decrease/magnetic_pressure_blast_bifrost_xy_mod_decrease5_21.png
+   :width: 48 %
+
+
+.. image:: img_bifrost_blast/magnetic_pressure/decrease/magnetic_pressure_blast_bifrost_xy_mod_decrease6_1.png
+   :width: 48 %
+.. image:: img_bifrost_blast/magnetic_pressure/decrease/magnetic_pressure_blast_bifrost_xy_mod_decrease6_21.png
+   :width: 48 %
+
 
