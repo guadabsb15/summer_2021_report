@@ -155,6 +155,8 @@ Finally, the magnetic pressure in the **xy-plane** is shown below.
     :width: 48 %
 
 
+Increasing bifrost_params
+-------------------------
 
-
+Now, we will subsequently increase each bifrost_param while keeping all other parameters fixed. All parameters are increased be a factor 10, except from E=0.9, which was increased by a factor 5, since E=9 caused the simulation to crash towards the end. We start by plotting the density when each parameter has been changed. 
 
