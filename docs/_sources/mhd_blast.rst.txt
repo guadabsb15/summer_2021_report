@@ -215,6 +215,8 @@ Now, we will subsequently increase each bifrost_param while keeping all other pa
 Densities
 **********
 
+We start by looking at the resulting densities
+
 .. image:: img_bifrost_blast/densities/increase/density_blast_bifrost_xy_mod_increase1_1.png
    :width: 48 %
 .. image:: img_bifrost_blast/densities/increase/density_blast_bifrost_xy_mod_increase1_21.png
@@ -249,8 +251,12 @@ Densities
 .. image:: img_bifrost_blast/densities/increase/density_blast_bifrost_xy_mod_increase6_21.png
 
 
+
+
 Energy (Ee)
 ***********
+
+Now, we plot the energy 
 
 .. image:: img_bifrost_blast/ee/increase/ee_blast_bifrost_xy_mod_increase1_1.png
    :width: 48 % 
@@ -292,6 +298,9 @@ Energy (Ee)
 Velocity magnitude
 *******************
 
+Now, we plot the velocity magnitude
+
+
 .. image:: img_bifrost_blast/velocity_magnitude/increase/velocity_magnitude_blast_bifrost_xy_mod_increase1_1.png
    :width: 48 %
 .. image:: img_bifrost_blast/velocity_magnitude/increase/velocity_magnitude_blast_bifrost_xy_mod_increase1_21.png
@@ -330,6 +339,8 @@ Velocity magnitude
 
 Magnetic pressure
 ******************
+
+Now, we plot the magnetic pressure
 
 .. image:: img_bifrost_blast/magnetic_pressure/increase/magnetic_pressure_blast_bifrost_xy_mod_increase1_1.png
    :width: 48 %
@@ -370,8 +381,13 @@ Magnetic pressure
 Decreasing bifrost parameters
 --------------------------------
 
+Now, we will plot the result from subsequently decreasing the initial bifrost_params by a factor 10 
+
 Densities
 *********
+
+We start with the resulting densities once again 
+
 
 .. image:: img_bifrost_blast/densities/decrease/density_blast_bifrost_xy_mod_decrease1_1.png
    :width: 48 %
@@ -410,6 +426,8 @@ Densities
 
 Energy (Ee)
 ************
+
+Now, we plot the energy
 
 .. image:: img_bifrost_blast/ee/decrease/ee_blast_bifrost_xy_mod_decrease1_1.png
    :width: 48 % 
@@ -450,6 +468,7 @@ Energy (Ee)
 Velocity magnitude
 *******************
 
+Now, we plot the velocity magnitude
 
 .. image:: img_bifrost_blast/velocity_magnitude/decrease/velocity_magnitude_blast_bifrost_xy_mod_decrease1_1.png
    :width: 48 %
@@ -489,6 +508,8 @@ Velocity magnitude
 
 Magnetic pressure
 ******************
+
+Finally, we plot the magnetic pressure
 
 
 .. image:: img_bifrost_blast/magnetic_pressure/decrease/magnetic_pressure_blast_bifrost_xy_mod_decrease1_1.png
