@@ -450,4 +450,104 @@ Magnetic Pressure
    :width: 48 % 
 
 
+Slope types
+-----------
+
+Now, we will adjust the slopes to see the resulting behaviour.
+
+Density
+*******
+
+.. image:: img_ramses_blast/slopes/density_blast_ramses_xy_slope-1_1.png
+   :width: 48 %
+.. image:: img_ramses_blast/slopes/density_blast_ramses_xy_slope-1_21.png
+   :width: 48 % 
+
+.. image:: img_ramses_blast/slopes/density_blast_ramses_xy_slope1_1.png
+   :width: 48 %
+.. image:: img_ramses_blast/slopes/density_blast_ramses_xy_slope1_21.png
+   :width: 48 % 
+
+.. image:: img_ramses_blast/slopes/density_blast_ramses_xy_slope2_1.png
+   :width: 48 %
+.. image:: img_ramses_blast/slopes/density_blast_ramses_xy_slope2_21.png
+   :width: 48 % 
+
+.. image:: img_ramses_blast/slopes/density_blast_ramses_xy_slope3_1.png
+   :width: 48 %
+.. image:: img_ramses_blast/slopes/density_blast_ramses_xy_slope3_21.png
+   :width: 48 % 
+
+
+Energy
+******
+
+.. image:: img_ramses_blast/slopes/ee_blast_ramses_xy_slope-1_1.png
+   :width: 48 %
+.. image:: img_ramses_blast/slopes/ee_blast_ramses_xy_slope-1_21.png
+   :width: 48 % 
+
+.. image:: img_ramses_blast/slopes/ee_blast_ramses_xy_slope1_1.png
+   :width: 48 %
+.. image:: img_ramses_blast/slopes/ee_blast_ramses_xy_slope1_21.png
+   :width: 48 % 
+
+.. image:: img_ramses_blast/slopes/ee_blast_ramses_xy_slope2_1.png
+   :width: 48 %
+.. image:: img_ramses_blast/slopes/ee_blast_ramses_xy_slope2_21.png
+   :width: 48 % 
+
+.. image:: img_ramses_blast/slopes/ee_blast_ramses_xy_slope3_1.png
+   :width: 48 %
+.. image:: img_ramses_blast/slopes/ee_blast_ramses_xy_slope3_21.png
+   :width: 48 % 
+
+
+Velocity magnitude
+******************
+
+.. image:: img_ramses_blast/slopes/velocity_magnitude_blast_ramses_xy_slope-1_1.png
+   :width: 48 %
+.. image:: img_ramses_blast/slopes/velocity_magnitude_blast_ramses_xy_slope-1_21.png
+   :width: 48 % 
+
+.. image:: img_ramses_blast/slopes/velocity_magnitude_blast_ramses_xy_slope1_1.png
+   :width: 48 %
+.. image:: img_ramses_blast/slopes/velocity_magnitude_blast_ramses_xy_slope1_21.png
+   :width: 48 % 
+
+.. image:: img_ramses_blast/slopes/velocity_magnitude_blast_ramses_xy_slope2_1.png
+   :width: 48 %
+.. image:: img_ramses_blast/slopes/velocity_magnitude_blast_ramses_xy_slope2_21.png
+   :width: 48 % 
+
+.. image:: img_ramses_blast/slopes/velocity_magnitude_blast_ramses_xy_slope3_1.png
+   :width: 48 %
+.. image:: img_ramses_blast/slopes/velocity_magnitude_blast_ramses_xy_slope3_21.png
+   :width: 48 % 
+
+
+Magnetic pressure
+*****************
+
+.. image:: img_ramses_blast/slopes/magnetic_pressure_blast_ramses_xy_slope-1_1.png
+   :width: 48 %
+.. image:: img_ramses_blast/slopes/magnetic_pressure_blast_ramses_xy_slope-1_21.png
+   :width: 48 % 
+
+.. image:: img_ramses_blast/slopes/magnetic_pressure_blast_ramses_xy_slope1_1.png
+   :width: 48 %
+.. image:: img_ramses_blast/slopes/magnetic_pressure_blast_ramses_xy_slope1_21.png
+   :width: 48 % 
+
+.. image:: img_ramses_blast/slopes/magnetic_pressure_blast_ramses_xy_slope2_1.png
+   :width: 48 %
+.. image:: img_ramses_blast/slopes/magnetic_pressure_blast_ramses_xy_slope2_21.png
+   :width: 48 % 
+
+.. image:: img_ramses_blast/slopes/magnetic_pressure_blast_ramses_xy_slope3_1.png
+   :width: 48 %
+.. image:: img_ramses_blast/slopes/magnetic_pressure_blast_ramses_xy_slope3_21.png
+   :width: 48 % 
+
 
