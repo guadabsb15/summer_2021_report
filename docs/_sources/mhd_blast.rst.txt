@@ -360,3 +360,94 @@ With E=4.5, we see a reduced maximum value of magnetic pressure after t=1ms. Aft
 
 
 
+Ramses/mhd_eos
+---------------
+
+Now we run the experiment with the solver ramses/mhd_eos. The initial simulations were run with the same configurations as we used for the bifrost solver, and we use the ramses_params
+ * slope_type=3.5 
+
+
+Initial results
+***************
+
+We will now plot the resulting density, energy, velocity magnitude and magnetic pressure in the xy-plane, xz-plane and yz-plane for the ramses solver. We plot the initial result at t=1ms, and at the final time of t=21ms.  
+
+
+Densities
+*********
+
+Below, we plot the initial and final densities
+
+.. image:: img_ramses_blast/compare_direction/density_blast_ramses_xy_1.png
+   :width: 48 % 
+.. image:: img_ramses_blast/compare_direction/density_blast_ramses_xy_21.png
+   :width: 48 % 
+
+.. image:: img_ramses_blast/compare_direction/density_blast_ramses_xz_1.png
+   :width: 48 % 
+.. image:: img_ramses_blast/compare_direction/density_blast_ramses_xz_21.png
+   :width: 48 % 
+
+.. image:: img_ramses_blast/compare_direction/density_blast_ramses_yz_1.png
+   :width: 48 % 
+.. image:: img_ramses_blast/compare_direction/density_blast_ramses_yz_21.png
+   :width: 48 % 
+
+Energy
+******
+
+.. image:: img_ramses_blast/compare_direction/ee_blast_ramses_xy_1.png
+   :width: 48 % 
+.. image:: img_ramses_blast/compare_direction/ee_blast_ramses_xy_21.png
+   :width: 48 % 
+
+.. image:: img_ramses_blast/compare_direction/ee_blast_ramses_xz_1.png
+   :width: 48 % 
+.. image:: img_ramses_blast/compare_direction/ee_blast_ramses_xz_21.png
+   :width: 48 % 
+
+
+.. image:: img_ramses_blast/compare_direction/ee_blast_ramses_yz_1.png
+   :width: 48 % 
+.. image:: img_ramses_blast/compare_direction/ee_blast_ramses_yz_21.png
+   :width: 48 % 
+
+Velocity magnitude
+******************
+
+.. image:: img_ramses_blast/compare_direction/velocity_magnitude_blast_ramses_xy_1.png
+   :width: 48 % 
+.. image:: img_ramses_blast/compare_direction/velocity_magnitude_blast_ramses_xy_21.png
+   :width: 48 % 
+
+.. image:: img_ramses_blast/compare_direction/velocity_magnitude_blast_ramses_xz_1.png
+   :width: 48 % 
+.. image:: img_ramses_blast/compare_direction/velocity_magnitude_blast_ramses_xz_21.png
+   :width: 48 % 
+
+.. image:: img_ramses_blast/compare_direction/velocity_magnitude_blast_ramses_yz_1.png
+   :width: 48 % 
+.. image:: img_ramses_blast/compare_direction/velocity_magnitude_blast_ramses_yz_21.png
+   :width: 48 % 
+
+
+Magnetic Pressure
+*****************
+
+.. image:: img_ramses_blast/compare_direction/magnetic_pressure_blast_ramses_xy_1.png
+   :width: 48 % 
+.. image:: img_ramses_blast/compare_direction/magnetic_pressure_blast_ramses_xy_21.png
+   :width: 48 % 
+
+.. image:: img_ramses_blast/compare_direction/magnetic_pressure_blast_ramses_xz_1.png
+   :width: 48 % 
+.. image:: img_ramses_blast/compare_direction/magnetic_pressure_blast_ramses_xz_21.png
+   :width: 48 % 
+
+.. image:: img_ramses_blast/compare_direction/magnetic_pressure_blast_ramses_yz_1.png
+   :width: 48 % 
+.. image:: img_ramses_blast/compare_direction/magnetic_pressure_blast_ramses_yz_21.png
+   :width: 48 % 
+
+
+

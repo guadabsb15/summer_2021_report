@@ -325,6 +325,41 @@ The tests were performed on</p>
 <a class="reference internal image-reference" href="_images/magnetic_pressure_blast_bifrost_xy_mod_increase6_21.png"><img alt="_images/magnetic_pressure_blast_bifrost_xy_mod_increase6_21.png" src="_images/magnetic_pressure_blast_bifrost_xy_mod_increase6_21.png" style="width: 48%;" /></a>
 <p>With E=4.5, we see a reduced maximum value of magnetic pressure after t=1ms. After t=21ms, there is a lot of noise once again for this parameter. It seems to be very dim, but the maximum value at the colorbar is above 9 (compared to ~5.5 iriginally), which is caused by small dots around the plot with apparently large values. These dots seem to be aligned on an 8x8 grid in the plot, which coincides with the size of the computational box, which is (x,y,z)=(8,8,1) for this simulation.</p>
 </div>
+<div class="section" id="ramses-mhd-eos">
+<h2>Ramses/mhd_eos<a class="headerlink" href="#ramses-mhd-eos" title="Permalink to this headline">¶</a></h2>
+<dl class="simple">
+<dt>Now we run the experiment with the solver ramses/mhd_eos. The initial simulations were run with the same configurations as we used for the bifrost solver, and we use the ramses_params</dt><dd><ul class="simple">
+<li><p>slope_type=3.5</p></li>
+</ul>
+</dd>
+</dl>
+<p>We will now plot the resulting density, energy, velocity magnitude and magnetic pressure in the xy-plane, xz-plane and yz-plane for the ramses solver. We plot the initial result at t=1ms, and at the final time of t=21ms.</p>
+<p>Below, we plot the initial and final densities</p>
+<a class="reference internal image-reference" href="_images/density_blast_ramses_xy_1.png"><img alt="_images/density_blast_ramses_xy_1.png" src="_images/density_blast_ramses_xy_1.png" style="width: 48%;" /></a>
+<a class="reference internal image-reference" href="_images/density_blast_ramses_xy_21.png"><img alt="_images/density_blast_ramses_xy_21.png" src="_images/density_blast_ramses_xy_21.png" style="width: 48%;" /></a>
+<a class="reference internal image-reference" href="_images/density_blast_ramses_xz_1.png"><img alt="_images/density_blast_ramses_xz_1.png" src="_images/density_blast_ramses_xz_1.png" style="width: 48%;" /></a>
+<a class="reference internal image-reference" href="_images/density_blast_ramses_xz_21.png"><img alt="_images/density_blast_ramses_xz_21.png" src="_images/density_blast_ramses_xz_21.png" style="width: 48%;" /></a>
+<a class="reference internal image-reference" href="_images/density_blast_ramses_yz_1.png"><img alt="_images/density_blast_ramses_yz_1.png" src="_images/density_blast_ramses_yz_1.png" style="width: 48%;" /></a>
+<a class="reference internal image-reference" href="_images/density_blast_ramses_yz_21.png"><img alt="_images/density_blast_ramses_yz_21.png" src="_images/density_blast_ramses_yz_21.png" style="width: 48%;" /></a>
+<a class="reference internal image-reference" href="_images/ee_blast_ramses_xy_1.png"><img alt="_images/ee_blast_ramses_xy_1.png" src="_images/ee_blast_ramses_xy_1.png" style="width: 48%;" /></a>
+<a class="reference internal image-reference" href="_images/ee_blast_ramses_xy_21.png"><img alt="_images/ee_blast_ramses_xy_21.png" src="_images/ee_blast_ramses_xy_21.png" style="width: 48%;" /></a>
+<a class="reference internal image-reference" href="_images/ee_blast_ramses_xz_1.png"><img alt="_images/ee_blast_ramses_xz_1.png" src="_images/ee_blast_ramses_xz_1.png" style="width: 48%;" /></a>
+<a class="reference internal image-reference" href="_images/ee_blast_ramses_xz_21.png"><img alt="_images/ee_blast_ramses_xz_21.png" src="_images/ee_blast_ramses_xz_21.png" style="width: 48%;" /></a>
+<a class="reference internal image-reference" href="_images/ee_blast_ramses_yz_1.png"><img alt="_images/ee_blast_ramses_yz_1.png" src="_images/ee_blast_ramses_yz_1.png" style="width: 48%;" /></a>
+<a class="reference internal image-reference" href="_images/ee_blast_ramses_yz_21.png"><img alt="_images/ee_blast_ramses_yz_21.png" src="_images/ee_blast_ramses_yz_21.png" style="width: 48%;" /></a>
+<a class="reference internal image-reference" href="_images/velocity_magnitude_blast_ramses_xy_1.png"><img alt="_images/velocity_magnitude_blast_ramses_xy_1.png" src="_images/velocity_magnitude_blast_ramses_xy_1.png" style="width: 48%;" /></a>
+<a class="reference internal image-reference" href="_images/velocity_magnitude_blast_ramses_xy_21.png"><img alt="_images/velocity_magnitude_blast_ramses_xy_21.png" src="_images/velocity_magnitude_blast_ramses_xy_21.png" style="width: 48%;" /></a>
+<a class="reference internal image-reference" href="_images/velocity_magnitude_blast_ramses_xz_1.png"><img alt="_images/velocity_magnitude_blast_ramses_xz_1.png" src="_images/velocity_magnitude_blast_ramses_xz_1.png" style="width: 48%;" /></a>
+<a class="reference internal image-reference" href="_images/velocity_magnitude_blast_ramses_xz_21.png"><img alt="_images/velocity_magnitude_blast_ramses_xz_21.png" src="_images/velocity_magnitude_blast_ramses_xz_21.png" style="width: 48%;" /></a>
+<a class="reference internal image-reference" href="_images/velocity_magnitude_blast_ramses_yz_1.png"><img alt="_images/velocity_magnitude_blast_ramses_yz_1.png" src="_images/velocity_magnitude_blast_ramses_yz_1.png" style="width: 48%;" /></a>
+<a class="reference internal image-reference" href="_images/velocity_magnitude_blast_ramses_yz_21.png"><img alt="_images/velocity_magnitude_blast_ramses_yz_21.png" src="_images/velocity_magnitude_blast_ramses_yz_21.png" style="width: 48%;" /></a>
+<a class="reference internal image-reference" href="_images/magnetic_pressure_blast_ramses_xy_1.png"><img alt="_images/magnetic_pressure_blast_ramses_xy_1.png" src="_images/magnetic_pressure_blast_ramses_xy_1.png" style="width: 48%;" /></a>
+<a class="reference internal image-reference" href="_images/magnetic_pressure_blast_ramses_xy_21.png"><img alt="_images/magnetic_pressure_blast_ramses_xy_21.png" src="_images/magnetic_pressure_blast_ramses_xy_21.png" style="width: 48%;" /></a>
+<a class="reference internal image-reference" href="_images/magnetic_pressure_blast_ramses_xz_1.png"><img alt="_images/magnetic_pressure_blast_ramses_xz_1.png" src="_images/magnetic_pressure_blast_ramses_xz_1.png" style="width: 48%;" /></a>
+<a class="reference internal image-reference" href="_images/magnetic_pressure_blast_ramses_xz_21.png"><img alt="_images/magnetic_pressure_blast_ramses_xz_21.png" src="_images/magnetic_pressure_blast_ramses_xz_21.png" style="width: 48%;" /></a>
+<a class="reference internal image-reference" href="_images/magnetic_pressure_blast_ramses_yz_1.png"><img alt="_images/magnetic_pressure_blast_ramses_yz_1.png" src="_images/magnetic_pressure_blast_ramses_yz_1.png" style="width: 48%;" /></a>
+<a class="reference internal image-reference" href="_images/magnetic_pressure_blast_ramses_yz_21.png"><img alt="_images/magnetic_pressure_blast_ramses_yz_21.png" src="_images/magnetic_pressure_blast_ramses_yz_21.png" style="width: 48%;" /></a>
+</div>
 </div>
 
 
@@ -353,6 +388,7 @@ The tests were performed on</p>
 <li class="toctree-l2"><a class="reference internal" href="#xy-plane-case-2">XY-plane - case 2</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#bifrost-solver">Bifrost solver</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#increasing-bifrost-params">Increasing bifrost_params</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#ramses-mhd-eos">Ramses/mhd_eos</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="sedov.html">Sedov-Taylor experiment</a></li>
