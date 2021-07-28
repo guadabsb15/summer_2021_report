@@ -222,34 +222,33 @@ We start by looking at the resulting densities
 .. image:: img_bifrost_blast/densities/increase/density_blast_bifrost_xy_mod_increase1_21.png
    :width: 48 % 
 
+The above image with Ca adjusted yields a slightly reduced density magnitude at t=1ms. After 21ms the contours inside the white middle region is very dim, compared to the original plot. 
 
 .. image:: img_bifrost_blast/densities/increase/density_blast_bifrost_xy_mod_increase2_1.png
    :width: 48 %
 .. image:: img_bifrost_blast/densities/increase/density_blast_bifrost_xy_mod_increase2_21.png
    :width: 48 % 
 
+The above image shows a reduced density magnitude after t=1ms with U=3. The reduction is also present after t=21ms, and the contours are dim here as well.
 
-.. image:: img_bifrost_blast/densities/increase/density_blast_bifrost_xy_mod_increase3_1.png
-   :width: 48 %
-.. image:: img_bifrost_blast/densities/increase/density_blast_bifrost_xy_mod_increase3_21.png
-   :width: 48 % 
 
-.. image:: img_bifrost_blast/densities/increase/density_blast_bifrost_xy_mod_increase4_1.png
-   :width: 48 %
+For Uv=1, there was no visible changes to the result. 
+
+
 .. image:: img_bifrost_blast/densities/increase/density_blast_bifrost_xy_mod_increase4_21.png
    :width: 48 % 
-
-.. image:: img_bifrost_blast/densities/increase/density_blast_bifrost_xy_mod_increase5_1.png
-   :width: 48 %
 .. image:: img_bifrost_blast/densities/increase/density_blast_bifrost_xy_mod_increase5_21.png
-   :width: 48 % 
-
-.. image:: img_bifrost_blast/densities/increase/density_blast_bifrost_xy_mod_increase6_1.png
    :width: 48 %
+
+The above panel shows d=0.5 to the left and e=0.5 to the right, both after t=21ms. These parameters seem to affect the result in the same way, where the contours inside the white are barely visible. For d=0.5, there seems to be a slight deviation near the upper right and lower left corner, where there is a small reduction in density in the middle of the strongest region. None of the above parameters caused noticeable changes at t=1ms.  
+
+
 .. image:: img_bifrost_blast/densities/increase/density_blast_bifrost_xy_mod_increase6_10.png
    :width: 48 % 
 .. image:: img_bifrost_blast/densities/increase/density_blast_bifrost_xy_mod_increase6_21.png
+   :width: 48 % 
 
+Finally, for E=4.5, there is no apparent change after t=1ms. After t=10ms, there is noticeable changes outside the blast contour. This is clearly visible after t=21ms.
 
 
 
