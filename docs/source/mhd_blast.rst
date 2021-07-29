@@ -207,7 +207,7 @@ Finally, for the **yz-plane** we get
 
 
 Increasing bifrost_params
--------------------------
+##########################
 
 Now, we will subsequently increase each bifrost_param while keeping all other parameters fixed. All parameters are increased be a factor 10, except from E=0.9, which was increased by a factor 5, since E=9 caused the simulation to crash towards the end. We start by plotting the density when each parameter has been changed. 
 
@@ -252,8 +252,8 @@ Finally, for E=4.5, there is no apparent change after t=1ms. After t=10ms, there
 
 
 
-Energy (Ee)
-***********
+Energy
+******
 
 Now, we plot the energy 
 
@@ -368,7 +368,7 @@ Now we run the experiment with the solver ramses/mhd_eos. The initial simulation
 
 
 Initial results
-***************
+##################
 
 We will now plot the resulting density, energy, velocity magnitude and magnetic pressure in the xy-plane, xz-plane and yz-plane for the ramses solver. We plot the initial result at t=1ms, and at the final time of t=21ms.  
 
@@ -471,8 +471,8 @@ Finally, we plot the **yz-plane**
    :width: 48 % 
 
 
-Slope types
------------
+Testing different slope types
+##############################
 
 Now, we will adjust the slopes to see the resulting behaviour. The above plots were created using slope_type=3.5. The below studies shows the result of testing with slope_type values of 3, 2, 1 and -1.
 
