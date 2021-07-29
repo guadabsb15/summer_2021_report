@@ -267,10 +267,11 @@ The tests were performed on</p>
 <a class="reference internal image-reference" href="_images/magnetic_pressure_blast_bifrost_yz_21.png"><img alt="_images/magnetic_pressure_blast_bifrost_yz_21.png" src="_images/magnetic_pressure_blast_bifrost_yz_21.png" style="width: 48%;" /></a>
 </div>
 </div>
-</div>
 <div class="section" id="increasing-bifrost-params">
-<h2>Increasing bifrost_params<a class="headerlink" href="#increasing-bifrost-params" title="Permalink to this headline">¶</a></h2>
+<h3>Increasing bifrost_params<a class="headerlink" href="#increasing-bifrost-params" title="Permalink to this headline">¶</a></h3>
 <p>Now, we will subsequently increase each bifrost_param while keeping all other parameters fixed. All parameters are increased be a factor 10, except from E=0.9, which was increased by a factor 5, since E=9 caused the simulation to crash towards the end. We start by plotting the density when each parameter has been changed.</p>
+<div class="section" id="id1">
+<h4>Densities<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h4>
 <p>We start by looking at the resulting densities</p>
 <a class="reference internal image-reference" href="_images/density_blast_bifrost_xy_mod_increase1_1.png"><img alt="_images/density_blast_bifrost_xy_mod_increase1_1.png" src="_images/density_blast_bifrost_xy_mod_increase1_1.png" style="width: 48%;" /></a>
 <a class="reference internal image-reference" href="_images/density_blast_bifrost_xy_mod_increase1_21.png"><img alt="_images/density_blast_bifrost_xy_mod_increase1_21.png" src="_images/density_blast_bifrost_xy_mod_increase1_21.png" style="width: 48%;" /></a>
@@ -285,6 +286,9 @@ The tests were performed on</p>
 <a class="reference internal image-reference" href="_images/density_blast_bifrost_xy_mod_increase6_10.png"><img alt="_images/density_blast_bifrost_xy_mod_increase6_10.png" src="_images/density_blast_bifrost_xy_mod_increase6_10.png" style="width: 48%;" /></a>
 <a class="reference internal image-reference" href="_images/density_blast_bifrost_xy_mod_increase6_21.png"><img alt="_images/density_blast_bifrost_xy_mod_increase6_21.png" src="_images/density_blast_bifrost_xy_mod_increase6_21.png" style="width: 48%;" /></a>
 <p>Finally, for E=4.5, there is no apparent change after t=1ms. After t=10ms, there is noticeable changes outside the blast contour. This is clearly visible after t=21ms.</p>
+</div>
+<div class="section" id="id2">
+<h4>Energy<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h4>
 <p>Now, we plot the energy</p>
 <a class="reference internal image-reference" href="_images/ee_blast_bifrost_xy_mod_increase1_1.png"><img alt="_images/ee_blast_bifrost_xy_mod_increase1_1.png" src="_images/ee_blast_bifrost_xy_mod_increase1_1.png" style="width: 48%;" /></a>
 <a class="reference internal image-reference" href="_images/ee_blast_bifrost_xy_mod_increase1_21.png"><img alt="_images/ee_blast_bifrost_xy_mod_increase1_21.png" src="_images/ee_blast_bifrost_xy_mod_increase1_21.png" style="width: 48%;" /></a>
@@ -301,6 +305,9 @@ The tests were performed on</p>
 <p>Above, we see the results from d=0.5 and e=0.5. These seem to affect the result similarly to Ca=0.3 and U=3 respectively, with e=0.5 having a slightly lower maximum value than d=0.5 after t=21ms. We do however notice that d=0.5 has a thin edge on the outside after t=1ms, which is not present for e=0.5. This contour is also the behaviour we see in the initial simulation.</p>
 <img alt="_images/ee_blast_bifrost_xy_mod_increase6_21.png" src="_images/ee_blast_bifrost_xy_mod_increase6_21.png" />
 <p>Above we see the result of E=4.5 after t=21ms. There were no visible deviation at t=1ms for this configuration. After t=21ms, there is some noisy features inside the center, and there is also strange behaviour on the outside, somewhat similar to what we saw for the density plot.</p>
+</div>
+<div class="section" id="velocity-magnitude">
+<h4>Velocity magnitude<a class="headerlink" href="#velocity-magnitude" title="Permalink to this headline">¶</a></h4>
 <p>Now, we plot the velocity magnitude</p>
 <a class="reference internal image-reference" href="_images/velocity_magnitude_blast_bifrost_xy_mod_increase1_1.png"><img alt="_images/velocity_magnitude_blast_bifrost_xy_mod_increase1_1.png" src="_images/velocity_magnitude_blast_bifrost_xy_mod_increase1_1.png" style="width: 48%;" /></a>
 <p>With Ca=0.3, the only noticeable difference is a reduced magnitude after t=1ms, shown above.</p>
@@ -316,6 +323,9 @@ The tests were performed on</p>
 <p>For e=0.5 there is a reduced maximum velcity magnitude after t=1ms. After 21ms, there is a line inside the elliptic shape, with the same shape as we got from d=0.5, but this is lighter. For d=0.5 there was a velocity increase at this region, but e=0.5 yields a velocity decrease.</p>
 <a class="reference internal image-reference" href="_images/velocity_magnitude_blast_bifrost_xy_mod_increase6_21.png"><img alt="_images/velocity_magnitude_blast_bifrost_xy_mod_increase6_21.png" src="_images/velocity_magnitude_blast_bifrost_xy_mod_increase6_21.png" style="width: 48%;" /></a>
 <p>After t=1ms, there is no noticeable difference with E=4.5. After t=21ms, the above plot shows noisy behaviour throughout the entire region where velocities are nonzero.</p>
+</div>
+<div class="section" id="id3">
+<h4>Magnetic pressure<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h4>
 <p>Now, we plot the magnetic pressure</p>
 <a class="reference internal image-reference" href="_images/magnetic_pressure_blast_bifrost_xy_mod_increase1_1.png"><img alt="_images/magnetic_pressure_blast_bifrost_xy_mod_increase1_1.png" src="_images/magnetic_pressure_blast_bifrost_xy_mod_increase1_1.png" style="width: 48%;" /></a>
 <a class="reference internal image-reference" href="_images/magnetic_pressure_blast_bifrost_xy_mod_increase2_1.png"><img alt="_images/magnetic_pressure_blast_bifrost_xy_mod_increase2_1.png" src="_images/magnetic_pressure_blast_bifrost_xy_mod_increase2_1.png" style="width: 48%;" /></a>
@@ -325,6 +335,8 @@ The tests were performed on</p>
 <a class="reference internal image-reference" href="_images/magnetic_pressure_blast_bifrost_xy_mod_increase6_21.png"><img alt="_images/magnetic_pressure_blast_bifrost_xy_mod_increase6_21.png" src="_images/magnetic_pressure_blast_bifrost_xy_mod_increase6_21.png" style="width: 48%;" /></a>
 <p>With E=4.5, we see a reduced maximum value of magnetic pressure after t=1ms. After t=21ms, there is a lot of noise once again for this parameter. It seems to be very dim, but the maximum value at the colorbar is above 9 (compared to ~5.5 iriginally), which is caused by small dots around the plot with apparently large values. These dots seem to be aligned on an 8x8 grid in the plot, which coincides with the size of the computational box, which is (x,y,z)=(8,8,1) for this simulation.</p>
 </div>
+</div>
+</div>
 <div class="section" id="ramses-mhd-eos">
 <h2>Ramses/mhd_eos<a class="headerlink" href="#ramses-mhd-eos" title="Permalink to this headline">¶</a></h2>
 <dl class="simple">
@@ -333,7 +345,11 @@ The tests were performed on</p>
 </ul>
 </dd>
 </dl>
+<div class="section" id="initial-results">
+<h3>Initial results<a class="headerlink" href="#initial-results" title="Permalink to this headline">¶</a></h3>
 <p>We will now plot the resulting density, energy, velocity magnitude and magnetic pressure in the xy-plane, xz-plane and yz-plane for the ramses solver. We plot the initial result at t=1ms, and at the final time of t=21ms.</p>
+<div class="section" id="id4">
+<h4>Densities<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h4>
 <p>Below, we plot the initial and final densities. We begin with the xy-plane, shown below.</p>
 <a class="reference internal image-reference" href="_images/density_blast_ramses_xy_1.png"><img alt="_images/density_blast_ramses_xy_1.png" src="_images/density_blast_ramses_xy_1.png" style="width: 48%;" /></a>
 <a class="reference internal image-reference" href="_images/density_blast_ramses_xy_21.png"><img alt="_images/density_blast_ramses_xy_21.png" src="_images/density_blast_ramses_xy_21.png" style="width: 48%;" /></a>
@@ -343,6 +359,9 @@ The tests were performed on</p>
 <p>Finally, the <strong>yz-plane</strong></p>
 <a class="reference internal image-reference" href="_images/density_blast_ramses_yz_1.png"><img alt="_images/density_blast_ramses_yz_1.png" src="_images/density_blast_ramses_yz_1.png" style="width: 48%;" /></a>
 <a class="reference internal image-reference" href="_images/density_blast_ramses_yz_21.png"><img alt="_images/density_blast_ramses_yz_21.png" src="_images/density_blast_ramses_yz_21.png" style="width: 48%;" /></a>
+</div>
+<div class="section" id="id5">
+<h4>Energy<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h4>
 <p>We now plot the energy, starting with the <strong>xy-plane</strong>, shown below</p>
 <a class="reference internal image-reference" href="_images/ee_blast_ramses_xy_1.png"><img alt="_images/ee_blast_ramses_xy_1.png" src="_images/ee_blast_ramses_xy_1.png" style="width: 48%;" /></a>
 <a class="reference internal image-reference" href="_images/ee_blast_ramses_xy_21.png"><img alt="_images/ee_blast_ramses_xy_21.png" src="_images/ee_blast_ramses_xy_21.png" style="width: 48%;" /></a>
@@ -352,6 +371,9 @@ The tests were performed on</p>
 <p>Finally, the <strong>yz-plane</strong></p>
 <a class="reference internal image-reference" href="_images/ee_blast_ramses_yz_1.png"><img alt="_images/ee_blast_ramses_yz_1.png" src="_images/ee_blast_ramses_yz_1.png" style="width: 48%;" /></a>
 <a class="reference internal image-reference" href="_images/ee_blast_ramses_yz_21.png"><img alt="_images/ee_blast_ramses_yz_21.png" src="_images/ee_blast_ramses_yz_21.png" style="width: 48%;" /></a>
+</div>
+<div class="section" id="id6">
+<h4>Velocity magnitude<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h4>
 <p>We begin with the <strong>xy-plane</strong>, shown below</p>
 <a class="reference internal image-reference" href="_images/velocity_magnitude_blast_ramses_xy_1.png"><img alt="_images/velocity_magnitude_blast_ramses_xy_1.png" src="_images/velocity_magnitude_blast_ramses_xy_1.png" style="width: 48%;" /></a>
 <a class="reference internal image-reference" href="_images/velocity_magnitude_blast_ramses_xy_21.png"><img alt="_images/velocity_magnitude_blast_ramses_xy_21.png" src="_images/velocity_magnitude_blast_ramses_xy_21.png" style="width: 48%;" /></a>
@@ -361,6 +383,9 @@ The tests were performed on</p>
 <p>Finally, the <strong>yz-plane</strong></p>
 <a class="reference internal image-reference" href="_images/velocity_magnitude_blast_ramses_yz_1.png"><img alt="_images/velocity_magnitude_blast_ramses_yz_1.png" src="_images/velocity_magnitude_blast_ramses_yz_1.png" style="width: 48%;" /></a>
 <a class="reference internal image-reference" href="_images/velocity_magnitude_blast_ramses_yz_21.png"><img alt="_images/velocity_magnitude_blast_ramses_yz_21.png" src="_images/velocity_magnitude_blast_ramses_yz_21.png" style="width: 48%;" /></a>
+</div>
+<div class="section" id="id7">
+<h4>Magnetic Pressure<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h4>
 <p>Finally, we look at the magnetic pressure, starting with the <strong>xy-plane</strong>, shown below</p>
 <a class="reference internal image-reference" href="_images/magnetic_pressure_blast_ramses_xy_1.png"><img alt="_images/magnetic_pressure_blast_ramses_xy_1.png" src="_images/magnetic_pressure_blast_ramses_xy_1.png" style="width: 48%;" /></a>
 <a class="reference internal image-reference" href="_images/magnetic_pressure_blast_ramses_xy_21.png"><img alt="_images/magnetic_pressure_blast_ramses_xy_21.png" src="_images/magnetic_pressure_blast_ramses_xy_21.png" style="width: 48%;" /></a>
@@ -371,9 +396,12 @@ The tests were performed on</p>
 <a class="reference internal image-reference" href="_images/magnetic_pressure_blast_ramses_yz_1.png"><img alt="_images/magnetic_pressure_blast_ramses_yz_1.png" src="_images/magnetic_pressure_blast_ramses_yz_1.png" style="width: 48%;" /></a>
 <a class="reference internal image-reference" href="_images/magnetic_pressure_blast_ramses_yz_21.png"><img alt="_images/magnetic_pressure_blast_ramses_yz_21.png" src="_images/magnetic_pressure_blast_ramses_yz_21.png" style="width: 48%;" /></a>
 </div>
-<div class="section" id="slope-types">
-<h2>Slope types<a class="headerlink" href="#slope-types" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="testing-different-slope-types">
+<h3>Testing different slope types<a class="headerlink" href="#testing-different-slope-types" title="Permalink to this headline">¶</a></h3>
 <p>Now, we will adjust the slopes to see the resulting behaviour. The above plots were created using slope_type=3.5. The below studies shows the result of testing with slope_type values of 3, 2, 1 and -1.</p>
+<div class="section" id="density">
+<h4>Density<a class="headerlink" href="#density" title="Permalink to this headline">¶</a></h4>
 <p>We start by looking at the density.</p>
 <a class="reference internal image-reference" href="_images/density_blast_ramses_xy_slope-1_1.png"><img alt="_images/density_blast_ramses_xy_slope-1_1.png" src="_images/density_blast_ramses_xy_slope-1_1.png" style="width: 48%;" /></a>
 <a class="reference internal image-reference" href="_images/density_blast_ramses_xy_slope-1_21.png"><img alt="_images/density_blast_ramses_xy_slope-1_21.png" src="_images/density_blast_ramses_xy_slope-1_21.png" style="width: 48%;" /></a>
@@ -382,11 +410,17 @@ The tests were performed on</p>
 <p>For slope_type=1, shown above, there was no visible change at t=1ms. After t=21ms however, there is a reduced density magnitude.</p>
 <p>The results from slope_type=2 yielded no significant deviations for the density. The only difference was a slight increase in the maximum density values at both t=1ms and t=21ms by a value of less than 0.1. Other than that, there were no visible changes.</p>
 <p>For slope_type=3, there was a slight decrease in maximum density value of both t=1ms and t=21ms. The decrease at t=1ms was around 0.1 g/cm3, while the decrease at t=21ms was between 0.3-0.4 g/cm3.</p>
+</div>
+<div class="section" id="id8">
+<h4>Energy<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h4>
 <p>We will now study how the energy is affected by the different slope_type values.</p>
 <a class="reference internal image-reference" href="_images/ee_blast_ramses_xy_slope-1_21.png"><img alt="_images/ee_blast_ramses_xy_slope-1_21.png" src="_images/ee_blast_ramses_xy_slope-1_21.png" style="width: 48%;" /></a>
 <p>Above swows the result of slope_type=-1 after t=21ms. For t=1ms, there was no apparent change. After t=21ms, there is a slight increase in the maximum energy values, and energy in the center seems more evenly distributed with less details. This may be due to the increased maximum value.</p>
 <p>With slope_type=1 and slope_type=2 there were no apparent changes in the resulting energy after t=1ms or t=21ms.</p>
 <p>With slope_type=3 there was no change after t=1ms, and after t=21ms, there was only a minor reduction in the maximum density value, barely visible from the colorbar.</p>
+</div>
+<div class="section" id="id9">
+<h4>Velocity magnitude<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h4>
 <p>We will now study the velocity magnitude with different slope_type values.</p>
 <a class="reference internal image-reference" href="_images/velocity_magnitude_blast_ramses_xy_slope-1_1.png"><img alt="_images/velocity_magnitude_blast_ramses_xy_slope-1_1.png" src="_images/velocity_magnitude_blast_ramses_xy_slope-1_1.png" style="width: 48%;" /></a>
 <a class="reference internal image-reference" href="_images/velocity_magnitude_blast_ramses_xy_slope-1_21.png"><img alt="_images/velocity_magnitude_blast_ramses_xy_slope-1_21.png" src="_images/velocity_magnitude_blast_ramses_xy_slope-1_21.png" style="width: 48%;" /></a>
@@ -394,6 +428,9 @@ The tests were performed on</p>
 <a class="reference internal image-reference" href="_images/velocity_magnitude_blast_ramses_xy_slope1_21.png"><img alt="_images/velocity_magnitude_blast_ramses_xy_slope1_21.png" src="_images/velocity_magnitude_blast_ramses_xy_slope1_21.png" style="width: 48%;" /></a>
 <p>After t=1ms, slope_type=1 yielded a minor reduction in the maximum value of the velocity magnitude after t=1ms, which was barely visible. After t=21ms, the colors inside the elliptic shape is darger, and lacks many of the details that were present in the initial case.</p>
 <p>With slope_type=2 and slope_type=3, the only change visible was a slight reduction in maximum magnitude at t=1ms for the latter case.</p>
+</div>
+<div class="section" id="id10">
+<h4>Magnetic pressure<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h4>
 <p>Finally, we are going to study the magnetic pressure results.</p>
 <a class="reference internal image-reference" href="_images/magnetic_pressure_blast_ramses_xy_slope-1_1.png"><img alt="_images/magnetic_pressure_blast_ramses_xy_slope-1_1.png" src="_images/magnetic_pressure_blast_ramses_xy_slope-1_1.png" style="width: 48%;" /></a>
 <a class="reference internal image-reference" href="_images/magnetic_pressure_blast_ramses_xy_slope-1_21.png"><img alt="_images/magnetic_pressure_blast_ramses_xy_slope-1_21.png" src="_images/magnetic_pressure_blast_ramses_xy_slope-1_21.png" style="width: 48%;" /></a>
@@ -404,6 +441,8 @@ The tests were performed on</p>
 <p>Slope_type=2 resulted in no visible changes after t=1ms or t=21ms.</p>
 <a class="reference internal image-reference" href="_images/magnetic_pressure_blast_ramses_xy_slope3_1.png"><img alt="_images/magnetic_pressure_blast_ramses_xy_slope3_1.png" src="_images/magnetic_pressure_blast_ramses_xy_slope3_1.png" style="width: 48%;" /></a>
 <p>With slope_type=3, there was a slight reduction in maximum magnetic pressure value at t=1ms, shown above. After t=21ms, there were no changes clearly evident.</p>
+</div>
+</div>
 </div>
 </div>
 
@@ -432,9 +471,7 @@ The tests were performed on</p>
 <li class="toctree-l2"><a class="reference internal" href="#experiment-parameters">Experiment parameters</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#xy-plane-case-2">XY-plane - case 2</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#bifrost-solver">Bifrost solver</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#increasing-bifrost-params">Increasing bifrost_params</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#ramses-mhd-eos">Ramses/mhd_eos</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#slope-types">Slope types</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="sedov.html">Sedov-Taylor experiment</a></li>
