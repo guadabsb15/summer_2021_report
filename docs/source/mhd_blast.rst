@@ -376,17 +376,21 @@ We will now plot the resulting density, energy, velocity magnitude and magnetic 
 Densities
 *********
 
-Below, we plot the initial and final densities
+Below, we plot the initial and final densities. We begin with the xy-plane, shown below.
 
 .. image:: img_ramses_blast/compare_direction/density_blast_ramses_xy_1.png
    :width: 48 % 
 .. image:: img_ramses_blast/compare_direction/density_blast_ramses_xy_21.png
    :width: 48 % 
 
+Below, shows the **xz-plane**
+
 .. image:: img_ramses_blast/compare_direction/density_blast_ramses_xz_1.png
    :width: 48 % 
 .. image:: img_ramses_blast/compare_direction/density_blast_ramses_xz_21.png
    :width: 48 % 
+
+Finally, the **yz-plane**
 
 .. image:: img_ramses_blast/compare_direction/density_blast_ramses_yz_1.png
    :width: 48 % 
@@ -396,16 +400,21 @@ Below, we plot the initial and final densities
 Energy
 ******
 
+We now plot the energy, starting with the **xy-plane**, shown below 
+
 .. image:: img_ramses_blast/compare_direction/ee_blast_ramses_xy_1.png
    :width: 48 % 
 .. image:: img_ramses_blast/compare_direction/ee_blast_ramses_xy_21.png
    :width: 48 % 
+
+Then we plot in the **xz-plane**
 
 .. image:: img_ramses_blast/compare_direction/ee_blast_ramses_xz_1.png
    :width: 48 % 
 .. image:: img_ramses_blast/compare_direction/ee_blast_ramses_xz_21.png
    :width: 48 % 
 
+Finally, the **yz-plane**
 
 .. image:: img_ramses_blast/compare_direction/ee_blast_ramses_yz_1.png
    :width: 48 % 
@@ -415,15 +424,21 @@ Energy
 Velocity magnitude
 ******************
 
+We begin with the **xy-plane**, shown below
+
 .. image:: img_ramses_blast/compare_direction/velocity_magnitude_blast_ramses_xy_1.png
    :width: 48 % 
 .. image:: img_ramses_blast/compare_direction/velocity_magnitude_blast_ramses_xy_21.png
    :width: 48 % 
 
+We continue with the **xz-plane**
+
 .. image:: img_ramses_blast/compare_direction/velocity_magnitude_blast_ramses_xz_1.png
    :width: 48 % 
 .. image:: img_ramses_blast/compare_direction/velocity_magnitude_blast_ramses_xz_21.png
    :width: 48 % 
+
+Finally, the **yz-plane**
 
 .. image:: img_ramses_blast/compare_direction/velocity_magnitude_blast_ramses_yz_1.png
    :width: 48 % 
@@ -434,15 +449,21 @@ Velocity magnitude
 Magnetic Pressure
 *****************
 
+Finally, we look at the magnetic pressure, starting with the **xy-plane**, shown below
+
 .. image:: img_ramses_blast/compare_direction/magnetic_pressure_blast_ramses_xy_1.png
    :width: 48 % 
 .. image:: img_ramses_blast/compare_direction/magnetic_pressure_blast_ramses_xy_21.png
    :width: 48 % 
 
+We continue with the **xz-plane**
+
 .. image:: img_ramses_blast/compare_direction/magnetic_pressure_blast_ramses_xz_1.png
    :width: 48 % 
 .. image:: img_ramses_blast/compare_direction/magnetic_pressure_blast_ramses_xz_21.png
    :width: 48 % 
+
+Finally, we plot the **yz-plane**
 
 .. image:: img_ramses_blast/compare_direction/magnetic_pressure_blast_ramses_yz_1.png
    :width: 48 % 
@@ -453,101 +474,87 @@ Magnetic Pressure
 Slope types
 -----------
 
-Now, we will adjust the slopes to see the resulting behaviour.
+Now, we will adjust the slopes to see the resulting behaviour. The above plots were created using slope_type=3.5. The below studies shows the result of testing with slope_type values of 3, 2, 1 and -1.
 
 Density
 *******
+
+We start by looking at the density. 
 
 .. image:: img_ramses_blast/slopes/density_blast_ramses_xy_slope-1_1.png
    :width: 48 %
 .. image:: img_ramses_blast/slopes/density_blast_ramses_xy_slope-1_21.png
    :width: 48 % 
 
-.. image:: img_ramses_blast/slopes/density_blast_ramses_xy_slope1_1.png
-   :width: 48 %
+The above image shows the result of slope_type=-1. The density has an increased maximum value at both t=1ms and t=21ms. At t=21ms the elliptic profile is also more pointy near the edges. 
+
 .. image:: img_ramses_blast/slopes/density_blast_ramses_xy_slope1_21.png
    :width: 48 % 
 
-.. image:: img_ramses_blast/slopes/density_blast_ramses_xy_slope2_1.png
-   :width: 48 %
-.. image:: img_ramses_blast/slopes/density_blast_ramses_xy_slope2_21.png
-   :width: 48 % 
+For slope_type=1, shown above, there was no visible change at t=1ms. After t=21ms however, there is a reduced density magnitude. 
 
-.. image:: img_ramses_blast/slopes/density_blast_ramses_xy_slope3_1.png
-   :width: 48 %
-.. image:: img_ramses_blast/slopes/density_blast_ramses_xy_slope3_21.png
-   :width: 48 % 
+The results from slope_type=2 yielded no significant deviations for the density. The only difference was a slight increase in the maximum density values at both t=1ms and t=21ms by a value of less than 0.1. Other than that, there were no visible changes. 
 
+For slope_type=3, there was a slight decrease in maximum density value of both t=1ms and t=21ms. The decrease at t=1ms was around 0.1 g/cm3, while the decrease at t=21ms was between 0.3-0.4 g/cm3. 
 
 Energy
 ******
 
-.. image:: img_ramses_blast/slopes/ee_blast_ramses_xy_slope-1_1.png
-   :width: 48 %
+We will now study how the energy is affected by the different slope_type values.
+
 .. image:: img_ramses_blast/slopes/ee_blast_ramses_xy_slope-1_21.png
    :width: 48 % 
 
-.. image:: img_ramses_blast/slopes/ee_blast_ramses_xy_slope1_1.png
-   :width: 48 %
-.. image:: img_ramses_blast/slopes/ee_blast_ramses_xy_slope1_21.png
-   :width: 48 % 
+Above swows the result of slope_type=-1 after t=21ms. For t=1ms, there was no apparent change. After t=21ms, there is a slight increase in the maximum energy values, and energy in the center seems more evenly distributed with less details. This may be due to the increased maximum value.
 
-.. image:: img_ramses_blast/slopes/ee_blast_ramses_xy_slope2_1.png
-   :width: 48 %
-.. image:: img_ramses_blast/slopes/ee_blast_ramses_xy_slope2_21.png
-   :width: 48 % 
+With slope_type=1 and slope_type=2 there were no apparent changes in the resulting energy after t=1ms or t=21ms. 
 
-.. image:: img_ramses_blast/slopes/ee_blast_ramses_xy_slope3_1.png
-   :width: 48 %
-.. image:: img_ramses_blast/slopes/ee_blast_ramses_xy_slope3_21.png
-   :width: 48 % 
-
+With slope_type=3 there was no change after t=1ms, and after t=21ms, there was only a minor reduction in the maximum density value, barely visible from the colorbar.  
 
 Velocity magnitude
 ******************
+
+We will now study the velocity magnitude with different slope_type values.
 
 .. image:: img_ramses_blast/slopes/velocity_magnitude_blast_ramses_xy_slope-1_1.png
    :width: 48 %
 .. image:: img_ramses_blast/slopes/velocity_magnitude_blast_ramses_xy_slope-1_21.png
    :width: 48 % 
 
-.. image:: img_ramses_blast/slopes/velocity_magnitude_blast_ramses_xy_slope1_1.png
-   :width: 48 %
+With slope_type=-1, shown above, the only noticeable change is a minor increase in velocity magnitude after t=1ms and a slightly larger increase after t=21ms. Otherwise, there is little change. 
+
 .. image:: img_ramses_blast/slopes/velocity_magnitude_blast_ramses_xy_slope1_21.png
    :width: 48 % 
 
-.. image:: img_ramses_blast/slopes/velocity_magnitude_blast_ramses_xy_slope2_1.png
-   :width: 48 %
-.. image:: img_ramses_blast/slopes/velocity_magnitude_blast_ramses_xy_slope2_21.png
-   :width: 48 % 
+After t=1ms, slope_type=1 yielded a minor reduction in the maximum value of the velocity magnitude after t=1ms, which was barely visible. After t=21ms, the colors inside the elliptic shape is darger, and lacks many of the details that were present in the initial case. 
 
-.. image:: img_ramses_blast/slopes/velocity_magnitude_blast_ramses_xy_slope3_1.png
-   :width: 48 %
-.. image:: img_ramses_blast/slopes/velocity_magnitude_blast_ramses_xy_slope3_21.png
-   :width: 48 % 
+With slope_type=2 and slope_type=3, the only change visible was a slight reduction in maximum magnitude at t=1ms for the latter case. 
 
 
 Magnetic pressure
 *****************
+
+Finally, we are going to study the magnetic pressure results.
 
 .. image:: img_ramses_blast/slopes/magnetic_pressure_blast_ramses_xy_slope-1_1.png
    :width: 48 %
 .. image:: img_ramses_blast/slopes/magnetic_pressure_blast_ramses_xy_slope-1_21.png
    :width: 48 % 
 
+With slope_type=-1, shown above, the maximum pressure value is lower after t=1ms. After t=21ms, the elliptic contour near the center is more stretched out towards a circle. In the initial plot, there seemed to be straight lines from the bottom left to the top right which separated the regions with high and low pressure values. These lines do no longer appear straight in the above image. 
+
 .. image:: img_ramses_blast/slopes/magnetic_pressure_blast_ramses_xy_slope1_1.png
    :width: 48 %
 .. image:: img_ramses_blast/slopes/magnetic_pressure_blast_ramses_xy_slope1_21.png
    :width: 48 % 
 
-.. image:: img_ramses_blast/slopes/magnetic_pressure_blast_ramses_xy_slope2_1.png
-   :width: 48 %
-.. image:: img_ramses_blast/slopes/magnetic_pressure_blast_ramses_xy_slope2_21.png
-   :width: 48 % 
+With slope_type=1, as shown above, there is a further reduction of the initial pressure values at t=1ms. After t=21ms, we see the same effect as we did with slope_type=-1, namely a rounding of the elliptic shape in the center. 
+
+Slope_type=2 resulted in no visible changes after t=1ms or t=21ms. 
 
 .. image:: img_ramses_blast/slopes/magnetic_pressure_blast_ramses_xy_slope3_1.png
    :width: 48 %
-.. image:: img_ramses_blast/slopes/magnetic_pressure_blast_ramses_xy_slope3_21.png
-   :width: 48 % 
+
+With slope_type=3, there was a slight reduction in maximum magnetic pressure value at t=1ms, shown above. After t=21ms, there were no changes clearly evident. 
 
 
