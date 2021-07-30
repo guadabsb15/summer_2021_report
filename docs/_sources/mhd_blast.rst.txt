@@ -72,8 +72,9 @@ Bifrost solver
 --------------
 We begin by running the experiment with the Bifrost solver. 
 The tests were performed on
- * branch: develop 
- * hash: 5e8f853
+
+* branch: develop 
+* hash: 5e8f853
 
 The initial bifrost parameters that were used are listed in the table below. These parameters are the ones we will adjust later for verification tests. 
 
