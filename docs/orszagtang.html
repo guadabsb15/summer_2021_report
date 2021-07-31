@@ -33,6 +33,88 @@
             
   <div class="section" id="orszag-tang-vortex">
 <h1>Orszag-Tang vortex<a class="headerlink" href="#orszag-tang-vortex" title="Permalink to this headline">¶</a></h1>
+<dl class="simple">
+<dt>Here we will report the results of the Orszag-Tang experiment. The simulations were performed with the</dt><dd><ul class="simple">
+<li><p>Branch: Develop</p></li>
+<li><p>Hash:</p></li>
+<li><p>OMP_NUM_THREADS=4</p></li>
+</ul>
+</dd>
+</dl>
+<div class="section" id="bifrost-results">
+<h2>Bifrost results<a class="headerlink" href="#bifrost-results" title="Permalink to this headline">¶</a></h2>
+<p>Here we will show the results of the experiment compiled with the bifrost solver. There are four quantities we will report for three different planes, namely density, energy, velocity magnitude and magnetic pressure.</p>
+<div class="section" id="initial-and-final-states">
+<h3>Initial and final states<a class="headerlink" href="#initial-and-final-states" title="Permalink to this headline">¶</a></h3>
+<p>We will plot the final states of the different quantities in all three directions. We will also include a plot of the initial state at t=0s for the xy-direction only.</p>
+<div class="section" id="density">
+<h4>Density<a class="headerlink" href="#density" title="Permalink to this headline">¶</a></h4>
+<p>We begin with the density, shown below.</p>
+<a class="reference internal image-reference" href="_images/density_ot_bifrost_xy_0.png"><img alt="_images/density_ot_bifrost_xy_0.png" src="_images/density_ot_bifrost_xy_0.png" style="width: 48%;" /></a>
+<a class="reference internal image-reference" href="_images/density_ot_bifrost_xy_5.png"><img alt="_images/density_ot_bifrost_xy_5.png" src="_images/density_ot_bifrost_xy_5.png" style="width: 48%;" /></a>
+<a class="reference internal image-reference" href="_images/density_ot_bifrost_xz_5.png"><img alt="_images/density_ot_bifrost_xz_5.png" src="_images/density_ot_bifrost_xz_5.png" style="width: 48%;" /></a>
+<img alt="_images/density_ot_bifrost_yz_5.png" src="_images/density_ot_bifrost_yz_5.png" />
+</div>
+<div class="section" id="energy">
+<h4>Energy<a class="headerlink" href="#energy" title="Permalink to this headline">¶</a></h4>
+<a class="reference internal image-reference" href="_images/ee_ot_bifrost_xy_0.png"><img alt="_images/ee_ot_bifrost_xy_0.png" src="_images/ee_ot_bifrost_xy_0.png" style="width: 48%;" /></a>
+<a class="reference internal image-reference" href="_images/ee_ot_bifrost_xy_5.png"><img alt="_images/ee_ot_bifrost_xy_5.png" src="_images/ee_ot_bifrost_xy_5.png" style="width: 48%;" /></a>
+<a class="reference internal image-reference" href="_images/ee_ot_bifrost_xz_5.png"><img alt="_images/ee_ot_bifrost_xz_5.png" src="_images/ee_ot_bifrost_xz_5.png" style="width: 48%;" /></a>
+<img alt="_images/ee_ot_bifrost_yz_5.png" src="_images/ee_ot_bifrost_yz_5.png" />
+</div>
+<div class="section" id="velocity-magnitude">
+<h4>Velocity magnitude<a class="headerlink" href="#velocity-magnitude" title="Permalink to this headline">¶</a></h4>
+<a class="reference internal image-reference" href="_images/velocity_magnitude_ot_bifrost_xy_0.png"><img alt="_images/velocity_magnitude_ot_bifrost_xy_0.png" src="_images/velocity_magnitude_ot_bifrost_xy_0.png" style="width: 48%;" /></a>
+<a class="reference internal image-reference" href="_images/velocity_magnitude_ot_bifrost_xy_5.png"><img alt="_images/velocity_magnitude_ot_bifrost_xy_5.png" src="_images/velocity_magnitude_ot_bifrost_xy_5.png" style="width: 48%;" /></a>
+<a class="reference internal image-reference" href="_images/velocity_magnitude_ot_bifrost_xz_5.png"><img alt="_images/velocity_magnitude_ot_bifrost_xz_5.png" src="_images/velocity_magnitude_ot_bifrost_xz_5.png" style="width: 48%;" /></a>
+<img alt="_images/velocity_magnitude_ot_bifrost_yz_5.png" src="_images/velocity_magnitude_ot_bifrost_yz_5.png" />
+</div>
+<div class="section" id="magnetic-pressure">
+<h4>Magnetic pressure<a class="headerlink" href="#magnetic-pressure" title="Permalink to this headline">¶</a></h4>
+<a class="reference internal image-reference" href="_images/magnetic_pressure_ot_bifrost_xy_0.png"><img alt="_images/magnetic_pressure_ot_bifrost_xy_0.png" src="_images/magnetic_pressure_ot_bifrost_xy_0.png" style="width: 48%;" /></a>
+<a class="reference internal image-reference" href="_images/magnetic_pressure_ot_bifrost_xy_5.png"><img alt="_images/magnetic_pressure_ot_bifrost_xy_5.png" src="_images/magnetic_pressure_ot_bifrost_xy_5.png" style="width: 48%;" /></a>
+<a class="reference internal image-reference" href="_images/magnetic_pressure_ot_bifrost_xz_5.png"><img alt="_images/magnetic_pressure_ot_bifrost_xz_5.png" src="_images/magnetic_pressure_ot_bifrost_xz_5.png" style="width: 48%;" /></a>
+<img alt="_images/magnetic_pressure_ot_bifrost_yz_5.png" src="_images/magnetic_pressure_ot_bifrost_yz_5.png" />
+</div>
+</div>
+</div>
+<div class="section" id="ramses-results">
+<h2>Ramses results<a class="headerlink" href="#ramses-results" title="Permalink to this headline">¶</a></h2>
+<p>We will now report the results obtained compiled with the ramses/mhd_eos solver.</p>
+<div class="section" id="initial-and-final-results">
+<h3>Initial and final results<a class="headerlink" href="#initial-and-final-results" title="Permalink to this headline">¶</a></h3>
+<p>The plots are the same as we did with bifrost, where each quantity is shown for the xy-plane, xz-plane and yz-plane. For the xy-plane we will include the result at t=0s, but for all three directions we will report the result after t=0.5s.</p>
+<div class="section" id="id1">
+<h4>Density<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h4>
+<p>We begin with the density, shown below.</p>
+<a class="reference internal image-reference" href="_images/density_ot_ramses_xy_0.png"><img alt="_images/density_ot_ramses_xy_0.png" src="_images/density_ot_ramses_xy_0.png" style="width: 48%;" /></a>
+<a class="reference internal image-reference" href="_images/density_ot_ramses_xy_5.png"><img alt="_images/density_ot_ramses_xy_5.png" src="_images/density_ot_ramses_xy_5.png" style="width: 48%;" /></a>
+<a class="reference internal image-reference" href="_images/density_ot_ramses_xz_5.png"><img alt="_images/density_ot_ramses_xz_5.png" src="_images/density_ot_ramses_xz_5.png" style="width: 48%;" /></a>
+<img alt="_images/density_ot_ramses_yz_5.png" src="_images/density_ot_ramses_yz_5.png" />
+</div>
+<div class="section" id="id2">
+<h4>Energy<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h4>
+<a class="reference internal image-reference" href="_images/ee_ot_ramses_xy_0.png"><img alt="_images/ee_ot_ramses_xy_0.png" src="_images/ee_ot_ramses_xy_0.png" style="width: 48%;" /></a>
+<a class="reference internal image-reference" href="_images/ee_ot_ramses_xy_5.png"><img alt="_images/ee_ot_ramses_xy_5.png" src="_images/ee_ot_ramses_xy_5.png" style="width: 48%;" /></a>
+<a class="reference internal image-reference" href="_images/ee_ot_ramses_xz_5.png"><img alt="_images/ee_ot_ramses_xz_5.png" src="_images/ee_ot_ramses_xz_5.png" style="width: 48%;" /></a>
+<img alt="_images/ee_ot_ramses_yz_5.png" src="_images/ee_ot_ramses_yz_5.png" />
+</div>
+<div class="section" id="id3">
+<h4>Velocity magnitude<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h4>
+<a class="reference internal image-reference" href="_images/velocity_magnitude_ot_ramses_xy_0.png"><img alt="_images/velocity_magnitude_ot_ramses_xy_0.png" src="_images/velocity_magnitude_ot_ramses_xy_0.png" style="width: 48%;" /></a>
+<a class="reference internal image-reference" href="_images/velocity_magnitude_ot_ramses_xy_5.png"><img alt="_images/velocity_magnitude_ot_ramses_xy_5.png" src="_images/velocity_magnitude_ot_ramses_xy_5.png" style="width: 48%;" /></a>
+<a class="reference internal image-reference" href="_images/velocity_magnitude_ot_ramses_xz_5.png"><img alt="_images/velocity_magnitude_ot_ramses_xz_5.png" src="_images/velocity_magnitude_ot_ramses_xz_5.png" style="width: 48%;" /></a>
+<img alt="_images/velocity_magnitude_ot_ramses_yz_5.png" src="_images/velocity_magnitude_ot_ramses_yz_5.png" />
+</div>
+<div class="section" id="id4">
+<h4>Magnetic pressure<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h4>
+<a class="reference internal image-reference" href="_images/magnetic_pressure_ot_ramses_xy_0.png"><img alt="_images/magnetic_pressure_ot_ramses_xy_0.png" src="_images/magnetic_pressure_ot_ramses_xy_0.png" style="width: 48%;" /></a>
+<a class="reference internal image-reference" href="_images/magnetic_pressure_ot_ramses_xy_5.png"><img alt="_images/magnetic_pressure_ot_ramses_xy_5.png" src="_images/magnetic_pressure_ot_ramses_xy_5.png" style="width: 48%;" /></a>
+<a class="reference internal image-reference" href="_images/magnetic_pressure_ot_ramses_xz_5.png"><img alt="_images/magnetic_pressure_ot_ramses_xz_5.png" src="_images/magnetic_pressure_ot_ramses_xz_5.png" style="width: 48%;" /></a>
+<img alt="_images/magnetic_pressure_ot_ramses_yz_5.png" src="_images/magnetic_pressure_ot_ramses_yz_5.png" />
+</div>
+</div>
+</div>
 </div>
 
 
@@ -58,7 +140,11 @@
 <li class="toctree-l1"><a class="reference internal" href="sod.html">Sod experimemts</a></li>
 <li class="toctree-l1"><a class="reference internal" href="mhd_blast.html">MHD Blast experiment</a></li>
 <li class="toctree-l1"><a class="reference internal" href="sedov.html">Sedov-Taylor experiment</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Orszag-Tang vortex</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Orszag-Tang vortex</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#bifrost-results">Bifrost results</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#ramses-results">Ramses results</a></li>
+</ul>
+</li>
 </ul>
 
 <div class="relations">
