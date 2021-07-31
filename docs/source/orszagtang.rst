@@ -104,7 +104,7 @@ Here we will show the results of the experiment compiled with the bifrost solver
 Initial and final states
 ##########################
 
-We will plot the final states of the different quantities in all three directions. We will also include a plot of the initial state at t=0s for the xy-direction only. 
+We will plot the final states of the different quantities in all three directions. We will also include a plot of the initial state at t=0s for the xy-direction only. The plot at t=0s for the xy plane will be shown in the upper left panel, while the upper right panel shows the plot in the xy-plane after t=0.5s. The lower left and lower bottom corresponds to the xz-plane and yz-plane at t=0.5s respectively. 
 
 Density
 *******
@@ -124,6 +124,8 @@ We begin with the density, shown below.
 Energy
 ******
 
+We proceed with the energy, shown below
+
 .. image:: img_ot_bifrost/ee_ot_bifrost_xy_0.png
    :width: 48 % 
 .. image:: img_ot_bifrost/ee_ot_bifrost_xy_5.png
@@ -136,6 +138,8 @@ Energy
 
 Velocity magnitude
 ******************
+
+Below are the images of the velocity magnitude
 
 .. image:: img_ot_bifrost/velocity_magnitude_ot_bifrost_xy_0.png
    :width: 48 % 
@@ -150,6 +154,8 @@ Velocity magnitude
 Magnetic pressure
 *****************
 
+Finally, we plot the magnetic pressure
+
 .. image:: img_ot_bifrost/magnetic_pressure_ot_bifrost_xy_0.png
    :width: 48 % 
 .. image:: img_ot_bifrost/magnetic_pressure_ot_bifrost_xy_5.png
@@ -163,12 +169,12 @@ Magnetic pressure
 Ramses results
 --------------
 
-We will now report the results obtained compiled with the ramses/mhd_eos solver. 
+We will now report the results obtained compiled with the ramses/mhd_eos solver, where we plot the same quantities as we did for the bifrost solver. 
 
 Initial and final results
 #########################
 
-The plots are the same as we did with bifrost, where each quantity is shown for the xy-plane, xz-plane and yz-plane. For the xy-plane we will include the result at t=0s, but for all three directions we will report the result after t=0.5s. 
+The plots are the same as we did with bifrost, where each quantity is shown for the xy-plane, xz-plane and yz-plane. For the xy-plane we will include the result at t=0s, but for all three directions we will report the result after t=0.5s. Similarly to the bifrost plots, the upper left and upper right plots corresponds to the xy-plane at t=0s and t=0.5s repsectively. The lower left and lower right plots correspond to the xz-plane and yz-plane, respectively.  
 
 
 Density
@@ -189,6 +195,8 @@ We begin with the density, shown below.
 Energy
 ******
 
+Then we plot the energy, shown below
+
 .. image:: img_ot_ramses/ee_ot_ramses_xy_0.png
    :width: 48 % 
 .. image:: img_ot_ramses/ee_ot_ramses_xy_5.png
@@ -201,6 +209,8 @@ Energy
 
 Velocity magnitude
 ******************
+
+The resulting velocity magnitude is shown below
 
 .. image:: img_ot_ramses/velocity_magnitude_ot_ramses_xy_0.png
    :width: 48 % 
@@ -215,6 +225,8 @@ Velocity magnitude
 Magnetic pressure
 *****************
 
+Finally, we plot the magnetic pressure, shown below.
+
 .. image:: img_ot_ramses/magnetic_pressure_ot_ramses_xy_0.png
    :width: 48 % 
 .. image:: img_ot_ramses/magnetic_pressure_ot_ramses_xy_5.png
@@ -223,6 +235,7 @@ Magnetic pressure
    :width: 48 % 
 .. image:: img_ot_ramses/magnetic_pressure_ot_ramses_yz_5.png 
    :width: 48 %
+
 
 
 
