@@ -117,7 +117,8 @@ We begin with the density, shown below.
    :width: 48 % 
 .. image:: img_ot_bifrost/density_ot_bifrost_xz_5.png 
    :width: 48 % 
-.. image:: img_ot_bifrost/density_ot_bifrost_yz_5.png 
+.. image:: img_ot_bifrost/density_ot_bifrost_yz_5.png
+   :width: 48 % 
 
 
 Energy
@@ -130,6 +131,8 @@ Energy
 .. image:: img_ot_bifrost/ee_ot_bifrost_xz_5.png 
    :width: 48 % 
 .. image:: img_ot_bifrost/ee_ot_bifrost_yz_5.png 
+   :width: 48 %
+
 
 Velocity magnitude
 ******************
@@ -141,6 +144,8 @@ Velocity magnitude
 .. image:: img_ot_bifrost/velocity_magnitude_ot_bifrost_xz_5.png 
    :width: 48 % 
 .. image:: img_ot_bifrost/velocity_magnitude_ot_bifrost_yz_5.png 
+   :width: 48 %
+
 
 Magnetic pressure
 *****************
@@ -152,8 +157,7 @@ Magnetic pressure
 .. image:: img_ot_bifrost/magnetic_pressure_ot_bifrost_xz_5.png 
    :width: 48 % 
 .. image:: img_ot_bifrost/magnetic_pressure_ot_bifrost_yz_5.png 
-
-
+   :width: 48 %
 
 
 Ramses results
@@ -179,6 +183,7 @@ We begin with the density, shown below.
 .. image:: img_ot_ramses/density_ot_ramses_xz_5.png 
    :width: 48 % 
 .. image:: img_ot_ramses/density_ot_ramses_yz_5.png 
+   :width: 48 %
 
 
 Energy
@@ -191,6 +196,8 @@ Energy
 .. image:: img_ot_ramses/ee_ot_ramses_xz_5.png 
    :width: 48 % 
 .. image:: img_ot_ramses/ee_ot_ramses_yz_5.png 
+   :width: 48 %
+
 
 Velocity magnitude
 ******************
@@ -202,6 +209,8 @@ Velocity magnitude
 .. image:: img_ot_ramses/velocity_magnitude_ot_ramses_xz_5.png 
    :width: 48 % 
 .. image:: img_ot_ramses/velocity_magnitude_ot_ramses_yz_5.png 
+   :width: 48 %
+
 
 Magnetic pressure
 *****************
@@ -213,7 +222,7 @@ Magnetic pressure
 .. image:: img_ot_ramses/magnetic_pressure_ot_ramses_xz_5.png 
    :width: 48 % 
 .. image:: img_ot_ramses/magnetic_pressure_ot_ramses_yz_5.png 
-
+   :width: 48 %
 
 
 
