@@ -303,8 +303,11 @@
 <p>We will now report the results of the gas pressure and magnetic pressure along the x-axis for the xy-plane.</p>
 <div class="section" id="gas-pressure">
 <h3>Gas pressure<a class="headerlink" href="#gas-pressure" title="Permalink to this headline">¶</a></h3>
-<p>We start with the gas pressure, derived from the gamma law equation of state, taken at t=0.5s at y=0.4277</p>
+<p>We start with the gas pressure, derived from the gamma law equation of state, taken at t=0.5s at y=0.4277. The results from the bifrost solver and the ramses/mhd_eos solver is shown in the plot below.</p>
 <img alt="_images/ot_xy-line_y04277_gas-pressure.png" src="_images/ot_xy-line_y04277_gas-pressure.png" />
+<p>For the above image, we get an overall profile for both solvers, matching the one from Miniati &amp; Martin (2011). Their simulation was performed with a grid of 200x200 cells. For the bifrost solver, the maximum gas pressure lies below 0.4 g/(cm*s^2), matching the result of Miniati &amp; Martin. Their simulation also has P&lt;0.1 at the boundaries where x=0 and x=1, similar to the bifrost solver. The shape of their resulting pressure at 0.9 &lt; x &lt; 1 looks more or less identical to the one obtained with the bifrost solver.</p>
+<p>We also compare the above result to Ryu et. al. (1998), which used the same y-value of y=0.4277, a grid of 256x256 cells and an output time of t=0.48s. In that experiment, the pressure had a slightly higher local maximum near x=0.2 and a less fluctuating profile near this point. The sudden increase in pressure before x reaches 0.4 that we see above does not occur in the result of Ryu et. al. (1998) before x reaches approximately x=0.44. Their overall maximum pressure value is slighlty larger than P=0.4, and resembles the shape we obtained from the ramses/mhd_eos solver. For x&gt;0.9 Ryu et. al. lies below P=0.1 and reaches a final value of P=0.8.</p>
+<p>As a final comparison, we consider the result from Stone et. al. (2008) where a 192x192 computational grid was used with a final time of t=0.5, both used for the above image as well. Their results were obtained with a slice along y=0.427. The pressure obtained by Stone et. al. starts below P=0.1, and reaches P=0.2 approximately around x=0.3. The steep pressure increase near x=0.4 above seems to occur almost exactly at x=0.4 in Stone et. al., which is at a slightly higher x-value than we have. The maximum pressure value they reach seems to be just below P=0.4. The small peak near x=0.9 lies above P=0.1 in Stone et. al. and approaches a final value in the range P= 0.07-0.08.</p>
 <p>Now, for y=0.3125</p>
 <img alt="_images/ot_xy-line_y03125_gas-pressure.png" src="_images/ot_xy-line_y03125_gas-pressure.png" />
 </div>
@@ -312,6 +315,12 @@
 <h3>Magnetic pressure<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
 <p>For the magnetic pressure, we will only consider a slice along y=0.4277, shown below</p>
 <img alt="_images/ot_xy-line_y04277_magnetic-pressure.png" src="_images/ot_xy-line_y04277_magnetic-pressure.png" />
+<div class="section" id="references">
+<h4>References<a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h4>
+<p>Miniati &amp; Martin (2011) - <a class="reference external" href="https://iopscience.iop.org/article/10.1088/0067-0049/195/1/5/pdf">https://iopscience.iop.org/article/10.1088/0067-0049/195/1/5/pdf</a>
+Ryu et. al. (1998) - <a class="reference external" href="https://iopscience.iop.org/article/10.1086/306481/pdf">https://iopscience.iop.org/article/10.1086/306481/pdf</a>
+Stone et. al. (2008) - <a class="reference external" href="https://iopscience.iop.org/article/10.1086/588755/pdf">https://iopscience.iop.org/article/10.1086/588755/pdf</a></p>
+</div>
 </div>
 </div>
 </div>
