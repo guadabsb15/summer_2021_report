@@ -97,7 +97,7 @@ For the ramses solver, we used
 
 
 
-Bifrost results
+Bifrost results 2D
 ##########################
 
 Here we will show the results of the experiment compiled with the bifrost solver. There are four quantities we will report for three different planes, namely density, energy, velocity magnitude and magnetic pressure.
@@ -166,7 +166,7 @@ Finally, we plot the magnetic pressure
 
 
 
-Ramses results
+Ramses results 2D
 #########################
 
 
@@ -236,4 +236,7 @@ Finally, we plot the magnetic pressure, shown below.
 
 
 
+1D pressure line profiles
+--------------------------
 
+We will now report the results of the gas pressure and magnetic pressure along the x-axis for the xy-plane. 
