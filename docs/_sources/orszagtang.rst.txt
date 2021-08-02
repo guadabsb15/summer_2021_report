@@ -273,6 +273,6 @@ For the magnetic pressure, we will only consider a slice along y=0.4277, shown b
 References
 ----------
 
-Miniati & Martin (2011) - https://iopscience.iop.org/article/10.1088/0067-0049/195/1/5/pdf
-Ryu et. al. (1998) - https://iopscience.iop.org/article/10.1086/306481/pdf
-Stone et. al. (2008) - https://iopscience.iop.org/article/10.1086/588755/pdf 
+ * Miniati & Martin (2011) - https://iopscience.iop.org/article/10.1088/0067-0049/195/1/5/pdf
+ * Ryu et. al. (1998) - https://iopscience.iop.org/article/10.1086/306481/pdf
+ * Stone et. al. (2008) - https://iopscience.iop.org/article/10.1086/588755/pdf 
