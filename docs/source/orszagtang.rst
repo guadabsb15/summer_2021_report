@@ -237,6 +237,33 @@ Finally, we plot the magnetic pressure, shown below.
 
 
 1D pressure line profiles
---------------------------
+##############################
 
-We will now report the results of the gas pressure and magnetic pressure along the x-axis for the xy-plane. 
+We will now report the results of the gas pressure and magnetic pressure along the x-axis for the xy-plane.
+
+
+
+Gas pressure
+************
+
+We start with the gas pressure, derived from the gamma law equation of state, taken at t=0.5s at y=0.4277
+
+.. image:: img_ot_lines/ot_xy-line_y04277_gas-pressure.png
+
+
+Now, for y=0.3125 
+
+.. image:: img_ot_lines/ot_xy-line_y03125_gas-pressure.png
+
+
+Magnetic pressure
+*****************
+
+For the magnetic pressure, we will only consider a slice along y=0.4277, shown below 
+
+.. image:: img_ot_lines/ot_xy-line_y04277_magnetic-pressure.png
+
+
+
+
+ 
