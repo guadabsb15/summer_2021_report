@@ -3,7 +3,7 @@ Rayleigh Taylor instability
 
 Results from RT experiments run with different parameters
 ----
-In these experiments, we change various parameters and study the effects in resultant density. The Ramses solver is used to simulate the experiment, and simulation snapshot are taken after 5 seconds. At this time we can compare results from different runs. 
+In these experiments, we change various parameters and study the effects in resultant density. The Ramses solver (ramses/mhd_eos) is used to simulate the experiment, and simulation snapshot are taken after 5 seconds. At this time we can compare results from different runs. 
 
 Initially, experimental parameters follow Abel. T (2011)
 
@@ -32,13 +32,25 @@ with gas constant gamma = 1.4
 Varying Ramses slope type
 ----
 
-Type of slope limiter used in the Godunov scheme for the piecewise linear reconstruction, see the `Ramses docs <https://bitbucket.org/rteyssie/ramses/wiki/Hydro%20Parameters>`_ for further explanation.
+slope_type is a parameter for the ramses solver. We tried the different values 1, 2, and 3.5
 
-.. image:: img_rayleigh_taylor/density_slope_2_50.png
-       :width: 48 %
-.. image:: img_rayleigh_taylor/density_slope_1_50.png
-       :width: 48 %
-.. image:: img_rayleigh_taylor/density_run_3_50.png
+.. figure:: img_rayleigh_taylor/density_slope_1_50.png
+    :width: 48%
+    :align: center
+    :alt: alternate text
+    :figclass: align-left
+    
+    slope_type = 1.0    
+
+.. figure:: img_rayleigh_taylor/density_slope_2_50.png
+    :width: 48%
+    :align: center
+    :alt: alternate text
+    :figclass: align-right
+    
+    slope_type = 2.0
+
+.. image:: img_rayleigh_taylor/density_run3_50.png
           :width: 48 %
 
 
