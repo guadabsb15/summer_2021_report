@@ -15,6 +15,6 @@ Welcome to Summer 2021 report's documentation!
    mhd_blast
    sedov
    orszagtang 
-  
+   rayleigh_taylor  
 
 
