@@ -256,18 +256,23 @@ We also compare the above result to Ryu et. al. (1998), which used the same y-va
 
 As a final comparison, we consider the result from Stone et. al. (2008) where a 192x192 computational grid was used with a final time of t=0.5, both used for the above image as well. Their results were obtained with a slice along y=0.427. The pressure obtained by Stone et. al. starts below P=0.1, and reaches P=0.2 approximately around x=0.3. The steep pressure increase near x=0.4 above seems to occur almost exactly at x=0.4 in Stone et. al., which is at a slightly higher x-value than we have. The maximum pressure value they reach seems to be just below P=0.4. The small peak near x=0.9 lies above P=0.1 in Stone et. al. and approaches a final value in the range P= 0.07-0.08.       
 
-Now, for y=0.3125 
+Now, we plot the gas pressure for the same experiment with a slice along y=0.3125, shown below. 
 
 .. image:: img_ot_lines/ot_xy-line_y03125_gas-pressure.png
+
+The above plot corresponds to an experiment by Stone et. al. (2008). Both initial values above resemble the initial values from Stone et. al. very well. The profile we see from the bifrost solver corresponds well with Stone et. al., but the drop that occurs before x=0.1, where the pressure drops below P=0.2 g/(cm*s^2) is less abrupt than it is in Stone et. al., where the drop has a minimum value of around P=0.13 g/(cm*s^2). The increase after x=0.2 from the ramses/mhd_eos solver is greater than in Stone et. al., and the bifrost matches this level better. The pressure drop around x=0.3 from the bifrost solver coincides well with Stone et. al., while the ramses/mhd_eos yields a too high pressure at this point. From that point and towards x=0.7, the bifrost results look very similar to Stone et. al. The bifrost solver also matches Stone et. al. for the remaining x-values, all the way towards x=1.  
 
 
 Magnetic pressure
 *****************
 
-For the magnetic pressure, we will only consider a slice along y=0.4277, shown below 
+For the magnetic pressure, we will only consider a slice along y=0.4277, shown below, which was reported by Ryu et. al. (1998) and Miniati & Martin (2011). 
 
 .. image:: img_ot_lines/ot_xy-line_y04277_magnetic-pressure.png
 
+Above, we see that the bifrost and ramses/mhd_eos solvers yield more or less the same result. Compared to Miniati & Martin the initial magnetic pressure above is initially lower, with their initial value is around 0.0085. Then, there is overlapping results until we rach the point x=0.2. The peak occuring before x=0.3 in Miniati & Martin. yields a magnetic pressure higher than 0.004. The two peaks we see around x=0.5 is approximately the same value as the peak before x=0.3 in Miniati & Martin, and their also roughly the same size in their experiment. The maximum value near x=0.6 yields a Magntic pressure around 0.01 in Miniati & Martin, much higher than what is plotted above. The reminaing simulation resembles Miniati & Martin well, but their pressure drops to approximately 0 around x=0.9, lower than our result and they reach a final value of the magnetic pressure that is above 0.008, while the above results lie below 0.007.
+
+In Ryu et. al. the initial and final pressure lies around 0.009. The peak between x=0.2 and x=0.3 exceeds 0.004 in their experiment as well. The two peaks around x=0.5 lies below 0.004 in Ryu et. al. and has a lower value than we have obtained. These peaks are thus lower than the one around x=0.25. The increment around x=0.6 reaches a value of 0.009 in Ryu et. al., while we don't exceed 0.008 with our simulation. Around x=0.9, the pressure in Ryu et. al. drops to a value near zero, lower than our minimum value, before it reaches the end value around 0.009   
 
 
 References
