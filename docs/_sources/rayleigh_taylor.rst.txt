@@ -36,17 +36,17 @@ slope_type is a parameter for the ramses solver. We tried the different values 1
 
 .. figure:: img_rayleigh_taylor/density_slope_1_50.png
     :width: 48%
-    :align: center
+    :align: left
     :alt: alternate text
-    :figclass: align-left
+    :figclass: align-center
     
     slope_type = 1.0    
 
 .. figure:: img_rayleigh_taylor/density_slope_2_50.png
     :width: 48%
-    :align: center
+    :align: right
     :alt: alternate text
-    :figclass: align-right
+    :figclass: align-center
     
     slope_type = 2.0
 
