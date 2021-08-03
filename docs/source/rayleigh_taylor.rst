@@ -34,25 +34,15 @@ Varying Ramses slope type
 
 slope_type is a parameter for the ramses solver. We tried the different values 1, 2, and 3.5
 
-.. figure:: img_rayleigh_taylor/density_slope_1_50.png
-    :width: 48%
-    :align: left
-    :alt: alternate text
-    :figclass: align-center
-    
-    slope_type = 1.0    
+.. list-table:: 
 
-.. figure:: img_rayleigh_taylor/density_slope_2_50.png
-    :width: 48%
-    :align: right
-    :alt: alternate text
-    :figclass: align-center
-    
-    slope_type = 2.0
+    * - .. figure:: img_rayleigh_taylor/density_slope_1_50.png
+           Fig 1. slope_type = 1.0
 
-.. image:: img_rayleigh_taylor/density_run3_50.png
-          :width: 48 %
+      - .. figure:: img_rayleigh_taylor/density_slope_2_50.png
+           Fig 2. slope_type = 2.0
 
-
+      - .. figure:: img_rayleigh_taylor/density_run3_50.png
+           Fig 3. slope_type = 3.5
 
 
