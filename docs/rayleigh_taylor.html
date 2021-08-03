@@ -35,7 +35,7 @@
 <h1>Rayleigh Taylor instability<a class="headerlink" href="#rayleigh-taylor-instability" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="results-from-rt-experiments-run-with-different-parameters">
 <h2>Results from RT experiments run with different parameters<a class="headerlink" href="#results-from-rt-experiments-run-with-different-parameters" title="Permalink to this headline">¶</a></h2>
-<p>In these experiments, we change various parameters and study the effects in resultant density. The Ramses solver is used to simulate the experiment, and simulation snapshot are taken after 5 seconds. At this time we can compare results from different runs.</p>
+<p>In these experiments, we change various parameters and study the effects in resultant density. The Ramses solver (ramses/mhd_eos) is used to simulate the experiment, and simulation snapshot are taken after 5 seconds. At this time we can compare results from different runs.</p>
 <p>Initially, experimental parameters follow Abel. T (2011)</p>
 <table class="docutils align-default">
 <colgroup>
@@ -77,10 +77,16 @@
 </div>
 <div class="section" id="varying-ramses-slope-type">
 <h2>Varying Ramses slope type<a class="headerlink" href="#varying-ramses-slope-type" title="Permalink to this headline">¶</a></h2>
-<p>Type of slope limiter used in the Godunov scheme for the piecewise linear reconstruction, see the <a class="reference external" href="https://bitbucket.org/rteyssie/ramses/wiki/Hydro%20Parameters">Ramses docs</a> for further explanation.</p>
-<a class="reference internal image-reference" href="_images/density_slope_2_50.png"><img alt="_images/density_slope_2_50.png" src="_images/density_slope_2_50.png" style="width: 48%;" /></a>
-<a class="reference internal image-reference" href="_images/density_slope_1_50.png"><img alt="_images/density_slope_1_50.png" src="_images/density_slope_1_50.png" style="width: 48%;" /></a>
-<a class="reference internal image-reference" href="img_rayleigh_taylor/density_run_3_50.png"><img alt="img_rayleigh_taylor/density_run_3_50.png" src="img_rayleigh_taylor/density_run_3_50.png" style="width: 48%;" /></a>
+<p>slope_type is a parameter for the ramses solver. We tried the different values 1, 2, and 3.5</p>
+<div class="align-left figure align-center" id="id1">
+<a class="reference internal image-reference" href="_images/density_slope_1_50.png"><img alt="alternate text" src="_images/density_slope_1_50.png" style="width: 48%;" /></a>
+<p class="caption"><span class="caption-text">slope_type = 1.0</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+</div>
+<div class="align-right figure align-center" id="id2">
+<a class="reference internal image-reference" href="_images/density_slope_2_50.png"><img alt="alternate text" src="_images/density_slope_2_50.png" style="width: 48%;" /></a>
+<p class="caption"><span class="caption-text">slope_type = 2.0</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
+</div>
+<a class="reference internal image-reference" href="_images/density_run3_50.png"><img alt="_images/density_run3_50.png" src="_images/density_run3_50.png" style="width: 48%;" /></a>
 </div>
 </div>
 
