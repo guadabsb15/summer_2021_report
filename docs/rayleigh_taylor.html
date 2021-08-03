@@ -1,0 +1,164 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rayleigh Taylor instability &#8212; Summer 2021 report 1.0.0 documentation</title>
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Orszag-Tang vortex" href="orszagtang.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="rayleigh-taylor-instability">
+<h1>Rayleigh Taylor instability<a class="headerlink" href="#rayleigh-taylor-instability" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="results-from-rt-experiments-run-with-different-parameters">
+<h2>Results from RT experiments run with different parameters<a class="headerlink" href="#results-from-rt-experiments-run-with-different-parameters" title="Permalink to this headline">¶</a></h2>
+<p>In these experiments, we change various parameters and study the effects in resultant density. The Ramses solver is used to simulate the experiment, and simulation snapshot are taken after 5 seconds. At this time we can compare results from different runs.</p>
+<p>Initially, experimental parameters follow Abel. T (2011)</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 45%" />
+<col style="width: 55%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head" colspan="2"><p>Experiment Parameters</p></th>
+</tr>
+<tr class="row-even"><th class="head"><p>Quantity</p></th>
+<th class="head"><p>Value</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-odd"><td><p>y0</p></td>
+<td><p>0.5</p></td>
+</tr>
+<tr class="row-even"><td><p>d1</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td><p>d2</p></td>
+<td><p>2</p></td>
+</tr>
+<tr class="row-even"><td><p>deltay</p></td>
+<td><p>0.025</p></td>
+</tr>
+<tr class="row-odd"><td><p>deltavy</p></td>
+<td><p>0.025</p></td>
+</tr>
+<tr class="row-even"><td><p>dymin</p></td>
+<td><p>0.3</p></td>
+</tr>
+<tr class="row-odd"><td><p>dymax</p></td>
+<td><p>0.7</p></td>
+</tr>
+</tbody>
+</table>
+<p>with gas constant gamma = 1.4</p>
+</div>
+<div class="section" id="varying-ramses-slope-type">
+<h2>Varying Ramses slope type<a class="headerlink" href="#varying-ramses-slope-type" title="Permalink to this headline">¶</a></h2>
+<p>Type of slope limiter used in the Godunov scheme for the piecewise linear reconstruction, see the <a class="reference external" href="https://bitbucket.org/rteyssie/ramses/wiki/Hydro%20Parameters">Ramses docs</a> for further explanation.</p>
+<a class="reference internal image-reference" href="_images/density_slope_2_50.png"><img alt="_images/density_slope_2_50.png" src="_images/density_slope_2_50.png" style="width: 48%;" /></a>
+<a class="reference internal image-reference" href="_images/density_slope_1_50.png"><img alt="_images/density_slope_1_50.png" src="_images/density_slope_1_50.png" style="width: 48%;" /></a>
+<a class="reference internal image-reference" href="img_rayleigh_taylor/density_run_3_50.png"><img alt="img_rayleigh_taylor/density_run_3_50.png" src="img_rayleigh_taylor/density_run_3_50.png" style="width: 48%;" /></a>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">Summer 2021 report</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="briowu.html">Brio&amp; Wu experimemts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sod.html">Sod experimemts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mhd_blast.html">MHD Blast experiment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sedov.html">Sedov-Taylor experiment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="orszagtang.html">Orszag-Tang vortex</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Rayleigh Taylor instability</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#results-from-rt-experiments-run-with-different-parameters">Results from RT experiments run with different parameters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#varying-ramses-slope-type">Varying Ramses slope type</a></li>
+</ul>
+</li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="orszagtang.html" title="previous chapter">Orszag-Tang vortex</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2021, testing crew at RoCs.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.5.4</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/rayleigh_taylor.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
