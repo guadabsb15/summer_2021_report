@@ -77,7 +77,8 @@
 </div>
 <div class="section" id="varying-ramses-slope-type">
 <h2>Varying Ramses slope type<a class="headerlink" href="#varying-ramses-slope-type" title="Permalink to this headline">¶</a></h2>
-<p>slope_type is a parameter for the ramses solver. We tried the different values 1, 2, and 3.5</p>
+<p><code class="docutils literal notranslate"><span class="pre">slope_type</span></code> is a parameter for the ramses solver. We tried the different values 1, 2, and 3.5</p>
+<p>The following simulations are run on grids with resolution 128x256 in x, y.</p>
 <table class="docutils align-default">
 <colgroup>
 <col style="width: 33%" />
@@ -87,17 +88,51 @@
 <tbody>
 <tr class="row-odd"><td><div class="figure align-default" id="id1">
 <img alt="_images/density_slope_1_50.png" src="_images/density_slope_1_50.png" />
-<p class="caption"><span class="caption-text">Fig 1. slope_type = 1.0</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">slope_type</span> <span class="pre">=</span> <span class="pre">1.0</span></code></span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
 </div>
 </td>
 <td><div class="figure align-default" id="id2">
 <img alt="_images/density_slope_2_50.png" src="_images/density_slope_2_50.png" />
-<p class="caption"><span class="caption-text">Fig 2. slope_type = 2.0</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">slope_type</span> <span class="pre">=</span> <span class="pre">2.0</span></code></span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
 </div>
 </td>
 <td><div class="figure align-default" id="id3">
 <img alt="_images/density_run3_50.png" src="_images/density_run3_50.png" />
-<p class="caption"><span class="caption-text">Fig 3. slope_type = 3.5</span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">slope_type</span> <span class="pre">=</span> <span class="pre">3.5</span></code></span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Some details in the results are clearly dependent on the <code class="docutils literal notranslate"><span class="pre">slope_type</span></code> variable. Larger values of this parameter gives the results finer/smaller scale patterns.</p>
+<p>Effects of grid
+—</p>
+<p>Falling back to the default <code class="docutils literal notranslate"><span class="pre">slope_type=3.5</span></code>, we study how grid resolution affects results.</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><div class="figure align-default" id="id4">
+<img alt="_images/density_ramses_small_50.png" src="_images/density_ramses_small_50.png" />
+<p class="caption"><span class="caption-text">nx=64, ny=256</span><a class="headerlink" href="#id4" title="Permalink to this image">¶</a></p>
+</div>
+</td>
+<td><div class="figure align-default" id="id5">
+<img alt="_images/density_run3_50.png" src="_images/density_run3_50.png" />
+<p class="caption"><span class="caption-text">nx=128, ny=256</span><a class="headerlink" href="#id5" title="Permalink to this image">¶</a></p>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><div class="figure align-default" id="id6">
+<img alt="_images/density_ramses_medium_20.png" src="_images/density_ramses_medium_20.png" />
+<p class="caption"><span class="caption-text">nx=256, ny=512</span><a class="headerlink" href="#id6" title="Permalink to this image">¶</a></p>
+</div>
+</td>
+<td><div class="figure align-default" id="id7">
+<img alt="_images/density_ramses_large_20.png" src="_images/density_ramses_large_20.png" />
+<p class="caption"><span class="caption-text">nx=512, ny=1024</span><a class="headerlink" href="#id7" title="Permalink to this image">¶</a></p>
 </div>
 </td>
 </tr>
