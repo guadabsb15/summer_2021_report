@@ -126,10 +126,19 @@ Behaviour of loop in the xy-plane
 
 Now, we include snapshots of the run in the **xy-plane** to show the behaviour of the loop throughout the simulation. This will be used for comparison later on 
 
-.. image:: Mag_img/xy_initial/magnetic_pressure_xy_1.png 
+.. image:: Mag_img/xy_initial/magnetic_pressure_xy_0.png 
    :width: 48 % 
-.. image:: Mag_img/xy_initial/magnetic_pressure_xy_10.png
+.. image:: Mag_img/xy_initial/magnetic_pressure_xy_2.png
    :width: 48 % 
+.. image:: Mag_img/xy_initial/magnetic_pressure_xy_4.png 
+   :width: 48 % 
+.. image:: Mag_img/xy_initial/magnetic_pressure_xy_5.png
+   :width: 48 % 
+
+And the loop has returned to the initial state after t=1s. 
+
+
+
 
 
 Static behaviour 
