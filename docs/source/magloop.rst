@@ -126,7 +126,10 @@ Behaviour of loop in the xy-plane
 
 Now, we include snapshots of the run in the **xy-plane** to show the behaviour of the loop throughout the simulation. This will be used for comparison later on 
 
-
+.. image:: Mag_img/xy_initial/magnetic_pressure_xy_1.png 
+   :width: 48 % 
+.. image:: Mag_img/xy_initial/magnetic_pressure_xy_10.png
+   :width: 48 % 
 
 
 Static behaviour 
@@ -167,6 +170,23 @@ Normalized magnetic pressure evolution
 We will now study the evolution of the normalized magnetic pressure throughout the simulation. 
 
 
+.. image:: Mag_img/pressure_evolution/loop_xy_mod_incr_pb_evolution.png
+   :width: 48 % 
+.. image:: Mag_img/pressure_evolution/loop_xy_mod_red_pb_evolution.png
+   :width: 48 % 
+
+
+Now, we report the effects by a further decrease of the parameters 
+
+.. image:: Mag_img/pressure_evolution/loop_xy_fact5_red_pb_evolution.png
+   :width: 48 % 
+.. image:: Mag_img/pressure_evolution/loop_xy_fact10_red_pb_evolution.png
+   :width: 48 % 
+
+For the combined, we get 
+
+.. image:: Mag_img/pressure_evolution/loop_xy_comb_adjust_pb_evolution.png
+   :width: 48 % 
 
 
 
