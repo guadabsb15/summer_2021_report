@@ -4,8 +4,8 @@ Rayleigh Taylor instability
 Results from RT experiments run with different parameters
 ----
 In these experiments, we change various parameters and study the effects in resultant density.
-The Ramses solver (ramses/mhd_eos) is used to simulate the experiment, and simulation snapshot are taken after 5 seconds.
-At this time we can compare results from different runs.
+We use both the Ramses solver (ramses/mhd_eos) and Bifrost (ideal_mhd) to simulate the experiment.
+Simulation snapshot are taken after 5 seconds, and at this time we can compare results from different runs.
 
 Initially, experimental parameters follow Abel. T (2011)
 
@@ -57,7 +57,7 @@ Larger values of this parameter gives the results finer/smaller scale patterns.
 Larger ``slope_type`` also introduces more non-linearity, and the flow becomes more turbulent.
 
 
-Effects of grid
+Effects of grid in Ramses
 ----
 
 Falling back to the default ``slope_type=3.5``, we study how grid resolution affects results.
@@ -67,7 +67,7 @@ Falling back to the default ``slope_type=3.5``, we study how grid resolution aff
 
     * - .. figure:: img_rayleigh_taylor/density_ramses_small_50.png
 
-           nx=64, ny=256
+           nx=64, ny=128
 
       - .. figure:: img_rayleigh_taylor/density_run3_50.png
 
@@ -84,3 +84,19 @@ Falling back to the default ``slope_type=3.5``, we study how grid resolution aff
 
 Finer resolution gives more details to the results, and patterns exists on smaller scales.
 It also makes the density profiles less symmetric and more chaotic.
+
+Effects of grid in Bifrost
+----
+
+.. list-table::
+
+  * - .. figure:: img_rayleigh_taylor/rho_bifrost_128x256.png
+
+         nx=128, ny=256
+
+    - .. figure:: img_rayleigh_taylor/rho_bifrost_256x512.png
+
+         nx=256, ny=512
+
+With Bifrost, the solution does not posess the same details as the Ramses solver.
+There are less whirls and non-linearity in these solutions.
