@@ -33,6 +33,223 @@
             
   <div class="section" id="magnetic-field-loop-advection">
 <h1>Magnetic Field Loop Advection<a class="headerlink" href="#magnetic-field-loop-advection" title="Permalink to this headline">¶</a></h1>
+<p>In this experiment we report the results of the Magnetic loop advection experiment, where we study the result from changing different bifrost parameters for the bifrost solver and slope_types for the ramses/mhd_eos solver.</p>
+<dl class="simple">
+<dt>The experiment was run on</dt><dd><ul class="simple">
+<li><p>branch: develop</p></li>
+<li><p>hash: aff3841</p></li>
+</ul>
+</dd>
+</dl>
+<div class="section" id="simulation-parameters">
+<h2>Simulation parameters<a class="headerlink" href="#simulation-parameters" title="Permalink to this headline">¶</a></h2>
+<p>We will here report the initial parameters used for running the experiment. We tabulate the grid parameters for the xy-direction explicitly, and state the differences related to the other planes</p>
+<div class="section" id="output-parameters">
+<h3>Output parameters<a class="headerlink" href="#output-parameters" title="Permalink to this headline">¶</a></h3>
+<p>For the output parameters</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 29%" />
+<col style="width: 32%" />
+<col style="width: 39%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head" colspan="3"><p>out_params</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>end_time</p></td>
+<td><p>out_time</p></td>
+<td><p>print_time</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>0.2</p></td>
+<td><p>0</p></td>
+</tr>
+</tbody>
+</table>
+<p>Using end_time=2.0, the magnetic loop completes two whole cycles for the initial velocities and cartesian parameters we have used, which is stated below.</p>
+</div>
+<div class="section" id="initial-conditions">
+<h3>Initial conditions<a class="headerlink" href="#initial-conditions" title="Permalink to this headline">¶</a></h3>
+<p>For the <strong>xy-plane</strong> we have</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 24%" />
+<col style="width: 14%" />
+<col style="width: 20%" />
+<col style="width: 24%" />
+<col style="width: 20%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head" colspan="5"><p>cartesian_params</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>size</p></td>
+<td><p>dims</p></td>
+<td><p>mpi_dims</p></td>
+<td><p>origin</p></td>
+<td><p>periodic</p></td>
+</tr>
+<tr class="row-odd"><td><p>2,1,0.0625</p></td>
+<td><p>4,4,1</p></td>
+<td><p>1,1,1</p></td>
+<td><p>-1,-0.5,0</p></td>
+<td><p>t,t,t</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 8%" />
+<col style="width: 19%" />
+<col style="width: 29%" />
+<col style="width: 29%" />
+<col style="width: 15%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head" colspan="5"><p>patch_params</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>nt</p></td>
+<td><p>n</p></td>
+<td><p>no_mans_land</p></td>
+<td><p>do_check_nan</p></td>
+<td><p>grace</p></td>
+</tr>
+<tr class="row-odd"><td><p>5</p></td>
+<td><p>32,16,1</p></td>
+<td><p>t</p></td>
+<td><p>t</p></td>
+<td><p>0.05</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 58%" />
+<col style="width: 21%" />
+<col style="width: 21%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head" colspan="3"><p>IC_params</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>idirect</p></td>
+<td><p>ux</p></td>
+<td><p>uy</p></td>
+</tr>
+<tr class="row-odd"><td><p>3</p></td>
+<td><p>2</p></td>
+<td><p>1</p></td>
+</tr>
+</tbody>
+</table>
+<p>Where ux=2 and uy=1 causes the loop to move from it’s initial position at the box’s center and towards the upper right corner.</p>
+<p>For the <strong>zx-plane</strong> the simulation was run by using  n=16,1,32, and changing the other parameters accoridnagly. For the <strong>yz-plane</strong>  the simulation was run by setting n=1,32,16, with the remaining parameters changed accoridngly. For the <strong>yz-plane</strong> idirect=1 and for the <strong>zx-plane</strong> idirect=2.</p>
+</div>
+</div>
+<div class="section" id="solver-parameters">
+<h2>Solver parameters<a class="headerlink" href="#solver-parameters" title="Permalink to this headline">¶</a></h2>
+<dl class="simple">
+<dt>For the gas, we used a <strong>gamma-law</strong> equation of state with</dt><dd><ul class="simple">
+<li><p>gamma=5/3</p></li>
+</ul>
+</dd>
+</dl>
+<div class="section" id="bifrost-parameters">
+<h3>Bifrost parameters<a class="headerlink" href="#bifrost-parameters" title="Permalink to this headline">¶</a></h3>
+<p>For the bifrost solver we initially used</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 18%" />
+<col style="width: 15%" />
+<col style="width: 15%" />
+<col style="width: 18%" />
+<col style="width: 18%" />
+<col style="width: 15%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head" colspan="6"><p>bifrost_params</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Ca</p></td>
+<td><p>U</p></td>
+<td><p>Uv</p></td>
+<td><p>d</p></td>
+<td><p>e</p></td>
+<td><p>E</p></td>
+</tr>
+<tr class="row-odd"><td><p>0.05</p></td>
+<td><p>0.1</p></td>
+<td><p>0.2</p></td>
+<td><p>0.05</p></td>
+<td><p>0.05</p></td>
+<td><p>0.5</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="ramses-parameters">
+<h3>Ramses parameters<a class="headerlink" href="#ramses-parameters" title="Permalink to this headline">¶</a></h3>
+<dl class="simple">
+<dt>For the ramses solver, we initially used</dt><dd><ul class="simple">
+<li><p>slope_type=3.5</p></li>
+</ul>
+</dd>
+</dl>
+</div>
+</div>
+<div class="section" id="initial-results-with-unchanged-parameters">
+<h2>Initial results with unchanged parameters<a class="headerlink" href="#initial-results-with-unchanged-parameters" title="Permalink to this headline">¶</a></h2>
+<p>We will here report the initial results where we use the bifrost parameters listed above. Initially, we plot the result after t=0s and t=2s for all three planes, in order to check for differences.</p>
+<p>For the <strong>xy-plane</strong> we get</p>
+<a class="reference internal image-reference" href="_images/magnetic_pressure_loop_xy_0.png"><img alt="_images/magnetic_pressure_loop_xy_0.png" src="_images/magnetic_pressure_loop_xy_0.png" style="width: 48%;" /></a>
+<a class="reference internal image-reference" href="_images/magnetic_pressure_loop_xy_10.png"><img alt="_images/magnetic_pressure_loop_xy_10.png" src="_images/magnetic_pressure_loop_xy_10.png" style="width: 48%;" /></a>
+<p>For the <strong>zx-plane</strong> we get</p>
+<a class="reference internal image-reference" href="_images/magnetic_pressure_loop_zx_0.png"><img alt="_images/magnetic_pressure_loop_zx_0.png" src="_images/magnetic_pressure_loop_zx_0.png" style="width: 48%;" /></a>
+<a class="reference internal image-reference" href="_images/magnetic_pressure_loop_zx_10.png"><img alt="_images/magnetic_pressure_loop_zx_10.png" src="_images/magnetic_pressure_loop_zx_10.png" style="width: 48%;" /></a>
+<p>And finally, for the <strong>yz-plane</strong></p>
+<a class="reference internal image-reference" href="_images/magnetic_pressure_loop_yz_0.png"><img alt="_images/magnetic_pressure_loop_yz_0.png" src="_images/magnetic_pressure_loop_yz_0.png" style="width: 48%;" /></a>
+<a class="reference internal image-reference" href="_images/magnetic_pressure_loop_yz_10.png"><img alt="_images/magnetic_pressure_loop_yz_10.png" src="_images/magnetic_pressure_loop_yz_10.png" style="width: 48%;" /></a>
+<div class="section" id="behaviour-of-loop-in-the-xy-plane">
+<h3>Behaviour of loop in the xy-plane<a class="headerlink" href="#behaviour-of-loop-in-the-xy-plane" title="Permalink to this headline">¶</a></h3>
+<p>Now, we include snapshots of the run in the <strong>xy-plane</strong> to show the behaviour of the loop throughout the simulation. This will be used for comparison later on</p>
+<a class="reference internal image-reference" href="Mag_img/xy_initial/magnetic_pressure_xy_0.png"><img alt="Mag_img/xy_initial/magnetic_pressure_xy_0.png" src="Mag_img/xy_initial/magnetic_pressure_xy_0.png" style="width: 48%;" /></a>
+<a class="reference internal image-reference" href="Mag_img/xy_initial/magnetic_pressure_xy_2.png"><img alt="Mag_img/xy_initial/magnetic_pressure_xy_2.png" src="Mag_img/xy_initial/magnetic_pressure_xy_2.png" style="width: 48%;" /></a>
+<a class="reference internal image-reference" href="Mag_img/xy_initial/magnetic_pressure_xy_4.png"><img alt="Mag_img/xy_initial/magnetic_pressure_xy_4.png" src="Mag_img/xy_initial/magnetic_pressure_xy_4.png" style="width: 48%;" /></a>
+<a class="reference internal image-reference" href="Mag_img/xy_initial/magnetic_pressure_xy_5.png"><img alt="Mag_img/xy_initial/magnetic_pressure_xy_5.png" src="Mag_img/xy_initial/magnetic_pressure_xy_5.png" style="width: 48%;" /></a>
+<p>And the loop has returned to the initial state after t=1s.</p>
+</div>
+<div class="section" id="static-behaviour">
+<h3>Static behaviour<a class="headerlink" href="#static-behaviour" title="Permalink to this headline">¶</a></h3>
+<p>We will now check the behaviour of the loop for the static case, where we set the u-values (ux, uy, uz) to zero for all the directions. We will plot the result for t=0s and t=2s for all three directions.</p>
+<p>For the <strong>xy-plane</strong> we get</p>
+<a class="reference internal image-reference" href="_images/magnetic_pressure_static_loop_xy_init.png"><img alt="_images/magnetic_pressure_static_loop_xy_init.png" src="_images/magnetic_pressure_static_loop_xy_init.png" style="width: 48%;" /></a>
+<a class="reference internal image-reference" href="_images/magnetic_pressure_static_loop_xy_final.png"><img alt="_images/magnetic_pressure_static_loop_xy_final.png" src="_images/magnetic_pressure_static_loop_xy_final.png" style="width: 48%;" /></a>
+<p>For the <strong>zx-plane</strong> we get</p>
+<a class="reference internal image-reference" href="_images/magnetic_pressure_static_loop_zx_init.png"><img alt="_images/magnetic_pressure_static_loop_zx_init.png" src="_images/magnetic_pressure_static_loop_zx_init.png" style="width: 48%;" /></a>
+<a class="reference internal image-reference" href="_images/magnetic_pressure_static_loop_zx_final.png"><img alt="_images/magnetic_pressure_static_loop_zx_final.png" src="_images/magnetic_pressure_static_loop_zx_final.png" style="width: 48%;" /></a>
+<p>Finally, for the <strong>yz-plane</strong> we get</p>
+<a class="reference internal image-reference" href="_images/magnetic_pressure_static_loop_yz_init.png"><img alt="_images/magnetic_pressure_static_loop_yz_init.png" src="_images/magnetic_pressure_static_loop_yz_init.png" style="width: 48%;" /></a>
+<a class="reference internal image-reference" href="_images/magnetic_pressure_static_loop_yz_final.png"><img alt="_images/magnetic_pressure_static_loop_yz_final.png" src="_images/magnetic_pressure_static_loop_yz_final.png" style="width: 48%;" /></a>
+</div>
+</div>
+<div class="section" id="normalized-magnetic-pressure-evolution">
+<h2>Normalized magnetic pressure evolution<a class="headerlink" href="#normalized-magnetic-pressure-evolution" title="Permalink to this headline">¶</a></h2>
+<p>We will now study the evolution of the normalized magnetic pressure throughout the simulation.</p>
+<a class="reference internal image-reference" href="_images/loop_xy_mod_incr_pb_evolution.png"><img alt="_images/loop_xy_mod_incr_pb_evolution.png" src="_images/loop_xy_mod_incr_pb_evolution.png" style="width: 48%;" /></a>
+<a class="reference internal image-reference" href="_images/loop_xy_mod_red_pb_evolution.png"><img alt="_images/loop_xy_mod_red_pb_evolution.png" src="_images/loop_xy_mod_red_pb_evolution.png" style="width: 48%;" /></a>
+<p>Now, we report the effects by a further decrease of the parameters</p>
+<a class="reference internal image-reference" href="Mag_img/pressure_evolution/loop_xy_fact5_red_pb_evolution.png"><img alt="Mag_img/pressure_evolution/loop_xy_fact5_red_pb_evolution.png" src="Mag_img/pressure_evolution/loop_xy_fact5_red_pb_evolution.png" style="width: 48%;" /></a>
+<a class="reference internal image-reference" href="Mag_img/pressure_evolution/loop_xy_fact10_red_pb_evolution.png"><img alt="Mag_img/pressure_evolution/loop_xy_fact10_red_pb_evolution.png" src="Mag_img/pressure_evolution/loop_xy_fact10_red_pb_evolution.png" style="width: 48%;" /></a>
+<p>For the combined, we get</p>
+<a class="reference internal image-reference" href="Mag_img/pressure_evolution/loop_xy_comb_adjust_pb_evolution.png"><img alt="Mag_img/pressure_evolution/loop_xy_comb_adjust_pb_evolution.png" src="Mag_img/pressure_evolution/loop_xy_comb_adjust_pb_evolution.png" style="width: 48%;" /></a>
+</div>
 </div>
 
 
@@ -60,7 +277,13 @@
 <li class="toctree-l1"><a class="reference internal" href="sedov.html">Sedov-Taylor experiment</a></li>
 <li class="toctree-l1"><a class="reference internal" href="orszagtang.html">Orszag-Tang vortex</a></li>
 <li class="toctree-l1"><a class="reference internal" href="rayleigh_taylor.html">Rayleigh Taylor instability</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Magnetic Field Loop Advection</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Magnetic Field Loop Advection</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#simulation-parameters">Simulation parameters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#solver-parameters">Solver parameters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#initial-results-with-unchanged-parameters">Initial results with unchanged parameters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#normalized-magnetic-pressure-evolution">Normalized magnetic pressure evolution</a></li>
+</ul>
+</li>
 </ul>
 
 <div class="relations">
