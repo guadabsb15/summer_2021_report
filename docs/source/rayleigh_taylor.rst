@@ -1,8 +1,8 @@
 Rayleigh Taylor instability
-======
+============================
 
 Results from RT experiments run with different parameters
-----
+---------------------------------------------------------
 In these experiments, we change various parameters and study the effects in resultant density.
 The Ramses solver (ramses/mhd_eos) is used to simulate the experiment, and simulation snapshot are taken after 5 seconds.
 At this time we can compare results from different runs.
@@ -32,7 +32,7 @@ Initially, experimental parameters follow Abel. T (2011)
 with gas constant gamma = 1.4
 
 Varying Ramses slope type
-----
+-------------------------
 
 ``slope_type`` is a parameter for the ramses solver. We tried the different values 1, 2, and 3.5
 
@@ -58,7 +58,7 @@ Larger ``slope_type`` also introduces more non-linearity, and the flow becomes m
 
 
 Effects of grid
-----
+---------------
 
 Falling back to the default ``slope_type=3.5``, we study how grid resolution affects results.
 

@@ -18,8 +18,8 @@ Output parameters
 
 For the output parameters 
 
-+------------------+
-| out_params       |
++---------------------------------+
+| out_params                      |
 +=========+==========+============+
 | end_time| out_time | print_time |               
 +---------+----------+------------+
