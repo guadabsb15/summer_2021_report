@@ -90,13 +90,23 @@ Effects of grid in Bifrost
 
 .. list-table::
 
-  * - .. figure:: img_rayleigh_taylor/rho_bifrost_128x256.png
+  * - .. figure:: img_rayleigh_taylor/rho_bifrost_64x128.png
+
+         nx=64, ny=128
+
+    - .. figure:: img_rayleigh_taylor/rho_bifrost_128x256.png
 
          nx=128, ny=256
 
-    - .. figure:: img_rayleigh_taylor/rho_bifrost_256x512.png
+  * - .. figure:: img_rayleigh_taylor/rho_bifrost_256x512.png
 
          nx=256, ny=512
+
+    - .. figure:: img_rayleigh_taylor/rho_bifrost_512x1024.png
+
+         nx=512, ny=1024
+
+
 
 With Bifrost, the solution does not posess the same details as the Ramses solver.
 There are less whirls and non-linearity in these solutions.
