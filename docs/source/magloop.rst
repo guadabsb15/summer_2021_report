@@ -97,13 +97,27 @@ We will here report the initial results where we use the bifrost parameters list
 
 For the **xy-plane** we get 
 
+.. image:: Mag_img/initial/magnetic_pressure_loop_xy_0.png
+   :width: 48 % 
+.. image:: Mag_img/initial/magnetic_pressure_loop_xy_10.png
+   :width: 48 % 
 
 
 For the **zx-plane** we get 
 
+.. image:: Mag_img/initial/magnetic_pressure_loop_zx_0.png
+   :width: 48 % 
+.. image:: Mag_img/initial/magnetic_pressure_loop_zx_10.png
+   :width: 48 % 
+
 
 
 And finally, for the **yz-plane**
+
+.. image:: Mag_img/initial/magnetic_pressure_loop_yz_0.png
+   :width: 48 % 
+.. image:: Mag_img/initial/magnetic_pressure_loop_yz_10.png
+   :width: 48 % 
 
 
 
@@ -122,14 +136,27 @@ We will now check the behaviour of the loop for the static case, where we set th
 
 For the **xy-plane** we get
 
-
+.. image:: Mag_img/static/magnetic_pressure_static_loop_xy_init.png
+   :width: 48 % 
+.. image:: Mag_img/static/magnetic_pressure_static_loop_xy_final.png
+   :width: 48 % 
 
 
 For the **zx-plane** we get 
 
+.. image:: Mag_img/static/magnetic_pressure_static_loop_zx_init.png
+   :width: 48 % 
+.. image:: Mag_img/static/magnetic_pressure_static_loop_zx_final.png
+   :width: 48 % 
+
 
 
 Finally, for the **yz-plane** we get 
+
+.. image:: Mag_img/static/magnetic_pressure_static_loop_yz_init.png
+   :width: 48 % 
+.. image:: Mag_img/static/magnetic_pressure_static_loop_yz_final.png
+   :width: 48 % 
 
 
 
