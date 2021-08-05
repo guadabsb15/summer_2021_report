@@ -37,8 +37,8 @@
 <div class="section" id="results-from-rt-experiments-run-with-different-parameters">
 <h2>Results from RT experiments run with different parameters<a class="headerlink" href="#results-from-rt-experiments-run-with-different-parameters" title="Permalink to this headline">¶</a></h2>
 <p>In these experiments, we change various parameters and study the effects in resultant density.
-The Ramses solver (ramses/mhd_eos) is used to simulate the experiment, and simulation snapshot are taken after 5 seconds.
-At this time we can compare results from different runs.</p>
+We use both the Ramses solver (ramses/mhd_eos) and Bifrost (ideal_mhd) to simulate the experiment.
+Simulation snapshot are taken after 5 seconds, and at this time we can compare results from different runs.</p>
 <p>Initially, experimental parameters follow Abel. T (2011)</p>
 <table class="docutils align-default">
 <colgroup>
@@ -111,8 +111,8 @@ At this time we can compare results from different runs.</p>
 Larger values of this parameter gives the results finer/smaller scale patterns.
 Larger <code class="docutils literal notranslate"><span class="pre">slope_type</span></code> also introduces more non-linearity, and the flow becomes more turbulent.</p>
 </div>
-<div class="section" id="effects-of-grid">
-<h2>Effects of grid<a class="headerlink" href="#effects-of-grid" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="effects-of-grid-in-ramses">
+<h2>Effects of grid in Ramses<a class="headerlink" href="#effects-of-grid-in-ramses" title="Permalink to this headline">¶</a></h2>
 <p>Falling back to the default <code class="docutils literal notranslate"><span class="pre">slope_type=3.5</span></code>, we study how grid resolution affects results.</p>
 <table class="docutils align-default">
 <colgroup>
@@ -122,7 +122,7 @@ Larger <code class="docutils literal notranslate"><span class="pre">slope_type</
 <tbody>
 <tr class="row-odd"><td><div class="figure align-default" id="id4">
 <img alt="_images/density_ramses_small_50.png" src="_images/density_ramses_small_50.png" />
-<p class="caption"><span class="caption-text">nx=64, ny=256</span><a class="headerlink" href="#id4" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-text">nx=64, ny=128</span><a class="headerlink" href="#id4" title="Permalink to this image">¶</a></p>
 </div>
 </td>
 <td><div class="figure align-default" id="id5">
@@ -146,6 +146,30 @@ Larger <code class="docutils literal notranslate"><span class="pre">slope_type</
 </table>
 <p>Finer resolution gives more details to the results, and patterns exists on smaller scales.
 It also makes the density profiles less symmetric and more chaotic.</p>
+</div>
+<div class="section" id="effects-of-grid-in-bifrost">
+<h2>Effects of grid in Bifrost<a class="headerlink" href="#effects-of-grid-in-bifrost" title="Permalink to this headline">¶</a></h2>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><div class="figure align-default" id="id8">
+<img alt="img_rayleigh_taylor/rho_bifrost_128x256.png" src="img_rayleigh_taylor/rho_bifrost_128x256.png" />
+<p class="caption"><span class="caption-text">nx=128, ny=256</span><a class="headerlink" href="#id8" title="Permalink to this image">¶</a></p>
+</div>
+</td>
+<td><div class="figure align-default" id="id9">
+<img alt="img_rayleigh_taylor/rho_bifrost_256x512.png" src="img_rayleigh_taylor/rho_bifrost_256x512.png" />
+<p class="caption"><span class="caption-text">nx=256, ny=512</span><a class="headerlink" href="#id9" title="Permalink to this image">¶</a></p>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<p>With Bifrost, the solution does not posess the same details as the Ramses solver.
+There are less whirls and non-linearity in these solutions.</p>
 </div>
 </div>
 
@@ -176,7 +200,8 @@ It also makes the density profiles less symmetric and more chaotic.</p>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Rayleigh Taylor instability</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#results-from-rt-experiments-run-with-different-parameters">Results from RT experiments run with different parameters</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#varying-ramses-slope-type">Varying Ramses slope type</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#effects-of-grid">Effects of grid</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#effects-of-grid-in-ramses">Effects of grid in Ramses</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#effects-of-grid-in-bifrost">Effects of grid in Bifrost</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="magloop.html">Magnetic Field Loop Advection</a></li>
