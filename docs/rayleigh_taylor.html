@@ -234,7 +234,7 @@ There are less whirls and non-linearity in these solutions.</p>
 </td>
 <td><div class="figure align-default" id="id17">
 <img alt="Nothinghere" src="Nothinghere" />
-<p class="caption"><span class="caption-text">Placeholder</span><a class="headerlink" href="#id17" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-text">Placeholder just so the figures render</span><a class="headerlink" href="#id17" title="Permalink to this image">¶</a></p>
 </div>
 </td>
 </tr>
@@ -242,6 +242,11 @@ There are less whirls and non-linearity in these solutions.</p>
 </table>
 </div>
 </div>
+</div>
+<div class="section" id="changes-to-the-rayleigh-taylor-scripts">
+<h1>Changes to the Rayleigh Taylor scripts<a class="headerlink" href="#changes-to-the-rayleigh-taylor-scripts" title="Permalink to this headline">¶</a></h1>
+<p>I made some changes to the <code class="docutils literal notranslate"><span class="pre">make_snap.py</span></code>, such that the intial state has the correct symmetry. The <code class="docutils literal notranslate"><span class="pre">np.roll</span></code> function is used on <code class="docutils literal notranslate"><span class="pre">pz</span></code>, shifting the array to the right such that the two fingers are side by side. I did not fix the boundaries <code class="docutils literal notranslate"><span class="pre">dymin</span></code> and <code class="docutils literal notranslate"><span class="pre">dymax</span></code>.</p>
+<p>In <code class="docutils literal notranslate"><span class="pre">make_plot.py</span></code>, it is possible to plot time evolution with the <code class="docutils literal notranslate"><span class="pre">make_plot()</span></code> function, just uncomment the lines at the bottom of the document.</p>
 </div>
 
 
@@ -274,6 +279,7 @@ There are less whirls and non-linearity in these solutions.</p>
 <li class="toctree-l2"><a class="reference internal" href="#bifrost">Bifrost</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="#changes-to-the-rayleigh-taylor-scripts">Changes to the Rayleigh Taylor scripts</a></li>
 <li class="toctree-l1"><a class="reference internal" href="magloop.html">Magnetic Field Loop Advection</a></li>
 </ul>
 
