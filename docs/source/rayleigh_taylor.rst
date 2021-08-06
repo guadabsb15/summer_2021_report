@@ -41,14 +41,17 @@ The following simulations are run on grids with resolution 128x256 in x, y.
 .. list-table::
 
     * - .. figure:: img_rayleigh_taylor/density_slope_1_50.png
+           :scale: 115 %
 
            ``slope_type = 1.0``
 
       - .. figure:: img_rayleigh_taylor/density_slope_2_50.png
+           :scale: 115 %
 
            ``slope_type = 2.0``
 
       - .. figure:: img_rayleigh_taylor/density_run3_50.png
+           :scale: 115 %
 
            ``slope_type = 3.5``
 
@@ -66,18 +69,22 @@ Falling back to the default ``slope_type=3.5``, we study how grid resolution aff
 .. list-table::
 
     * - .. figure:: img_rayleigh_taylor/density_ramses_small_50.png
+           :scale: 115 %
 
            nx=64, ny=128
 
       - .. figure:: img_rayleigh_taylor/density_run3_50.png
+           :scale: 115 %
 
            nx=128, ny=256
 
     * - .. figure:: img_rayleigh_taylor/density_ramses_medium_20.png
+           :scale: 115 %
 
            nx=256, ny=512
 
       - .. figure:: img_rayleigh_taylor/density_ramses_large_20.png
+           :scale: 115 %
 
            nx=512, ny=1024
 
@@ -91,18 +98,22 @@ Effects of grid in Bifrost
 .. list-table::
 
   * - .. figure:: img_rayleigh_taylor/rho_bifrost_64x128.png
+         :scale: 150 %
 
          nx=64, ny=128
 
     - .. figure:: img_rayleigh_taylor/rho_bifrost_128x256.png
+         :scale: 150 %
 
          nx=128, ny=256
 
   * - .. figure:: img_rayleigh_taylor/rho_bifrost_256x512.png
+         :scale: 150 %
 
          nx=256, ny=512
 
     - .. figure:: img_rayleigh_taylor/rho_bifrost_512x1024.png
+         :scale: 150 %
 
          nx=512, ny=1024
 
