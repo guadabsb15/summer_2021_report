@@ -178,6 +178,8 @@ Normalized magnetic pressure evolution
 
 We will now study the evolution of the normalized magnetic pressure throughout the simulation. 
 
+Increasing and decreasing bifrost parameters
+********************************************
 
 .. image:: Mag_img/pressure_evolution/loop_xy_mod_incr_pb_evolution.png
    :width: 48 % 
@@ -197,6 +199,24 @@ For the combined, we get
 .. image:: Mag_img/pressure_evolution/loop_xy_comb-adjust_pb_evolution.png
    :width: 48 % 
 
+Loop evolution after decrease
+*****************************
+
+.. image:: Mag_img/2D_pressure/magnetic_loop_xy_mod_red6_1.png
+   :width: 48 % 
+.. image:: Mag_img/2D_pressure/magnetic_loop_xy_mod_red6_10.png
+   :width: 48 % 
+
+.. image:: Mag_img/2D_pressure/magnetic_loop_xy_fact5-red6_1.png
+   :width: 48 % 
+.. image:: Mag_img/2D_pressure/magnetic_loop_xy_fact5-red6_10.png
+   :width: 48 % 
+
+
+.. image:: Mag_img/2D_pressure/magnetic_loop_xy_fact10-red6_1.png
+   :width: 48 % 
+.. image:: Mag_img/2D_pressure/magnetic_loop_xy_fact10-red6_10.png
+   :width: 48 % 
 
 
 
