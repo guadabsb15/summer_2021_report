@@ -198,6 +198,8 @@ We begin by studying the effect of subsequently increasing each bifrost paramete
 
 We see that there is little increase of the pressure by increasing the bifrost parameters. However, between t=1 and t=1.75 the pressure is higher than the initial value when the parameter e was increased to a value of e=0.25. The parameters Ca, U & E caused a significant pressure drop when increased. With decreased parameter there is a noticeable pressure increase when the parameters Ca, U & E were reduced, which are the same parameters that caused a pressure drop when increased. The parameter Uv causes the pressure to drop slightly when increased, while there is little noticeable change when the parameters d & e are reduced.  
 
+Comparing the above result with the ones obtained by Miniati & Martin (2011) the pressure decrease we see are far greater than the ones they obtained with the resolution N=128 in the x-direction, which we also used. After t=2s Miniati & Martin reports a normalized pressure value of more than 0.95. We compare this to the results from Gardiner & Stone (2005), where the magnetic pressure dropped from 3.46e-8 at t=0s to 3.18e-8 after t=2s, corresponding to a normalized final value of 0.91. These results were obtained with N=128 in the x-direction as well. 
+
 Further deacrease of bifrost parameters
 ***************************************
 
@@ -210,6 +212,7 @@ Now, we report the effects by a further decrease of the parameters, where each p
 
 The image on the left panel below shows that Ca, U & E yields a higher pressure evolution than before. However, despite lying below the initial value when reduced by a factor 2, Uv lies slightly above the initial value when reduced by a factor of 5. This factor causes the pressure to lie below the initial one when adjusting e. On the right panel above we once again see the further increase in pressure for Ca, U & E. Uv lies below the initial result at first, but lies above towards the end of the simulation. e is clearly below the initial pressure result, while d now lies slightly below the initial. 
 
+With the reduction factor of 10, the E parameter adjustment yields a final normalized magnetic pressure value above 0.85. This is slightly higher than what Miniati & Martin achieved using N=32, while we use N=128. These are still below 0.91 which was achieved by Gardiner & Stone (2005).  
 
 There were few noticeable changes in the evolution of the Loop for the parameters that increased the pressure over time. However, the parameter E affected the behaviour of the magnetic pressure Loop once it became small enough. Below, we show images of the Loop after t=0.2s and t=2s when E is reduced. We start with the plot where it was reduced by a factor of 2, shown below. 
 
@@ -242,12 +245,14 @@ The ripples after t=0.2s above are more prominant with a factor 10 increase of E
 Multiple adjustment of bifrost parameters 
 ******************************************
 
-Now we will study the combined effect, where we adjust multiple bifrost parameters simultaneously. We will report the result of increasing Uv, d & e by a factor of 2. Another adjustment we make is decreasing Ca, U & E by a factor of 2. Finally, we study the effect of increasing Uv, d & e by a factor of 2 while simultaneously decreasing Ca, U & E by a factor of 2. The pressure evolution for these three combinations are plotted below, where the initial result is included for reference.  
+Now we will study the combined effect, where we adjust multiple bifrost parameters simultaneously. We will report the result of increasing Uv, d & e by a factor of 2. Another adjustment we make is decreasing Ca, U & E by a factor of 2. Finally, we study the effect of increasing Uv, d & e by a factor of 2 while simultaneously decreasing Ca, U & E by a factor of 2. The pressure evolution for these three combinations are plotted below, where the initial result is included for reference. The factor 2 was chosen in order to avoid potential deformation of the Loop, which occured for a factor 5 and 10 reduction of E.   
 
 .. image:: Mag_img/pressure_evolution/loop_xy_comb-adjust_pb_evolution.png
    :width: 48 % 
 
 We see that there is little difference between the initial pressure profile and the pressure profile from increasing Uv, d & e by a factor 2, as these lines nearly overlap throughout the simulation. Decreasing Ca, U & E causes less reduction of the pressure in both cases, when Uv, d & e are held fixed and when they're adjusted as well. The combined decrease and increase seems to give a more steady pressure drop, since we see that the line with reduction only is flattening out before t=1.5s, after which  it starts declining at the approximately same rate as the other line after t=1.75s. 
+
+The combined adjustments yields a comparable pressure drop compared to the case of N=32 for Miniati & Martin, and with less deformation of the Loop than we had for E=5, which we will show below. 
 
 Below, we plot the magnetic pressure of the Loop for the two cases where three bifrost parameters were reduced. We begin with the case where Uv, d & e are held fixed while the remaining parameters are decreased, showing the result after t=0.2s and t=2s in the left and right panel, respectively. 
 
@@ -308,7 +313,11 @@ We now plot the normalized magnetic pressure evolution for the ramses experiment
 As we can see above, the bifrost solver yields a lower reduction in the magnetic pressure over time. The reduction from the bifrost solver is more steady than the reduction from the ramses/mhd_eos solver, which displays an oscillating behaviour as it declines.   
 
 
+References
+###########
 
+ * Miniati & Martin (2011) - iopscience.iop.org/article/10.1088/0067-0049/195/1/5/pdf
+ * Gardiner & Stone (2005) - arxiv.org/pdf/astro-ph/0501557.pdf
 
 
 
