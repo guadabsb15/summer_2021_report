@@ -157,4 +157,8 @@ Changing the Bifrost parameters one at a time while other parameters have the de
   * - .. figure:: img_rayleigh_taylor/rho_bifrost_nu_r_03.png
 
          ``nu_r = 0.3``
+         
+  * - .. figure:: Nothing here
+   
+         Placeholder
 
