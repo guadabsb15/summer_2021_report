@@ -218,12 +218,16 @@
 <a class="reference internal image-reference" href="_images/magnetic_pressure_loop_yz_10.png"><img alt="_images/magnetic_pressure_loop_yz_10.png" src="_images/magnetic_pressure_loop_yz_10.png" style="width: 48%;" /></a>
 <div class="section" id="behaviour-of-loop-in-the-xy-plane">
 <h3>Behaviour of loop in the xy-plane<a class="headerlink" href="#behaviour-of-loop-in-the-xy-plane" title="Permalink to this headline">¶</a></h3>
-<p>Now, we include snapshots of the run in the <strong>xy-plane</strong> to show the behaviour of the loop throughout the simulation. This will be used for comparison later on</p>
-<a class="reference internal image-reference" href="_images/magnetic_pressure_loop_xy_01.png"><img alt="_images/magnetic_pressure_loop_xy_01.png" src="_images/magnetic_pressure_loop_xy_01.png" style="width: 48%;" /></a>
+<p>Now, we include snapshots of the run in the <strong>xy-plane</strong> to show the behaviour of the loop throughout the simulation. This will be used for comparison later on. The image after t=0s is omitted, as it is shown above.</p>
+<a class="reference internal image-reference" href="_images/magnetic_pressure_loop_xy_1.png"><img alt="_images/magnetic_pressure_loop_xy_1.png" src="_images/magnetic_pressure_loop_xy_1.png" style="width: 48%;" /></a>
 <a class="reference internal image-reference" href="_images/magnetic_pressure_loop_xy_2.png"><img alt="_images/magnetic_pressure_loop_xy_2.png" src="_images/magnetic_pressure_loop_xy_2.png" style="width: 48%;" /></a>
 <a class="reference internal image-reference" href="_images/magnetic_pressure_loop_xy_4.png"><img alt="_images/magnetic_pressure_loop_xy_4.png" src="_images/magnetic_pressure_loop_xy_4.png" style="width: 48%;" /></a>
 <a class="reference internal image-reference" href="_images/magnetic_pressure_loop_xy_5.png"><img alt="_images/magnetic_pressure_loop_xy_5.png" src="_images/magnetic_pressure_loop_xy_5.png" style="width: 48%;" /></a>
 <p>And the loop has returned to the initial state after t=1s.</p>
+<p>It continues for an additional cycle after t=1s. Below shows the simulation after t=1.2s and t=2s in the left and right panel, respectively, where the simulation ends after t=2s.</p>
+<a class="reference internal image-reference" href="_images/magnetic_pressure_loop_xy_6.png"><img alt="_images/magnetic_pressure_loop_xy_6.png" src="_images/magnetic_pressure_loop_xy_6.png" style="width: 48%;" /></a>
+<a class="reference internal image-reference" href="_images/magnetic_pressure_loop_xy_101.png"><img alt="_images/magnetic_pressure_loop_xy_101.png" src="_images/magnetic_pressure_loop_xy_101.png" style="width: 48%;" /></a>
+<p>We see that the final image has a larger pressure drop at the center and a lower pressure magnitude overall.</p>
 </div>
 <div class="section" id="static-behaviour">
 <h3>Static behaviour<a class="headerlink" href="#static-behaviour" title="Permalink to this headline">¶</a></h3>
@@ -237,6 +241,7 @@
 <p>Finally, for the <strong>yz-plane</strong> we get</p>
 <a class="reference internal image-reference" href="_images/magnetic_pressure_static_loop_yz_init.png"><img alt="_images/magnetic_pressure_static_loop_yz_init.png" src="_images/magnetic_pressure_static_loop_yz_init.png" style="width: 48%;" /></a>
 <a class="reference internal image-reference" href="_images/magnetic_pressure_static_loop_yz_final.png"><img alt="_images/magnetic_pressure_static_loop_yz_final.png" src="_images/magnetic_pressure_static_loop_yz_final.png" style="width: 48%;" /></a>
+<p>For all three planes, the static Loop yields a lower reduction in magnetic pressure throughout the simulation, and that the Loop is less deformed compared to the moving Loop, as it has a more circular shape. The hole in the center of the Loop has a size comparable to the hole of the moving loop after t=1s.</p>
 </div>
 </div>
 <div class="section" id="normalized-magnetic-pressure-evolution">
@@ -258,12 +263,15 @@
 <p>There were few noticeable changes in the evolution of the Loop for the parameters that increased the pressure over time. However, the parameter E affected the behaviour of the magnetic pressure Loop once it became small enough. Below, we show images of the Loop after t=0.2s and t=2s when E is reduced. We start with the plot where it was reduced by a factor of 2, shown below.</p>
 <a class="reference internal image-reference" href="_images/magnetic_pressure_loop_xy_mod_red6_1.png"><img alt="_images/magnetic_pressure_loop_xy_mod_red6_1.png" src="_images/magnetic_pressure_loop_xy_mod_red6_1.png" style="width: 48%;" /></a>
 <a class="reference internal image-reference" href="_images/magnetic_pressure_loop_xy_mod_red6_10.png"><img alt="_images/magnetic_pressure_loop_xy_mod_red6_10.png" src="_images/magnetic_pressure_loop_xy_mod_red6_10.png" style="width: 48%;" /></a>
+<p>After t=0.2s the above image shows no clear, visible deviations from the initial plot after t=0.2s. After t=2s the pressure is less reduced, and despite a slightly less symmetric hole at the center, the Loop does not seem to have been affected too much by the parameter adjustment.</p>
 <p>Below shows the magnetic pressure loop after t=0.2s and t=2s when E is reduced by a factor of 5.</p>
 <a class="reference internal image-reference" href="_images/magnetic_pressure_loop_xy_fact5-red6_1.png"><img alt="_images/magnetic_pressure_loop_xy_fact5-red6_1.png" src="_images/magnetic_pressure_loop_xy_fact5-red6_1.png" style="width: 48%;" /></a>
 <a class="reference internal image-reference" href="_images/magnetic_pressure_loop_xy_fact5-red6_10.png"><img alt="_images/magnetic_pressure_loop_xy_fact5-red6_10.png" src="_images/magnetic_pressure_loop_xy_fact5-red6_10.png" style="width: 48%;" /></a>
+<p>After t=0.2s it’s evident that a factor 5 decrease of E has affected the simulation, as there are ripples within the loop which was not present for the initial simulations. After t=2s there is less reduction of the magnetic pressure, but the loop is visibly deformed, compared to the initial plot.</p>
 <p>Below is the magnetic pressure of the Loop for a factor 10 reduction of E after t=0.2s and t=2s.</p>
 <a class="reference internal image-reference" href="_images/magnetic_pressure_loop_xy_fact10-red6_1.png"><img alt="_images/magnetic_pressure_loop_xy_fact10-red6_1.png" src="_images/magnetic_pressure_loop_xy_fact10-red6_1.png" style="width: 48%;" /></a>
 <a class="reference internal image-reference" href="_images/magnetic_pressure_loop_xy_fact10-red6_10.png"><img alt="_images/magnetic_pressure_loop_xy_fact10-red6_10.png" src="_images/magnetic_pressure_loop_xy_fact10-red6_10.png" style="width: 48%;" /></a>
+<p>The ripples after t=0.2s above are more prominant with a factor 10 increase of E, as compared to the factor 5 increase. After t=2s there are visible lines in the Loop, demonstrating that it’s not necessarily an optimal result, despite the reduced pressure decline.</p>
 </div>
 <div class="section" id="multiple-adjustment-of-bifrost-parameters">
 <h3>Multiple adjustment of bifrost parameters<a class="headerlink" href="#multiple-adjustment-of-bifrost-parameters" title="Permalink to this headline">¶</a></h3>
@@ -273,9 +281,10 @@
 <p>Below, we plot the magnetic pressure of the Loop for the two cases where three bifrost parameters were reduced. We begin with the case where Uv, d &amp; e are held fixed while the remaining parameters are decreased, showing the result after t=0.2s and t=2s in the left and right panel, respectively.</p>
 <a class="reference internal image-reference" href="_images/magnetic_pressure_loop_xy_red_multiple_1.png"><img alt="_images/magnetic_pressure_loop_xy_red_multiple_1.png" src="_images/magnetic_pressure_loop_xy_red_multiple_1.png" style="width: 48%;" /></a>
 <a class="reference internal image-reference" href="_images/magnetic_pressure_loop_xy_red_multiple_10.png"><img alt="_images/magnetic_pressure_loop_xy_red_multiple_10.png" src="_images/magnetic_pressure_loop_xy_red_multiple_10.png" style="width: 48%;" /></a>
+<p>Above, we can see that there are some lines inside the Loop after t=0.2s, which resemble the ones we saw by decreasing E by too much. After t=2s the Loop looks distorted, once again resembling what we saw for the reduction of E.</p>
 <p>Below shows the magnetic pressure of the Loop after t=0.2s and t=2s when Ca, U &amp; E are decreased by a factor of 2, while Uv, d &amp; e are increased by a factor of 2.</p>
-<a class="reference internal image-reference" href="_images/magnetic_pressure_loop_xy_red-incr_1.png"><img alt="_images/magnetic_pressure_loop_xy_red-incr_1.png" src="_images/magnetic_pressure_loop_xy_red-incr_1.png" style="width: 48%;" /></a>
 <a class="reference internal image-reference" href="_images/magnetic_pressure_loop_xy_red-incr_10.png"><img alt="_images/magnetic_pressure_loop_xy_red-incr_10.png" src="_images/magnetic_pressure_loop_xy_red-incr_10.png" style="width: 48%;" /></a>
+<p>After t=0.2s there were little noticeable changes when all parameters were adjusted, compared to the plot where we only decreased Ca, U &amp; E. After t=2s there is less deformation of the Loop in the above plot, and the Loop is slightly more circular with less distortion. This effect is not very clear, but the additional increase seems to stabilize the simulation a bit.</p>
 </div>
 </div>
 <div class="section" id="ramses-results">
@@ -290,6 +299,11 @@
 <a class="reference internal image-reference" href="_images/magnetic_pressure_ramses_loop_xy_5.png"><img alt="_images/magnetic_pressure_ramses_loop_xy_5.png" src="_images/magnetic_pressure_ramses_loop_xy_5.png" style="width: 48%;" /></a>
 <p>We plot the Loop after t=2s, shown below. The Loop has a dim circular shape, but the main part of it is clearly reduced, and high pressure is noticeable in a more rectangular shape.</p>
 <a class="reference internal image-reference" href="_images/magnetic_pressure_ramses_loop_xy_10.png"><img alt="_images/magnetic_pressure_ramses_loop_xy_10.png" src="_images/magnetic_pressure_ramses_loop_xy_10.png" style="width: 48%;" /></a>
+<p>Above we see the Loop after t=2s. It’s clearly deformed, and has a very reduced pressure overall, meaning that the bifrost simulation was far better for this particular experiment and with the particular parameters.</p>
+</div>
+<div class="section" id="slope-type">
+<h3>slope_type<a class="headerlink" href="#slope-type" title="Permalink to this headline">¶</a></h3>
+<p>When attempting a simulation using slope_type=1, the simulation reached a point where there were multiple infinities and no results were obtained.</p>
 </div>
 <div class="section" id="pressure-evolution">
 <h3>Pressure evolution<a class="headerlink" href="#pressure-evolution" title="Permalink to this headline">¶</a></h3>
