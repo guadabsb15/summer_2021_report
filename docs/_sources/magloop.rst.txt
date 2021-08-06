@@ -202,6 +202,31 @@ Now, we report the effects by a further decrease of the parameters, where each p
 
 The image on the left panel below shows that Ca, U & E yields a higher pressure evolution than before. However, despite lying below the initial value when reduced by a factor 2, Uv lies slightly above the initial value when reduced by a factor of 5. This factor causes the pressure to lie below the initial one when adjusting e. On the right panel above we once again see the further increase in pressure for Ca, U & E. Uv lies below the initial result at first, but lies above towards the end of the simulation. e is clearly below the initial pressure result, while d now lies slightly below the initial. 
 
+
+There were few noticeable changes in the evolution of the Loop for the parameters that increased the pressure over time. However, the parameter E affected the behaviour of the magnetic pressure Loop once it became small enough. Below, we show images of the Loop after t=0.2s and t=2s when E is reduced. We start with the plot where it was reduced by a factor of 2, shown below. 
+
+.. image:: Mag_img/2D_pressure/magnetic_pressure_loop_xy_mod_red6_1.png
+   :width: 48 % 
+.. image:: Mag_img/2D_pressure/magnetic_pressure_loop_xy_mod_red6_10.png
+   :width: 48 % 
+
+
+Below shows the magnetic pressure loop after t=0.2s and t=2s when E is reduced by a factor of 5.
+
+.. image:: Mag_img/2D_pressure/magnetic_pressure_loop_xy_fact5-red6_1.png
+   :width: 48 % 
+.. image:: Mag_img/2D_pressure/magnetic_pressure_loop_xy_fact5-red6_10.png
+   :width: 48 % 
+
+Below is the magnetic pressure of the Loop for a factor 10 reduction of E after t=0.2s and t=2s.
+
+.. image:: Mag_img/2D_pressure/magnetic_pressure_loop_xy_fact10-red6_1.png
+   :width: 48 % 
+.. image:: Mag_img/2D_pressure/magnetic_pressure_loop_xy_fact10-red6_10.png
+   :width: 48 % 
+
+
+
 Multiple adjustment of bifrost parameters 
 ******************************************
 
@@ -210,24 +235,23 @@ Now we will study the combined effect, where we adjust multiple bifrost paramete
 .. image:: Mag_img/pressure_evolution/loop_xy_comb-adjust_pb_evolution.png
    :width: 48 % 
 
-Loop evolution after decrease
-*****************************
+We see that there is little difference between the initial pressure profile and the pressure profile from increasing Uv, d & e by a factor 2, as these lines nearly overlap throughout the simulation. Decreasing Ca, U & E causes less reduction of the pressure in both cases, when Uv, d & e are held fixed and when they're adjusted as well. The combined decrease and increase seems to give a more steady pressure drop, since we see that the line with reduction only is flattening out before t=1.5s, after which  it starts declining at the approximately same rate as the other line after t=1.75s. 
 
-.. image:: Mag_img/2D_pressure/magnetic_loop_xy_mod_red6_1.png
-   :width: 48 % 
-.. image:: Mag_img/2D_pressure/magnetic_loop_xy_mod_red6_10.png
-   :width: 48 % 
+Below, we plot the magnetic pressure of the Loop for the two cases where three bifrost parameters were reduced. We begin with the case where Uv, d & e are held fixed while the remaining parameters are decreased, showing the result after t=0.2s and t=2s in the left and right panel, respectively. 
 
-.. image:: Mag_img/2D_pressure/magnetic_loop_xy_fact5-red6_1.png
+.. image:: Mag_img/2D_pressure/magnetic_pressure_loop_xy_red_multiple_1.png
    :width: 48 % 
-.. image:: Mag_img/2D_pressure/magnetic_loop_xy_fact5-red6_10.png
+.. image:: Mag_img/2D_pressure/magnetic_pressure_loop_xy_red_multiple_10.png
    :width: 48 % 
 
 
-.. image:: Mag_img/2D_pressure/magnetic_loop_xy_fact10-red6_1.png
+Below shows the magnetic pressure of the Loop after t=0.2s and t=2s when Ca, U & E are decreased by a factor of 2, while Uv, d & e are increased by a factor of 2.
+
+.. image:: Mag_img/2D_pressure/magnetic_pressure_loop_xy_red-incr_1.png
    :width: 48 % 
-.. image:: Mag_img/2D_pressure/magnetic_loop_xy_fact10-red6_10.png
+.. image:: Mag_img/2D_pressure/magnetic_pressure_loop_xy_red-incr_10.png
    :width: 48 % 
+
 
 
 
