@@ -138,11 +138,11 @@ Changing the Bifrost parameters one at a time while other parameters have the de
 
 .. list-table::
 
-  * - .. figure:: img_rayleigh_taylor/rho_bifrost_nu1_01.png
+  * - .. figure:: img_rayleigh_taylor/rho_bifrost_nu1_02.png
 
          ``nu1 = 0.1``
 
-  * - .. figure:: img_rayleigh_taylor/rho_bifrost_nu2_01.png
+    - .. figure:: img_rayleigh_taylor/rho_bifrost_nu2_02.png
 
          ``nu2 = 0.1``
 
@@ -150,7 +150,7 @@ Changing the Bifrost parameters one at a time while other parameters have the de
 
          ``nu3 = 0.3``
 
-  * - .. figure:: img_rayleigh_taylor/rho_bifrost_nu_r_01.png
+    - .. figure:: img_rayleigh_taylor/rho_bifrost_nu_r_01.png
 
          ``nu_r = 0.1``
 
