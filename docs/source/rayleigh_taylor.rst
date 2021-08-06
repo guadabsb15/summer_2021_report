@@ -4,7 +4,7 @@ Rayleigh Taylor instability
 Results from RT experiments run with different parameters
 ---------------------------------------------------------
 In these experiments, we change various parameters and study the effects in resultant density.
-We use both the Ramses solver (ramses/mhd_eos) and Bifrost (ideal_mhd) to simulate the experiment.
+We use both the Ramses solver (ramses/mhd_eos from the `Dispatch-Bifrost <https://github.com/ITA-Solar/Dispatch-Bifrost>`_ repository) and Bifrost (ideal_mhd from the `Bifrost <https://github.com/ITA-Solar/Bifrost>_` repository) to simulate the experiment.
 Simulation snapshot are taken after 5 seconds, and at this time we can compare results from different runs.
 
 Initially, experimental parameters follow Abel. T (2011)
@@ -31,8 +31,13 @@ Initially, experimental parameters follow Abel. T (2011)
 
 with gas constant gamma = 1.4
 
+Ramses
+----
+
+First, we study the Ramses solver
+
 Varying Ramses slope type
--------------------------
+****
 
 ``slope_type`` is a parameter for the ramses solver. We tried the different values 1, 2, and 3.5
 
@@ -58,7 +63,7 @@ Larger ``slope_type`` also introduces more non-linearity, and the flow becomes m
 
 
 Effects of grid in Ramses
-----
+****
 
 Falling back to the default ``slope_type=3.5``, we study how grid resolution affects results.
 
@@ -85,8 +90,22 @@ Falling back to the default ``slope_type=3.5``, we study how grid resolution aff
 Finer resolution gives more details to the results, and patterns exists on smaller scales.
 It also makes the density profiles less symmetric and more chaotic.
 
-Effects of grid in Bifrost
+Bifrost
 ----
+
+Now, we move on to the Bifrost solver. We have the same intial conditions, and the Bifrost parameters are by default
+
+.. code-block::
+
+    mhd_template['nu1'] = 0.1
+    mhd_template['nu2'] = 0.1
+    mhd_template['nu3'] = 0.5
+    mhd_template['nu_r'] = 0.3
+
+The default grid is `nx=128, ny=256`.
+
+Effects of grid in Bifrost
+****
 
 .. list-table::
 
@@ -110,3 +129,7 @@ Effects of grid in Bifrost
 
 With Bifrost, the solution does not posess the same details as the Ramses solver.
 There are less whirls and non-linearity in these solutions.
+
+
+
+
