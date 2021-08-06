@@ -200,6 +200,40 @@ For the combined, we get
 
 
 
+Ramses results 
+###############
+
+For the ramses solver, we plot the behaviour of the Loop, and compare the evolution of the magnetic pressure with the result from the unchanged bifrost result. We will only consider the results in the xy-direction, since the simulation yielded the same results for all three directions. 
+
+Initial behaviour 
+*****************
+
+Below are four images showing the initial behaviour of the Loop from t=0s to t=1s. At t=0s the Loop looks fine, but there are visual ripples in the lower left corner appearing as it moves. After t=0.8s (lower left panel), the bottom left of the Loop is very dim and the ripples are still in place. After t=1s, the Loop is dimmer overall and the pressure gap in the Loop's center has increased its diameter.  
+
+.. image:: Mag_img/ramses/magnetic_pressure_ramses_loop_xy_0.png 
+   :width: 48 % 
+.. image:: Mag_img/ramses/magnetic_pressure_ramses_loop_xy_2.png 
+   :width: 48 % 
+.. image:: Mag_img/ramses/magnetic_pressure_ramses_loop_xy_4.png 
+   :width: 48 % 
+.. image:: Mag_img/ramses/magnetic_pressure_ramses_loop_xy_5.png 
+   :width: 48 % 
+
+We plot the Loop after t=2s, shown below. The Loop has a dim circular shape, but the main part of it is clearly reduced, and high pressure is noticeable in a more rectangular shape. 
+
+.. image:: Mag_img/ramses/magnetic_pressure_ramses_loop_xy_10.png 
+   :width: 48 % 
+
+
+Pressure evolution
+******************
+
+We now plot the normalized magnetic pressure evolution for the ramses experiment, shown below. The initial pressure evolution of the bifrost solver is also included in order to compare. 
+
+.. image:: Mag_img/pressure_evolution/bifrost-ramses_xy_pb_evolution.png 
+   :width: 48 % 
+
+As we can see above, the bifrost solver yields a lower reduction in the magnetic pressure over time. The reduction from the bifrost solver is more steady than the reduction from the ramses/mhd_eos solver, which displays an oscillating behaviour as it declines.   
 
 
 
