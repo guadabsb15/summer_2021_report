@@ -187,14 +187,14 @@ We will now study the evolution of the normalized magnetic pressure throughout t
 
 Now, we report the effects by a further decrease of the parameters 
 
-.. image:: Mag_img/pressure_evolution/loop_xy_fact5_red_pb_evolution.png
+.. image:: Mag_img/pressure_evolution/loop_xy_fact5-red_pb_evolution.png
    :width: 48 % 
-.. image:: Mag_img/pressure_evolution/loop_xy_fact10_red_pb_evolution.png
+.. image:: Mag_img/pressure_evolution/loop_xy_fact10-red_pb_evolution.png
    :width: 48 % 
 
 For the combined, we get 
 
-.. image:: Mag_img/pressure_evolution/loop_xy_comb_adjust_pb_evolution.png
+.. image:: Mag_img/pressure_evolution/loop_xy_comb-adjust_pb_evolution.png
    :width: 48 % 
 
 
