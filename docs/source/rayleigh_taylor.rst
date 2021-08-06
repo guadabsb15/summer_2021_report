@@ -157,4 +157,16 @@ Changing the Bifrost parameters one at a time while other parameters have the de
   * - .. figure:: img_rayleigh_taylor/rho_bifrost_nu_r_03.png
 
          ``nu_r = 0.3``
+         
+    - .. figure:: Nothing here
+   
+         Placeholder just so the figures render
+         
+Changes to the Rayleigh Taylor scripts
+====================================
+
+I made some changes to the ``make_snap.py``, such that the intial state has the correct symmetry. The ``np.roll`` function is used on ``pz``, shifting the array to the right such that the two fingers are side by side. I did not fix the boundaries ``dymin`` and ``dymax``. 
+
+In ``make_plot.py``, it is possible to plot time evolution with the ``make_plot()`` function, just uncomment the lines at the bottom of the document.
+
 
