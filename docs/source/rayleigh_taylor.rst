@@ -32,12 +32,12 @@ Initially, experimental parameters follow Abel. T (2011)
 with gas constant gamma = 1.4
 
 Ramses
-----
+---------------------------------------------------------
 
 First, we study the Ramses solver
 
 Varying Ramses slope type
-****
+******************************************************************
 
 ``slope_type`` is a parameter for the ramses solver. We tried the different values 1, 2, and 3.5
 
@@ -63,7 +63,7 @@ Larger ``slope_type`` also introduces more non-linearity, and the flow becomes m
 
 
 Effects of grid in Ramses
-****
+******************************************************************
 
 Falling back to the default ``slope_type=3.5``, we study how grid resolution affects results.
 
@@ -91,7 +91,7 @@ Finer resolution gives more details to the results, and patterns exists on small
 It also makes the density profiles less symmetric and more chaotic.
 
 Bifrost
-----
+---------------------------------------------------------
 
 Now, we move on to the Bifrost solver. We have the same intial conditions, and the Bifrost parameters are by default
 
@@ -105,7 +105,7 @@ Now, we move on to the Bifrost solver. We have the same intial conditions, and t
 The default grid is `nx=128, ny=256`.
 
 Effects of grid in Bifrost
-****
+******************************************************************
 
 .. list-table::
 
