@@ -250,6 +250,26 @@
 <p>For the combined, we get</p>
 <a class="reference internal image-reference" href="_images/loop_xy_comb-adjust_pb_evolution.png"><img alt="_images/loop_xy_comb-adjust_pb_evolution.png" src="_images/loop_xy_comb-adjust_pb_evolution.png" style="width: 48%;" /></a>
 </div>
+<div class="section" id="ramses-results">
+<h2>Ramses results<a class="headerlink" href="#ramses-results" title="Permalink to this headline">¶</a></h2>
+<p>For the ramses solver, we plot the behaviour of the Loop, and compare the evolution of the magnetic pressure with the result from the unchanged bifrost result. We will only consider the results in the xy-direction, since the simulation yielded the same results for all three directions.</p>
+<div class="section" id="initial-behaviour">
+<h3>Initial behaviour<a class="headerlink" href="#initial-behaviour" title="Permalink to this headline">¶</a></h3>
+<p>Below are four images showing the initial behaviour of the Loop from t=0s to t=1s. At t=0s the Loop looks fine, but there are visual ripples in the lower left corner appearing as it moves. After t=0.8s (lower left panel), the bottom left of the Loop is very dim and the ripples are still in place. After t=1s, the Loop is dimmer overall and the pressure gap in the Loop’s center has increased its diameter.</p>
+<a class="reference internal image-reference" href="_images/magnetic_pressure_ramses_loop_xy_0.png"><img alt="_images/magnetic_pressure_ramses_loop_xy_0.png" src="_images/magnetic_pressure_ramses_loop_xy_0.png" style="width: 48%;" /></a>
+<a class="reference internal image-reference" href="_images/magnetic_pressure_ramses_loop_xy_2.png"><img alt="_images/magnetic_pressure_ramses_loop_xy_2.png" src="_images/magnetic_pressure_ramses_loop_xy_2.png" style="width: 48%;" /></a>
+<a class="reference internal image-reference" href="_images/magnetic_pressure_ramses_loop_xy_4.png"><img alt="_images/magnetic_pressure_ramses_loop_xy_4.png" src="_images/magnetic_pressure_ramses_loop_xy_4.png" style="width: 48%;" /></a>
+<a class="reference internal image-reference" href="_images/magnetic_pressure_ramses_loop_xy_5.png"><img alt="_images/magnetic_pressure_ramses_loop_xy_5.png" src="_images/magnetic_pressure_ramses_loop_xy_5.png" style="width: 48%;" /></a>
+<p>We plot the Loop after t=2s, shown below. The Loop has a dim circular shape, but the main part of it is clearly reduced, and high pressure is noticeable in a more rectangular shape.</p>
+<a class="reference internal image-reference" href="_images/magnetic_pressure_ramses_loop_xy_10.png"><img alt="_images/magnetic_pressure_ramses_loop_xy_10.png" src="_images/magnetic_pressure_ramses_loop_xy_10.png" style="width: 48%;" /></a>
+</div>
+<div class="section" id="pressure-evolution">
+<h3>Pressure evolution<a class="headerlink" href="#pressure-evolution" title="Permalink to this headline">¶</a></h3>
+<p>We now plot the normalized magnetic pressure evolution for the ramses experiment, shown below. The initial pressure evolution of the bifrost solver is also included in order to compare.</p>
+<a class="reference internal image-reference" href="_images/bifrost-ramses_xy_pb_evolution.png"><img alt="_images/bifrost-ramses_xy_pb_evolution.png" src="_images/bifrost-ramses_xy_pb_evolution.png" style="width: 48%;" /></a>
+<p>As we can see above, the bifrost solver yields a lower reduction in the magnetic pressure over time. The reduction from the bifrost solver is more steady than the reduction from the ramses/mhd_eos solver, which displays an oscillating behaviour as it declines.</p>
+</div>
+</div>
 </div>
 
 
@@ -282,6 +302,7 @@
 <li class="toctree-l2"><a class="reference internal" href="#solver-parameters">Solver parameters</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#initial-results-with-unchanged-parameters">Initial results with unchanged parameters</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#normalized-magnetic-pressure-evolution">Normalized magnetic pressure evolution</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#ramses-results">Ramses results</a></li>
 </ul>
 </li>
 </ul>
