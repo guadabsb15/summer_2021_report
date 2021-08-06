@@ -219,10 +219,10 @@
 <div class="section" id="behaviour-of-loop-in-the-xy-plane">
 <h3>Behaviour of loop in the xy-plane<a class="headerlink" href="#behaviour-of-loop-in-the-xy-plane" title="Permalink to this headline">¶</a></h3>
 <p>Now, we include snapshots of the run in the <strong>xy-plane</strong> to show the behaviour of the loop throughout the simulation. This will be used for comparison later on</p>
-<a class="reference internal image-reference" href="Mag_img/xy_initial/magnetic_pressure_xy_0.png"><img alt="Mag_img/xy_initial/magnetic_pressure_xy_0.png" src="Mag_img/xy_initial/magnetic_pressure_xy_0.png" style="width: 48%;" /></a>
-<a class="reference internal image-reference" href="Mag_img/xy_initial/magnetic_pressure_xy_2.png"><img alt="Mag_img/xy_initial/magnetic_pressure_xy_2.png" src="Mag_img/xy_initial/magnetic_pressure_xy_2.png" style="width: 48%;" /></a>
-<a class="reference internal image-reference" href="Mag_img/xy_initial/magnetic_pressure_xy_4.png"><img alt="Mag_img/xy_initial/magnetic_pressure_xy_4.png" src="Mag_img/xy_initial/magnetic_pressure_xy_4.png" style="width: 48%;" /></a>
-<a class="reference internal image-reference" href="Mag_img/xy_initial/magnetic_pressure_xy_5.png"><img alt="Mag_img/xy_initial/magnetic_pressure_xy_5.png" src="Mag_img/xy_initial/magnetic_pressure_xy_5.png" style="width: 48%;" /></a>
+<a class="reference internal image-reference" href="_images/magnetic_pressure_loop_xy_01.png"><img alt="_images/magnetic_pressure_loop_xy_01.png" src="_images/magnetic_pressure_loop_xy_01.png" style="width: 48%;" /></a>
+<a class="reference internal image-reference" href="_images/magnetic_pressure_loop_xy_2.png"><img alt="_images/magnetic_pressure_loop_xy_2.png" src="_images/magnetic_pressure_loop_xy_2.png" style="width: 48%;" /></a>
+<a class="reference internal image-reference" href="_images/magnetic_pressure_loop_xy_4.png"><img alt="_images/magnetic_pressure_loop_xy_4.png" src="_images/magnetic_pressure_loop_xy_4.png" style="width: 48%;" /></a>
+<a class="reference internal image-reference" href="_images/magnetic_pressure_loop_xy_5.png"><img alt="_images/magnetic_pressure_loop_xy_5.png" src="_images/magnetic_pressure_loop_xy_5.png" style="width: 48%;" /></a>
 <p>And the loop has returned to the initial state after t=1s.</p>
 </div>
 <div class="section" id="static-behaviour">
@@ -244,12 +244,21 @@
 <p>We will now study the evolution of the normalized magnetic pressure throughout the simulation.</p>
 <div class="section" id="increasing-and-decreasing-bifrost-parameters">
 <h3>Increasing and decreasing bifrost parameters<a class="headerlink" href="#increasing-and-decreasing-bifrost-parameters" title="Permalink to this headline">¶</a></h3>
+<p>We begin by studying the effect of subsequently increasing each bifrost parameter while the other are held fixed. For the increase, all bifrost parameters were multiplied by a factor of 5, except from E, which was multiplied by a factor of 2.5 since E=2.5 caused the simulation to crash. The resulting normalized pressure evolution is plotted below on the left panel. On the right panel we show the effect of decreasing the bifrost parameters subsequently by a factor of 2, i.e. using half of the original values.</p>
 <a class="reference internal image-reference" href="_images/loop_xy_mod_incr_pb_evolution.png"><img alt="_images/loop_xy_mod_incr_pb_evolution.png" src="_images/loop_xy_mod_incr_pb_evolution.png" style="width: 48%;" /></a>
 <a class="reference internal image-reference" href="_images/loop_xy_mod_red_pb_evolution.png"><img alt="_images/loop_xy_mod_red_pb_evolution.png" src="_images/loop_xy_mod_red_pb_evolution.png" style="width: 48%;" /></a>
-<p>Now, we report the effects by a further decrease of the parameters</p>
+<p>We see that there is little increase of the pressure by increasing the bifrost parameters. However, between t=1 and t=1.75 the pressure is higher than the initial value when the parameter e was increased to a value of e=0.25. The parameters Ca, U &amp; E caused a significant pressure drop when increased. With decreased parameter there is a noticeable pressure increase when the parameters Ca, U &amp; E were reduced, which are the same parameters that caused a pressure drop when increased. The parameter Uv causes the pressure to drop slightly when increased, while there is little noticeable change when the parameters d &amp; e are reduced.</p>
+</div>
+<div class="section" id="further-deacrease-of-bifrost-parameters">
+<h3>Further deacrease of bifrost parameters<a class="headerlink" href="#further-deacrease-of-bifrost-parameters" title="Permalink to this headline">¶</a></h3>
+<p>Now, we report the effects by a further decrease of the parameters, where each parameter is subsequently reduced by a factor of 5 and by a factor of 10, shown in the left an right panel below, respectively.</p>
 <a class="reference internal image-reference" href="_images/loop_xy_fact5-red_pb_evolution.png"><img alt="_images/loop_xy_fact5-red_pb_evolution.png" src="_images/loop_xy_fact5-red_pb_evolution.png" style="width: 48%;" /></a>
 <a class="reference internal image-reference" href="_images/loop_xy_fact10-red_pb_evolution.png"><img alt="_images/loop_xy_fact10-red_pb_evolution.png" src="_images/loop_xy_fact10-red_pb_evolution.png" style="width: 48%;" /></a>
-<p>For the combined, we get</p>
+<p>The image on the left panel below shows that Ca, U &amp; E yields a higher pressure evolution than before. However, despite lying below the initial value when reduced by a factor 2, Uv lies slightly above the initial value when reduced by a factor of 5. This factor causes the pressure to lie below the initial one when adjusting e. On the right panel above we once again see the further increase in pressure for Ca, U &amp; E. Uv lies below the initial result at first, but lies above towards the end of the simulation. e is clearly below the initial pressure result, while d now lies slightly below the initial.</p>
+</div>
+<div class="section" id="multiple-adjustment-of-bifrost-parameters">
+<h3>Multiple adjustment of bifrost parameters<a class="headerlink" href="#multiple-adjustment-of-bifrost-parameters" title="Permalink to this headline">¶</a></h3>
+<p>Now we will study the combined effect, where we adjust multiple bifrost parameters simultaneously. We will report the result of increasing Uv, d &amp; e by a factor of 2. Another adjustment we make is decreasing Ca, U &amp; E by a factor of 2. Finally, we study the effect of increasing Uv, d &amp; e by a factor of 2 while simultaneously decreasing Ca, U &amp; E by a factor of 2. The pressure evolution for these three combinations are plotted below, where the initial result is included for reference.</p>
 <a class="reference internal image-reference" href="_images/loop_xy_comb-adjust_pb_evolution.png"><img alt="_images/loop_xy_comb-adjust_pb_evolution.png" src="_images/loop_xy_comb-adjust_pb_evolution.png" style="width: 48%;" /></a>
 </div>
 <div class="section" id="loop-evolution-after-decrease">

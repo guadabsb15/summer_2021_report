@@ -126,13 +126,13 @@ Behaviour of loop in the xy-plane
 
 Now, we include snapshots of the run in the **xy-plane** to show the behaviour of the loop throughout the simulation. This will be used for comparison later on 
 
-.. image:: Mag_img/xy_initial/magnetic_pressure_xy_0.png 
+.. image:: Mag_img/xy_initial/magnetic_pressure_loop_xy_0.png 
    :width: 48 % 
-.. image:: Mag_img/xy_initial/magnetic_pressure_xy_2.png
+.. image:: Mag_img/xy_initial/magnetic_pressure_loop_xy_2.png
    :width: 48 % 
-.. image:: Mag_img/xy_initial/magnetic_pressure_xy_4.png 
+.. image:: Mag_img/xy_initial/magnetic_pressure_loop_xy_4.png 
    :width: 48 % 
-.. image:: Mag_img/xy_initial/magnetic_pressure_xy_5.png
+.. image:: Mag_img/xy_initial/magnetic_pressure_loop_xy_5.png
    :width: 48 % 
 
 And the loop has returned to the initial state after t=1s. 
@@ -181,20 +181,31 @@ We will now study the evolution of the normalized magnetic pressure throughout t
 Increasing and decreasing bifrost parameters
 ********************************************
 
+We begin by studying the effect of subsequently increasing each bifrost parameter while the other are held fixed. For the increase, all bifrost parameters were multiplied by a factor of 5, except from E, which was multiplied by a factor of 2.5 since E=2.5 caused the simulation to crash. The resulting normalized pressure evolution is plotted below on the left panel. On the right panel we show the effect of decreasing the bifrost parameters subsequently by a factor of 2, i.e. using half of the original values.  
+
 .. image:: Mag_img/pressure_evolution/loop_xy_mod_incr_pb_evolution.png
    :width: 48 % 
 .. image:: Mag_img/pressure_evolution/loop_xy_mod_red_pb_evolution.png
    :width: 48 % 
 
+We see that there is little increase of the pressure by increasing the bifrost parameters. However, between t=1 and t=1.75 the pressure is higher than the initial value when the parameter e was increased to a value of e=0.25. The parameters Ca, U & E caused a significant pressure drop when increased. With decreased parameter there is a noticeable pressure increase when the parameters Ca, U & E were reduced, which are the same parameters that caused a pressure drop when increased. The parameter Uv causes the pressure to drop slightly when increased, while there is little noticeable change when the parameters d & e are reduced.  
 
-Now, we report the effects by a further decrease of the parameters 
+Further deacrease of bifrost parameters
+***************************************
+
+Now, we report the effects by a further decrease of the parameters, where each parameter is subsequently reduced by a factor of 5 and by a factor of 10, shown in the left an right panel below, respectively. 
 
 .. image:: Mag_img/pressure_evolution/loop_xy_fact5-red_pb_evolution.png
    :width: 48 % 
 .. image:: Mag_img/pressure_evolution/loop_xy_fact10-red_pb_evolution.png
    :width: 48 % 
 
-For the combined, we get 
+The image on the left panel below shows that Ca, U & E yields a higher pressure evolution than before. However, despite lying below the initial value when reduced by a factor 2, Uv lies slightly above the initial value when reduced by a factor of 5. This factor causes the pressure to lie below the initial one when adjusting e. On the right panel above we once again see the further increase in pressure for Ca, U & E. Uv lies below the initial result at first, but lies above towards the end of the simulation. e is clearly below the initial pressure result, while d now lies slightly below the initial. 
+
+Multiple adjustment of bifrost parameters 
+******************************************
+
+Now we will study the combined effect, where we adjust multiple bifrost parameters simultaneously. We will report the result of increasing Uv, d & e by a factor of 2. Another adjustment we make is decreasing Ca, U & E by a factor of 2. Finally, we study the effect of increasing Uv, d & e by a factor of 2 while simultaneously decreasing Ca, U & E by a factor of 2. The pressure evolution for these three combinations are plotted below, where the initial result is included for reference.  
 
 .. image:: Mag_img/pressure_evolution/loop_xy_comb-adjust_pb_evolution.png
    :width: 48 % 
