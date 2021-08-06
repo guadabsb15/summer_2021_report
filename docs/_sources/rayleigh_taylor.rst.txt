@@ -158,7 +158,7 @@ Changing the Bifrost parameters one at a time while other parameters have the de
 
          ``nu_r = 0.3``
          
-  * - .. figure:: Nothing here
+    - .. figure:: Nothing here
    
          Placeholder
 
